@@ -41,6 +41,9 @@ public class UIMeta {
 		if(testvalue.contains("{instance/web-url}")){
 			testvalue = testvalue.replace("{instance/web-url}", ins.getWebURL());
 		}
+		if(testvalue.contains("{instance/id}")){
+			testvalue = testvalue.replace("{instance/id}", ins.getID());
+		}
 		
 		return testvalue;
 	}
