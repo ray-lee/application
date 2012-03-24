@@ -84,7 +84,7 @@ public class WebLoginStatus  implements WebMethod {
 								permsdata = perms.getJSONArray(r.getWebURL());
 							}
 						}
-						perms.put(ins.getID(), permsdata);
+						perms.put(ins.getWebURL(), permsdata);
 					}
 				}
 			}
