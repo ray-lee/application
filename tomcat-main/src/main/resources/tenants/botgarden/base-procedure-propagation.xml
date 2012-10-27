@@ -76,7 +76,8 @@
             				<option id="prop-number" sample="UCBG1000">Propagation Number</option>
             			</options>
             		</field>
-                    <field id="propDate" ui-type="date" ui-search="range"/>
+                    <field id="propDate" ui-type="groupfield/structureddate" 
+                        primarykey="propDate.dateDisplayDate" ui-func="cspace.structuredDate"/>
                     <field id="propReason" ui-search="repeatable" >
                         <options>
                             <option id="" default="yes">Please select a value</option>
@@ -93,7 +94,8 @@
                         </options>
                     </field>
                     <field id="propComments"/>
-                    <repeat id="scarStratList">
+                    <field id="numStarted"/>
+                    <repeat id="scarStratGroupList/scarStratGroup">
                         <field id="scarStrat">
                             <options>
                                 <option id="" default="yes">Please select a value</option>
@@ -101,8 +103,18 @@
                                 <option id="bar">bar</option>
                             </options>
                         </field>
+                        <field id="duration"/>
+                        <field id="durationUnit">
+                            <options>
+                                <option id="" default="yes">Please select a value</option>
+                                <option id="days">Days</option>
+                                <option id="weeks">Weeks</option>
+                                <option id="months">Months</option>
+                            </options>
+                        </field>
                     </repeat>                    
                     <field id="extraSeeds" datatype="boolean"/>
+                    <field id="spores" datatype="boolean"/>
                     <field id="cuttingType">
                         <options>
                             <option id="" default="yes">Please select a value</option>
@@ -119,12 +131,22 @@
                     </field>
                     <field id="concentration"/>
                     <field id="wounded" datatype="boolean"/>
+                    <field id="plantType">
+                        <options>
+                            <option id="" default="yes">Please select a value</option>
+                            <option id="foo">foo</option>
+                            <option id="bar">bar</option>
+                        </options>
+                    </field>
                     <field id="germinationDate" ui-type="date"/>
                     <field id="successRate"/>
                     
                     <repeat id="propActivityGroupList/propActivityGroup">
                         <field id="order"/>
-                        <field id="activityDate" ui-type="date"/>
+                        <!-- <field id="activityDate" ui-type="date"/> -->
+                        <group id="activityDate" ui-type="groupfield/structureddate" 
+                            primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
+                        </group>
                         <field id="activityType">
                             <options>
                                 <option id="" default="yes">Please select a value</option>
@@ -141,15 +163,16 @@
                                 <option id="bar">bar</option>
                             </options>
                         </field>
-                        <field id="nurseryLocation" autocomplete="place-place"/>
+                        <field id="nurseryLocation" autocomplete="location-location"/>
                         <field id="conditions"/>
-                        <field id="fungicide">
+                        <field id="chemicalApplied">
                             <options>
                                 <option id="" default="yes">Please select a value</option>
                                 <option id="foo">foo</option>
                                 <option id="bar">bar</option>
                             </options>
                         </field>
+                        <field id="activityConcentration"/>
                         <field id="activityComments"/>
                     </repeat>
                 </section>

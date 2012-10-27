@@ -9,23 +9,18 @@
 			</options>
 		</field>
 		
-		<!-- Add organization-institution to autocomplete, and remove person-person -->
-		<field id="borrower" autocomplete="organization-organization,organization-institution"/>
+		<!-- Remove person-person from autocomplete -->
+		<field id="borrower" autocomplete="organization-organization"/>
 
 		<field id="loanPurpose">
 			<!-- Remove options -->
 			<options/>
 		</field>
-	
-		<repeat id="taxonomyList">
-			<!-- Add taxon-unverified to autocomplete -->
-			<field id="taxonomy" autocomplete="taxon-taxon,taxon-unverified"/>
-		</repeat>
 		
 		<!-- Local fields -->
 		
 		<repeat id="collectorList" section="botgarden">
-			<field id="collector" autocomplete="organization-organization" section="botgarden"/>
+			<field id="collector" autocomplete="person-person" section="botgarden"/>
 		</repeat>
 		<field id="collectionNote" section="botgarden"/>
 		<field id="gardenLocation" autocomplete="location-location" section="botgarden"/>
