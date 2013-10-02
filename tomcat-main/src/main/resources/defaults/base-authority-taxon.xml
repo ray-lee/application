@@ -101,7 +101,15 @@
             <field id="taxonCitation" autocomplete="citation-citation,citation-worldcat" ui-search="repeatable"/>
         </repeat>
         <field id="taxonNote"/>
-        <field id="taxonIsNamedHybrid" datatype="boolean" ui-search="repeatable"></field>
+        <field id="taxonIsNamedHybrid" datatype="boolean"></field>
+        <field id="taxonIsNamedHybridSearch" datatype="boolean" ui-search="repeatable" exists-in-services="false">
+            <services-tag>taxonIsNamedHybrid</services-tag>
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="true">Yes</option>
+                <option id="false">No</option>
+            </options>
+        </field>
         <repeat id="commonNameGroupList/commonNameGroup" has-primary="yes">
             <field id="commonName" ui-search="repeatable"/>
             <field id="commonNameLanguage" autocomplete="vocab-languages" ui-type="enum"/>
