@@ -88,4 +88,13 @@
 			</options>
 		</field>
 	</section>
+	
+	<section id="valuationInformation">
+		<repeat id="appraisalGroupList/appraisalGroup" section="bampfa">
+			<field id="appraisalInfo" section="bampfa"/>
+			<field id="appraisalSource" section="bampfa"/>
+			<field id="appraisalDate" section="bampfa" ui-type="date" datatype="date"/>
+			<field id="appraisalNote" section="bampfa"/>
+		</repeat>
+	</section>
 </record>
