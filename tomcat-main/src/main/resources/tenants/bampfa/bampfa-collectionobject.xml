@@ -21,7 +21,7 @@
 
 		<repeat id="titleGroupList/titleGroup">
 			<!-- Add summary and relate to mini -->
-			<field id="title" mini="summary,search,list,relate"/>
+			<field id="title" ui-type="richtext" mini="summary,search,list,relate"/>
 		</repeat>
 		
 		<!-- Local fields -->
