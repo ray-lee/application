@@ -1,5 +1,6 @@
 <cspace-config tenantname="lhmc">
 
+	<tenantid>501</tenantid>
 	<version>11</version>
 	<include src="settings.xml,local-lhmc-settings.xml" merge="xmlmerge-settings.properties" 
 		strip-root="yes" />
@@ -11,7 +12,8 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml"/>
+			<include src="base-collectionobject.xml,extensions/lhmc-collectionobject.xml"
+					 merge="xmlmerge.properties" />
 			<include src="base-authority.xml"/>
 
 			<include src="base-procedure-acquisition.xml"/>
