@@ -1,0 +1,44 @@
+<record id="transport" in-recordlist="no" separate-record="false" services-type="transportGroupList">
+    <hassoftdelete>true</hassoftdelete>
+    <section id="transportInformation" section="lhmc">
+        <group id="transportGroupList/transportGroup">
+            <field id="referenceNumber" chooser="yes" in-title="yes" ui-search="repeatable"
+                   mini="number,search,list,relate" seperate_ui_container="true" section="lhmc">
+                <container-selector>transport-reference-number-patternChooserContainer</container-selector>
+                <options>
+                    <option id="transport" sample="TR2015.1">Transport</option>
+                </options>
+            </field>
+            <repeat id="agentsGroupList/transportAgentsGroup" section="lhmc">
+                <field id="agent" autocomplete="person-person,organization-organization" section="lhmc"/>
+                <field id="agentContact" autocomplete="person-person" section="lhmc"/>
+            </repeat>
+
+            <field id="departurePoint" autocomplete="person-person,organization-organization" section="lhmc"/>
+            <field id="destination" autocomplete="person-person,organization-organization" section="lhmc"/>
+
+            <field id="departureDate" ui-type="date" datatype="date" section="lhmc"/>
+            <field id="departureTime" section="lhmc"/>
+
+            <field id="arrivalDate" ui-type="date" datatype="date" section="lhmc"/>
+            <field id="arrivalTime" section="lhmc"/>
+
+            <field id="numberOfCratesObjects" section="lhmc"/>
+
+            <repeat id="lenders" section="lhmc">
+                <field id="lender" autocomplete="person-person,organization-organization" section="lhmc"/>
+            </repeat>
+
+            <field id="method" autocomplete="vocab-transportmethod" ui-type="enum" section="lhmc"/>
+
+            <field id="courier" autocomplete="person-person,organization-organization" section="lhmc"/>
+
+            <repeat id="insuranceIndemnityGroupList/transportInsuranceIndemnityGroup" section="lhmc">
+                <field id="insuranceIndemnityCurrency" autocomplete="vocab-currency" ui-type="enum"  section="lhmc"/>
+                <field id="insuranceIndemnityValue" ui-type="validated" datatype="float" section="lhmc"/>
+            </repeat>
+
+            <field id="remarks" section="lhmc"/>
+        </group>
+    </section>
+</record>

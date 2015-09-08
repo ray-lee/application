@@ -1,0 +1,10 @@
+<record id="loanout" is-extension="true" generate-services-schema="true" type="record,procedure">
+
+    <!-- Information about your extension schema goes here -->
+    <services-record-path id="lhmc">
+        loansout_lhmc:http://collectionspace.org/services/loanout/domain/lhmc,loansout_lhmc
+    </services-record-path>
+    <section>
+        <field id="transport" ui-type="groupfield/transport/selfrenderer" ui-func="cspace.transport" section="lhmc"/>
+    </section>
+</record>

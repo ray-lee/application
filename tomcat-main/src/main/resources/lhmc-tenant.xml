@@ -26,7 +26,8 @@
 			<include src="base-procedure-intake.xml,extensions/lhmc-procedure-intake.xml"
 					 merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanin.xml"/>
-			<include src="base-procedure-loanout.xml"/>
+			<include src="base-procedure-loanout.xml,extensions/lhmc-procedure-loan-out.xml"
+					 merge="xmlmerge.properties" />
 			<include src="base-procedure-media.xml"/>
 			<include src="base-procedure-valuationcontrol.xml"/>
 			<include src="base-procedure-movement.xml"/>
@@ -76,6 +77,7 @@
 			<include src="base-other-reporting.xml"/>
 			<include src="base-other-reportingoutput.xml"/>
 			<include src="base-other-searchall.xml"/>
+			<include src="extensions/lhmc-other-transport.xml"/>
 
 
 		</records>
