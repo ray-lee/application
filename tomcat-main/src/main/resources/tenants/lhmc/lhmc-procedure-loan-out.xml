@@ -4,7 +4,7 @@
     <services-record-path id="lhmc">
         loansout_lhmc:http://collectionspace.org/services/loanout/domain/lhmc,loansout_lhmc
     </services-record-path>
-    <section>
+    <section id="loanoutInformation">
         <field id="transport" ui-type="groupfield/transport/selfrenderer" ui-func="cspace.transport" section="lhmc"/>
     </section>
 </record>
