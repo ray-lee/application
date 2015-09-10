@@ -57,6 +57,7 @@
 			</tenant>
 			<repository>
 				<domain>lhmc-domain</domain>
+                <name>lhmc</name>
 				<client>nuxeo-java</client>
 				<dateformats>
 					<pattern>MM/dd/yyyy</pattern>

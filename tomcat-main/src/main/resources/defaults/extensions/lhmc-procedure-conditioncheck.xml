@@ -1,0 +1,22 @@
+<record id="conditioncheck" is-extension="true" generate-services-schema="true" type="record,procedure">
+
+    <!-- Information about your extension schema goes here -->
+    <services-record-path id="lhmc">
+        conditionchecks_lhmc:http://collectionspace.org/services/conditioncheck/domain/lhmc,conditionchecks_lhmc
+    </services-record-path>
+    <section id="objectConditionInformation">
+        <repeat id="conditionCheckGroupList/conditionCheckGroup" section="lhmc">
+            <field id="condition" section="lhmc" />
+            <field id="conditionFacet" section="lhmc" autocomplete="vocab-conditionfacet" ui-type="enum">
+                <selector>conditioncheck-conditionFacet</selector>
+            </field>
+            <field id="conditionDate" section="lhmc" />
+            <field id="conditionNote" section="lhmc" />
+        </repeat>
+
+        <field id="maintenanceDate" section="lhmc" datatype="date" ui-type="date" />
+        <field id="maintenanceCycle" section="lhmc" autocomplete="vocab-maintenancecycle" ui-type="enum" />
+        <field id="maintenanceNote"  section="lhmc" />
+    </section>
+
+</record>
