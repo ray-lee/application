@@ -1,0 +1,40 @@
+<record id="acquisition" is-extension="true" generate-services-schema="true" type="record,procedure">
+
+    <!-- Information about your extension schema goes here -->
+    <services-record-path id="lhmc">
+        acquisitions_lhmc:http://collectionspace.org/services/acquisition/domain/lhmc,acquisitions_lhmc
+    </services-record-path>
+    <section id="acquisitionInformation">
+        <repeat id="receivedGroupList/receivedGroup" section="lhmc">
+            <group id="receivedDateGroup" section="lhmc" ui-type="groupfield/structureddate"
+                   ui-search="range" primarykey="dateDisplayDate"
+                   ui-func="cspace.structuredDate">
+                <field id="dateDisplayDate" section="lhmc"/>
+                <field id="dateAssociation" section="lhmc"/>
+                <field id="dateEarliestSingleYear" section="lhmc"/>
+                <field id="dateEarliestSingleMonth" section="lhmc"/>
+                <field id="dateEarliestSingleDay" section="lhmc"/>
+                <field id="dateEarliestSingleEra" section="lhmc"/>
+                <field id="dateEarliestSingleCertainty" section="lhmc"/>
+                <field id="dateEarliestSingleQualifier" section="lhmc"/>
+                <field id="dateEarliestSingleQualifierValue" section="lhmc"/>
+                <field id="dateEarliestSingleQualifierUnit" section="lhmc"/>
+                <field id="dateLatestYear" section="lhmc"/>
+                <field id="dateLatestMonth" section="lhmc"/>
+                <field id="dateLatestDay" section="lhmc"/>
+                <field id="dateLatestEra" section="lhmc"/>
+                <field id="dateLatestCertainty" section="lhmc"/>
+                <field id="dateLatestQualifier" section="lhmc"/>
+                <field id="dateLatestQualifierValue" section="lhmc"/>
+                <field id="dateLatestQualifierUnit" section="lhmc"/>
+                <field id="datePeriod" section="lhmc"/>
+                <field id="dateNote" section="lhmc"/>
+                <field id="dateEarliestScalarValue" section="lhmc"/>
+                <field id="dateLatestScalarValue" section="lhmc"/>
+                <field id="scalarValuesComputed" section="lhmc"/>
+            </group>
+            <field id="receivedBy" autocomplete="person-person" section="lhmc" />
+        </repeat>
+
+    </section>
+</record>
