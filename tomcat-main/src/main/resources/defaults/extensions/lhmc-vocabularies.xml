@@ -47,4 +47,16 @@
             <option id="">Please select an option</option>
         </options>
     </instance>
+    <instance id="vocab-intakestatus">
+        <web-url>intakestatus</web-url>
+        <title-ref>intakestatus</title-ref>
+        <title>Intake Status</title>
+        <options>
+            <option id="active">Active</option>
+            <option id="convertedyoacquisition">Converted to acquisition</option>
+            <option id="convertedtoloan">Converted to loan</option>
+            <option id="returned">Returned</option>
+        </options>
+    </instance>
+
 </instances>
