@@ -79,4 +79,12 @@
             <option id="spouse"> spouse</option>
         </options>
     </instance>
+    <instance id="vocab-transportmethod">
+        <web-url>transportmethod</web-url>
+        <title-ref>transportmethod</title-ref>
+        <title>Transport Method</title>
+        <options>
+            <option id="" default="yes"> PLease select a value</option>
+        </options>
+    </instance>
 </instances>

@@ -26,7 +26,7 @@
 			<include src="base-procedure-intake.xml,extensions/lhmc-procedure-intake.xml"
 					 merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanin.xml"/>
-			<include src="base-procedure-loanout.xml,extensions/lhmc-procedure-loan-out.xml"
+			<include src="base-procedure-loanout.xml,lhmc-procedure-loan-out.xml"
 					 merge="xmlmerge.properties" />
 			<include src="base-procedure-media.xml"/>
 			<include src="base-procedure-valuationcontrol.xml"/>

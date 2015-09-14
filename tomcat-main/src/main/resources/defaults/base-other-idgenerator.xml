@@ -4,6 +4,9 @@
                 <services-tenant-singular>id</services-tenant-singular>
                 <authorization-view>false</authorization-view>
                 <section id="idGeneratorInformation">
+                    <field id="transport">
+                        <selector>a19171fa-c33f-46cb-a952-0a112f076736</selector>
+                    </field>
                     <field id="exhibition">
                         <selector>29ff8c5e-597a-41c6-a481-6e92dfe0a59f</selector>
                     </field>
