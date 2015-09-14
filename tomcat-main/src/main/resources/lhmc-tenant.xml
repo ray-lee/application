@@ -40,12 +40,13 @@
 			<include src="base-authority-organization.xml"/>
 			<include src="base-authority-person-termList.xml,extensions/lhmc-authority-person-termList.xml"
 					 merge="xmlmerge.properties"/>
-			<include src="base-authority-person.xml,extensions/lhmc-authority-person-.xml"
+			<include src="base-authority-person.xml,extensions/lhmc-authority-person.xml"
 					 merge="xmlmerge.properties"/>
 			<include src="base-authority-citation-termList.xml"/>
 			<include src="base-authority-citation.xml"/>
 			<include src="base-authority-place-termList.xml"/>
-			<include src="base-authority-place.xml"/>
+			<include src="base-authority-place.xml,extensions/lhmc-authority-place.xml"
+					 merge="xmlmerge.properties"/>
 			
 			<!-- Commented out to disable Taxon for the 'lhmc' tenant per CSPACE-4466 -->
 			<!-- include src="base-authority-taxon-termList.xml"/ -->

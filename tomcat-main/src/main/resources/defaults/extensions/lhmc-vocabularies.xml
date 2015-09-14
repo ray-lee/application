@@ -58,5 +58,25 @@
             <option id="returned">Returned</option>
         </options>
     </instance>
-
+    <instance id="vocab-persontermqualifier">
+        <web-url>persontermqualifier</web-url>
+        <title-ref>persontermqualifier</title-ref>
+        <title>Person Authority Term Qualifier</title>
+        <options>
+            <option id="maiden">Maiden Name</option>
+            <option id="nickname">Nickname</option>
+            <option id="pseudonym">Pseudonym</option>
+        </options>
+    </instance>
+    <instance id="vocab-personrelationship">
+        <web-url>personrelationship</web-url>
+        <title-ref>personrelationship</title-ref>
+        <title>Related Person Relationship</title>
+        <options>
+            <option id="child"> child</option>
+            <option id="father"> father</option>
+            <option id="mother"> mother</option>
+            <option id="spouse"> spouse</option>
+        </options>
+    </instance>
 </instances>
