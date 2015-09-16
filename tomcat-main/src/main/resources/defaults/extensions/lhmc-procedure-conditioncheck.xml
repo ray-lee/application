@@ -6,6 +6,8 @@
     </services-record-path>
     <section id="objectConditionInformation">
         <repeat id="conditionCheckGroupList/conditionCheckGroup" section="lhmc">
+            <!-- conditionFacet is the only new field, however in order to add a member to a repeating group, the
+            group and all members of that group must also be added to the extension schema -->
             <field id="condition" section="lhmc" />
             <field id="conditionFacet" section="lhmc" autocomplete="vocab-conditionfacet" ui-type="enum">
                 <selector>conditioncheck-conditionFacet</selector>

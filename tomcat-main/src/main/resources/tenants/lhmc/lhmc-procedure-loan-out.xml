@@ -73,7 +73,7 @@
             </field>
         </repeat>
 
-        <field id="remarks" section="lhmc">
+        <field id="remarks" section="lhmc" datatype="largetext">
             <selector>transport-remarks</selector>
         </field>
     </section>

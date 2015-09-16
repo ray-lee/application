@@ -26,6 +26,17 @@
             <option id="unknown">  unknown </option>
         </options>
     </instance>
+    <instance id="vocab-condition">
+        <web-url>condition</web-url>
+        <title-ref>condition</title-ref>
+        <title>Condition</title>
+        <options>
+            <option id="needsnowork">Needs no work</option>
+            <option id="exhibitableneedswork">Exhibitable / needs work</option>
+            <option id="notexhibitablestable">Not exhibitable / stable</option>
+            <option id="injeopardy">In jeopardy</option>
+        </options>
+    </instance>
     <instance id="vocab-conditionfacet">
         <web-url>conditionfacet</web-url>
         <title-ref>conditionfacet</title-ref>
@@ -45,6 +56,13 @@
         <title>Maintenance Cycle</title>
         <options>
             <option id="">Please select an option</option>
+            <option id="weekly">weekly</option>
+            <option id="monthly">monthly</option>
+            <option id="quarterly">quarterly</option>
+            <option id="yearly">yearly</option>
+            <option id="everytwoyears">every two years</option>
+            <option id="everyfiveyears">every five years</option>
+            <option id="never">never</option>
         </options>
     </instance>
     <instance id="vocab-intakestatus">
@@ -84,7 +102,17 @@
         <title-ref>transportmethod</title-ref>
         <title>Transport Method</title>
         <options>
-            <option id="" default="yes"> PLease select a value</option>
+            <option id="cargoaircraft">cargo aircraft</option>
+            <option id="combiaircraft">combi aircraft</option>
+            <option id="commoncarrier">common carrier</option>
+            <option id="exclusiveusetruck">exclusive-use truck</option>
+            <option id="expeditedusefreight">expedited use freight</option>
+            <option id="lofofreight">LOFO freight</option>
+            <option id="mail">mail</option>
+            <option id="noncommercialcarrier">non-commercial carrier</option>
+            <option id="oceanfreight">ocean freight</option>
+            <option id="passengeraircraft">passenger aircraft</option>
+            <option id="shuttleservice">shuttle service</option>
         </options>
     </instance>
 </instances>
