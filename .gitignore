@@ -18,4 +18,5 @@ tomcat-main/src/main/resources/tenants/pahma/host-settings.xml
 .DS_Store
 *.bindings.xml
 logs/
+war-entry/tmp/
 
