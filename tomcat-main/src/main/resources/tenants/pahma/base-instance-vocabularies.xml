@@ -340,8 +340,6 @@
 			<option id="imagemediaresearcher">Image/media researcher</option>
 			<option id="webdesigner">Web designer</option>
 			<option id="webdeveloper">Web developer</option>
-			<option id="sponsor">Sponsor</option>
-			<option id="organizer">Organizer</option>
 		</options>
 	</instance>
 	<instance id="vocab-exhibitionreferencetype">
@@ -355,6 +353,18 @@
 			<option id="newsarticle">News article</option>
 			<option id="pressrelease">Press release</option>
 			<option id="review">Review</option>
+		</options>
+	</instance>
+	<instance id="vocab-exhibitionstatus">
+		<web-url>exhibitionstatus</web-url>
+		<title-ref>exhibitionstatus</title-ref>
+		<title>exhibitionstatus</title>
+		<options>
+			<option id="themeselected">Theme selected</option>
+			<option id="preliminaryobjectlistcreated">Preliminary object list created</option>
+			<option id="sectionsdetermined">Sections determined</option>
+			<option id="finalobjectlistdetermined">Final object list determined</option>
+			<option id="labelswritten">Labels written</option>
 		</options>
 	</instance>
 </instances>
