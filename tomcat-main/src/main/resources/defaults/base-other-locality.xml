@@ -1,11 +1,11 @@
 <record id="locality" in-recordlist="no" separate-record="false" services-type="localityGroupList">
     <hassoftdelete>true</hassoftdelete>
     <section id="localityInformation">
-        <repeat id="localityGroupList/localityGroup" section="naturalhistory">
-            <field id="fieldLocVerbatim" ui-search="repeatable" section="naturalhistory"/>
-            <field id="taxonomicRange" section="naturalhistory"/>
-            <field id="fieldLocPlace" autocomplete="place-place" section="naturalhistory"/>
-            <field id="fieldLocCounty" ui-search="repeatable" section="naturalhistory">
+        <repeat id="localityGroupList/localityGroup">
+            <field id="fieldLocVerbatim" ui-search="repeatable"/>
+            <field id="taxonomicRange"/>
+            <field id="fieldLocPlace" autocomplete="place-place"/>
+            <field id="fieldLocCounty" ui-search="repeatable">
                 <options>
                     <option id="">Please select a value</option>
                     <option id="Unknown">Unknown</option>
@@ -2076,7 +2076,7 @@
                     <option id="Ziebach">Ziebach</option>
                 </options>
             </field>
-            <field id="fieldLocState" ui-search="repeatable" section="naturalhistory">
+            <field id="fieldLocState" ui-search="repeatable">
                 <options>
                     <option id="">Please select a value</option>
                     <option id="Unknown">Unknown</option>
@@ -2478,7 +2478,7 @@
                     <option id="Zulia">Zulia</option>
                 </options>
             </field>
-            <field id="fieldLocCountry" ui-search="repeatable" section="naturalhistory">
+            <field id="fieldLocCountry" ui-search="repeatable">
                 <options>
                     <option id="">Please select a value</option>
                     <option id="unknown">unknown</option>
@@ -2749,19 +2749,19 @@
                     <option id="ZW">Zimbabwe</option>
                 </options>
             </field>
-            <field id="fieldLocHigherGeography" section="naturalhistory">
+            <field id="fieldLocHigherGeography">
                 <options>
                         <option id="" default="yes">Please select a value</option>
                         <option id="pacificocean">Pacific Ocean</option>
                         <option id="North America">North America</option>
                 </options>
             </field>
-            <field id="vCoordinates" section="naturalhistory"/>
-                        <field id="vOtherCoords" section="naturalhistory"/>
-            <field id="vLatitude" section="naturalhistory"/>
-            <field id="vLongitude" section="naturalhistory"/>
-            <field id="vCoordSys" section="naturalhistory" autocomplete="vocab-vcoordsys" ui-type="enum"/>
-            <field id="vSpatialReferenceSystem" section="naturalhistory">
+            <field id="vCoordinates"/>
+                        <field id="vOtherCoords"/>
+            <field id="vLatitude"/>
+            <field id="vLongitude"/>
+            <field id="vCoordSys" autocomplete="vocab-vcoordsys" ui-type="enum"/>
+            <field id="vSpatialReferenceSystem">
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="epsg4326-wgs84">EPSG:4326-WGS84</option>
@@ -2771,9 +2771,9 @@
                 </options>
             </field>
 
-            <field id="decimalLatitude" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="decimalLongitude" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="geodeticDatum" section="naturalhistory">
+            <field id="decimalLatitude" ui-type="validated" datatype="float"/>
+            <field id="decimalLongitude" ui-type="validated" datatype="float"/>
+            <field id="geodeticDatum">
                 <options>
                     <option id="">Please select a value</option>
                     <option id="Not Recorded">Not Recorded</option>
@@ -2784,8 +2784,8 @@
                     <option id="WGS84">WGS84</option>
                 </options>
             </field>
-            <field id="coordUncertainty" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="coordUncertaintyUnit" section="naturalhistory">
+            <field id="coordUncertainty" ui-type="validated" datatype="float"/>
+            <field id="coordUncertaintyUnit">
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="unknown">unknown</option>
@@ -2795,10 +2795,10 @@
                     <option id="miles">miles</option>
                 </options>
             </field>
-            <field id="vDepth" section="naturalhistory"/>
-            <field id="minDepth" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="maxDepth" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="depthUnit" section="naturalhistory">
+            <field id="vDepth"/>
+            <field id="minDepth" ui-type="validated" datatype="float"/>
+            <field id="maxDepth" ui-type="validated" datatype="float"/>
+            <field id="depthUnit">
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="uncertain">uncertain</option>
@@ -2813,10 +2813,10 @@
                     <option id="rods">rods</option>
                 </options>
             </field>
-            <field id="vElevation" section="naturalhistory"/>
-            <field id="minElevation" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="maxElevation" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="elevationUnit" section="naturalhistory">
+            <field id="vElevation"/>
+            <field id="minElevation" ui-type="validated" datatype="float"/>
+            <field id="maxElevation" ui-type="validated" datatype="float"/>
+            <field id="elevationUnit">
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="uncertain">uncertain</option>
@@ -2824,10 +2824,10 @@
                     <option id="meters">meters</option>
                 </options>
             </field>
-            <field id="vDistanceAboveSurface" section="naturalhistory"/>
-            <field id="minDistanceAboveSurface" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="maxDistanceAboveSurface" section="naturalhistory" ui-type="validated" datatype="float"/>
-            <field id="distanceAboveSurfaceUnit" section="naturalhistory">
+            <field id="vDistanceAboveSurface"/>
+            <field id="minDistanceAboveSurface" ui-type="validated" datatype="float"/>
+            <field id="maxDistanceAboveSurface" ui-type="validated" datatype="float"/>
+            <field id="distanceAboveSurfaceUnit">
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="uncertain">uncertain</option>
@@ -2842,43 +2842,43 @@
                     <option id="rods">rods</option>
                 </options>
             </field>
-            <field id="localityNote" section="naturalhistory"/>
-            <field id="localitySource" section="naturalhistory"/>
-            <field id="localitySourceDetail" section="naturalhistory"/>
+            <field id="localityNote"/>
+            <field id="localitySource"/>
+            <field id="localitySourceDetail"/>
 
-            <field id="pointRadiusSpatialFit" section="naturalhistory"/>
-            <field id="footprintWKT" section="naturalhistory"/>
-            <field id="footprintSRS" section="naturalhistory"/>
-            <field id="footprintSpatialFit" section="naturalhistory"/>
-            <field id="coordPrecision" section="naturalhistory"/>
-            <field id="geoRefencedBy" section="naturalhistory"/>
-            <group id="geoRefDateGroup" section="naturalhistory" ui-type="groupfield/structureddate" primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
+            <field id="pointRadiusSpatialFit"/>
+            <field id="footprintWKT"/>
+            <field id="footprintSRS"/>
+            <field id="footprintSpatialFit"/>
+            <field id="coordPrecision"/>
+            <field id="geoRefencedBy"/>
+            <group id="geoRefDateGroup" ui-type="groupfield/structureddate" primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
                 <!-- These fields are defined here as a workaround to CSPACE-5085. See http://issues.collectionspace.org/browse/CSPACE-5085 for details. -->
-                <field id="dateDisplayDate" section="naturalhistory"/>
-                <field id="dateAssociation" section="naturalhistory"/>
-                <field id="dateEarliestSingleYear" section="naturalhistory"/>
-                <field id="dateEarliestSingleMonth" section="naturalhistory"/>
-                <field id="dateEarliestSingleDay" section="naturalhistory"/>
-                <field id="dateEarliestSingleEra" section="naturalhistory"/>
-                <field id="dateEarliestSingleCertainty" section="naturalhistory"/>
-                <field id="dateEarliestSingleQualifier" section="naturalhistory"/>
-                <field id="dateEarliestSingleQualifierValue" section="naturalhistory"/>
-                <field id="dateEarliestSingleQualifierUnit" section="naturalhistory"/>
-                <field id="dateLatestYear" section="naturalhistory"/>
-                <field id="dateLatestMonth" section="naturalhistory"/>
-                <field id="dateLatestDay" section="naturalhistory"/>
-                <field id="dateLatestEra" section="naturalhistory"/>
-                <field id="dateLatestCertainty" section="naturalhistory"/>
-                <field id="dateLatestQualifier" section="naturalhistory"/>
-                <field id="dateLatestQualifierValue" section="naturalhistory"/>
-                <field id="dateLatestQualifierUnit" section="naturalhistory"/>
-                <field id="datePeriod" section="naturalhistory"/>
-                <field id="dateNote" section="naturalhistory"/>
-                <field id="dateEarliestScalarValue" section="naturalhistory"/>
-                <field id="dateLatestScalarValue" section="naturalhistory"/>
-                <field id="scalarValuesComputed" section="naturalhistory"/>
+                <field id="dateDisplayDate"/>
+                <field id="dateAssociation"/>
+                <field id="dateEarliestSingleYear"/>
+                <field id="dateEarliestSingleMonth"/>
+                <field id="dateEarliestSingleDay"/>
+                <field id="dateEarliestSingleEra"/>
+                <field id="dateEarliestSingleCertainty"/>
+                <field id="dateEarliestSingleQualifier"/>
+                <field id="dateEarliestSingleQualifierValue"/>
+                <field id="dateEarliestSingleQualifierUnit"/>
+                <field id="dateLatestYear"/>
+                <field id="dateLatestMonth"/>
+                <field id="dateLatestDay"/>
+                <field id="dateLatestEra"/>
+                <field id="dateLatestCertainty"/>
+                <field id="dateLatestQualifier"/>
+                <field id="dateLatestQualifierValue"/>
+                <field id="dateLatestQualifierUnit"/>
+                <field id="datePeriod"/>
+                <field id="dateNote"/>
+                <field id="dateEarliestScalarValue"/>
+                <field id="dateLatestScalarValue"/>
+                <field id="scalarValuesComputed"/>
             </group>
-            <field id="geoRefProtocol" section="naturalhistory"><!-- See http://code.google.com/p/darwincore/wiki/Location#georeferenceProtocol -->
+            <field id="geoRefProtocol"><!-- See http://code.google.com/p/darwincore/wiki/Location#georeferenceProtocol -->
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="chapman-wieczorek-2006-guide-best-practices-georeferencing">Chapman, Wieczorek 2006, Guide to Best Practices for Georeferencing</option>
@@ -2887,8 +2887,8 @@
                     <option id="biogeomancer">BioGeomancer</option>
                 </options>
             </field>
-            <field id="geoRefSource" section="naturalhistory"/>
-            <field id="geoRefVerificationStatus" section="naturalhistory"><!-- See http://code.google.com/p/darwincore/wiki/Location#georeferenceVerificationStatus -->
+            <field id="geoRefSource"/>
+            <field id="geoRefVerificationStatus"><!-- See http://code.google.com/p/darwincore/wiki/Location#georeferenceVerificationStatus -->
                 <options>
                     <option id="" default="yes">Please select a value</option>
                     <option id="unverified">Unverified</option>
@@ -2896,8 +2896,11 @@
                     <option id="verified-contributor">Verified by contributor</option>
                 </options>
             </field>
-            <field id="geoRefRemarks" section="naturalhistory"/>
-            <field id="geoRefPlaceName" section="naturalhistory"/>
+            <field id="geoRefRemarks"/>
+            <field id="geoRefPlaceName"/>
         </repeat>
     </section>
+    
+    <!-- Used to create a label. -->
+    <section id="geoRefDetail"/>
 </record>
