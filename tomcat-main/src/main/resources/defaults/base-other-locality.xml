@@ -2852,32 +2852,7 @@
             <field id="footprintSpatialFit"/>
             <field id="coordPrecision"/>
             <field id="geoRefencedBy"/>
-            <group id="geoRefDateGroup" ui-type="groupfield/structureddate" primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
-                <!-- These fields are defined here as a workaround to CSPACE-5085. See http://issues.collectionspace.org/browse/CSPACE-5085 for details. -->
-                <field id="dateDisplayDate"/>
-                <field id="dateAssociation"/>
-                <field id="dateEarliestSingleYear"/>
-                <field id="dateEarliestSingleMonth"/>
-                <field id="dateEarliestSingleDay"/>
-                <field id="dateEarliestSingleEra"/>
-                <field id="dateEarliestSingleCertainty"/>
-                <field id="dateEarliestSingleQualifier"/>
-                <field id="dateEarliestSingleQualifierValue"/>
-                <field id="dateEarliestSingleQualifierUnit"/>
-                <field id="dateLatestYear"/>
-                <field id="dateLatestMonth"/>
-                <field id="dateLatestDay"/>
-                <field id="dateLatestEra"/>
-                <field id="dateLatestCertainty"/>
-                <field id="dateLatestQualifier"/>
-                <field id="dateLatestQualifierValue"/>
-                <field id="dateLatestQualifierUnit"/>
-                <field id="datePeriod"/>
-                <field id="dateNote"/>
-                <field id="dateEarliestScalarValue"/>
-                <field id="dateLatestScalarValue"/>
-                <field id="scalarValuesComputed"/>
-            </group>
+            <group id="geoRefDateGroup" ui-type="groupfield/structureddate" primarykey="dateDisplayDate" ui-func="cspace.structuredDate"/>
             <field id="geoRefProtocol"><!-- See http://code.google.com/p/darwincore/wiki/Location#georeferenceProtocol -->
                 <options>
                     <option id="" default="yes">Please select a value</option>
