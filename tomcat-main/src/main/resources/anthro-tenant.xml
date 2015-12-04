@@ -1,7 +1,7 @@
-<cspace-config tenantname="pahma">
+<cspace-config tenantname="anthro">
 	<tenantid>15</tenantid>
 	<version>11</version>
-	<include src="settings.xml,pahma-settings.xml,host-settings.xml" merge="xmlmerge-settings.properties" strip-root="yes"/>
+	<include src="settings.xml,anthro-settings.xml,host-settings.xml" merge="xmlmerge-settings.properties" strip-root="yes"/>
 
 	<spec>
 		<include src="base-relations.xml"/>

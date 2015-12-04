@@ -5,7 +5,7 @@
 			<web-url>location</web-url>
 			<title-ref>location</title-ref>
 			<!-- Change title -->
-			<title>PAHMA Storage Locations</title>
+			<title>Local Storage Locations</title>
 		</instance>
 		<instance id="location-crate">
 			<web-url>crate</web-url>

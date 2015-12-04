@@ -6,14 +6,14 @@
 
 <settings>
 	<admin>
-		<username>admin@pahma.cspace.berkeley.edu</username>
+		<username>admin@anthro.collectionspace.org</username>
 		<tenant>15</tenant>
-		<tenantname>pahma</tenantname>
+		<tenantname>anthro</tenantname>
 	</admin>
 	<email>
-		<from>admin@pahma.cspace.berkeley.edu</from>
+		<from>admin@anthro.collectionspace.org</from>
 		<passwordreset>
-			<loginpage>/collectionspace/ui/pahma/html/index.html</loginpage>
+			<loginpage>/collectionspace/ui/anthro/html/index.html</loginpage>
 			<message>Hello {{greeting}},\n\r\n\rYou've started the process to reset your CollectionSpace account password.\n\r\n\rTo finish resetting your password, go to the Reset Password page {{link}} on CollectionSpace.\n\r\n\r \n\r\n\rIf clicking the link doesn't work, copy and paste the following link into your browser address bar and click Go.\n\r\n\r{{link}}\n\r \n\r\n\rThanks,\n\r\n\r CollectionSpace Administrator\n\r\n\rPlease do not reply to this email. This mailbox is not monitored and you will not receive a response. For assistance, contact your CollectionSpace Administrator directly.</message>
 		</passwordreset>
 	</email>
@@ -21,13 +21,13 @@
 		<service>
 			<tenant>
 				<id>15</id>
-				<name>pahma.cspace.berkeley.edu</name>
+				<name>anthro.collectionspace.org</name>
 				<version>0.1</version>
-				<display-name>CollectionSpace PAHMA Tenant</display-name>
+				<display-name>CollectionSpace Anthropology Tenant</display-name>
 			</tenant>
 			<repository>
-				<domain>pahma_domain</domain>
-				<name>pahma_domain</name>
+				<domain>anthro_domain</domain>
+				<name>anthro_domain</name>
 				<client>nuxeo-java</client>
 				<dateformats>
 					<pattern>MM/dd/yyyy</pattern>
@@ -39,26 +39,26 @@
 				</languages>
 				<indexHandler>org.collectionspace.services.common.init.AddIndices</indexHandler>
 			</repository>
-			<ims-url>/collectionspace/tenant/pahma/</ims-url>
+			<ims-url>/collectionspace/tenant/anthro/</ims-url>
 	   </service>
 	</persistence>
 	<ui>
 		<web>
-			<login-dest>/collectionspace/ui/pahma/html/advancedsearch.html</login-dest>
-			<login-failed-dest>/collectionspace/ui/pahma/html/index.html</login-failed-dest>
-			<front-page>/collectionspace/ui/pahma/html/index.html</front-page>
+			<login-dest>/collectionspace/ui/anthro/html/advancedsearch.html</login-dest>
+			<login-failed-dest>/collectionspace/ui/anthro/html/index.html</login-failed-dest>
+			<front-page>/collectionspace/ui/anthro/html/index.html</front-page>
 			<mappings>
 				<map id="record">
-					<file>/pahma/html/record.html</file>
+					<file>/anthro/html/record.html</file>
 				</map>
 				<map id="authority">
-					<file>/pahma/html/record.html</file>
+					<file>/anthro/html/record.html</file>
 					<configure>
 						<meta id="recordType">{instance/web-url}</meta>
 					</configure>
 				</map>
 				<map id="procedure">
-					<file>/pahma/html/record.html</file>
+					<file>/anthro/html/record.html</file>
 				</map>
 			</mappings>
 		</web>

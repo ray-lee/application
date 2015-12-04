@@ -4,7 +4,7 @@
 			<web-url>person</web-url>
 			<title-ref>person</title-ref>
 			<!-- Change title -->
-			<title>PAHMA Person Authority</title>
+			<title>Local Person Authority</title>
 		</instance>
 	</instances>
 
