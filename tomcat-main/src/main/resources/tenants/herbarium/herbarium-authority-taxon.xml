@@ -1,5 +1,5 @@
 <record id="taxon" is-extension="true">
-	<services-record-path id="ucjeps">taxon_ucjeps:http://collectionspace.org/services/taxon/local/ucjeps,taxon_ucjeps</services-record-path>
+	<services-record-path id="herbarium">taxon_herbarium:http://collectionspace.org/services/taxon/local/herbarium,taxon_herbarium</services-record-path>
 	
 	<instances id="taxon">
 		<instance id="taxon-taxon">
@@ -83,7 +83,7 @@
 		
 		<!-- Local fields -->
 		
-		<field id="taxonMajorGroup" section="ucjeps">
+		<field id="taxonMajorGroup" section="herbarium">
 			<options>
 				<option id="">Please select a value</option>
 				<option id="Spermatophytes">Spermatophytes</option>

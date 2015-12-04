@@ -1,0 +1,72 @@
+<cspace-config tenantname="herbarium">
+	<tenantid>20</tenantid>
+	<version>11</version>
+	<include src="settings.xml,herbarium-settings.xml,host-settings.xml" merge="xmlmerge-settings.properties" strip-root="yes"/>
+
+	<spec>
+		<include src="base-relations.xml"/>
+		<include src="base-schemas.xml"/>
+
+		<records>
+			<enum-blank>Please select a value</enum-blank>
+
+			<include src="base-collectionobject.xml,naturalhistory-collectionobject.xml,herbarium-collectionobject.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority.xml"/>
+
+			<!-- <include src="base-procedure-acquisition.xml"/> -->
+			<include src="base-procedure-blobs.xml,herbarium-procedure-blobs.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-conditioncheck.xml"/>
+			<include src="base-procedure-groups.xml"/>
+			<include src="base-procedure-intake.xml,herbarium-procedure-intake.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-loanin.xml,naturalhistory-procedure-loanin.xml,herbarium-procedure-loanin.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-loanout.xml,naturalhistory-procedure-loanout.xml,herbarium-procedure-loanout.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-media.xml,herbarium-procedure-media.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-valuationcontrol.xml"/>
+			<include src="base-procedure-movement.xml,herbarium-procedure-movement.xml" merge="xmlmerge.properties"/>
+			<!-- <include src="base-procedure-objectexit.xml"/> -->
+
+			<include src="base-authority-contact.xml"/>
+
+			<include src="base-authority-location-termList.xml,herbarium-authority-location-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-location.xml,herbarium-authority-location.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-organization-termList.xml,herbarium-authority-organization-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-organization.xml,naturalhistory-authority-organization.xml,herbarium-authority-organization.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-person-termList.xml,herbarium-authority-person-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-person.xml,herbarium-authority-person.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-citation-termList.xml,herbarium-authority-citation-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-citation.xml,herbarium-authority-citation.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-place-termList.xml,herbarium-authority-place-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-place.xml,herbarium-authority-place.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-taxon-termList.xml,herbarium-authority-taxon-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-taxon.xml,naturalhistory-authority-taxon.xml,herbarium-authority-taxon.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-concept-termList.xml,herbarium-authority-concept-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-concept.xml,herbarium-authority-concept.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-work-termList.xml,herbarium-authority-work-termList.xml" merge="xmlmerge.properties"/>
+			<include src="base-authority-work.xml"/>
+			
+			<include src="base-vocabularies.xml"/>
+			
+			<include src="base-authz-accountrole.xml"/>
+			<include src="base-authz-permission.xml"/>
+			<include src="base-authz-permrole.xml"/>
+			<include src="base-authz-role.xml"/>
+			<include src="base-authz-userperm.xml"/>
+			<include src="base-authz-userrole.xml"/>
+			<include src="base-authz-users.xml"/>
+			
+			<include src="base-other-dimension.xml,herbarium-other-dimension.xml" merge="xmlmerge.properties"/>
+			<include src="base-other-locality.xml,herbarium-other-locality.xml" merge="xmlmerge.properties"/>
+			<include src="base-other-hierarchy.xml"/>
+			<include src="base-other-idgenerator.xml,herbarium-other-idgenerator.xml" merge="xmlmerge.properties"/>
+			<include src="base-other-structureddate.xml"/>
+			<include src="base-other-termlist.xml"/>
+			<include src="base-other-termlistitem.xml"/>
+			<include src="base-other-reporting.xml"/>
+			<include src="base-other-reportingoutput.xml"/>
+			<include src="base-other-batch.xml"/>
+			<include src="base-other-batchoutput.xml"/>
+			<include src="base-other-invocationresults.xml"/>
+			<include src="base-other-searchall.xml"/>
+		</records>
+	</spec>
+</cspace-config>

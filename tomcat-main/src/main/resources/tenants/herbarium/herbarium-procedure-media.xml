@@ -1,5 +1,5 @@
 <record id="media" is-extension="true">
-	<services-record-path id="ucjeps">media_ucjeps:http://collectionspace.org/services/media/local/ucjeps,media_ucjeps</services-record-path>
+	<services-record-path id="herbarium">media_herbarium:http://collectionspace.org/services/media/local/herbarium,media_herbarium</services-record-path>
 	
 	<section id="mediaInformation">
 		<!-- Remove mini values -->
@@ -33,7 +33,7 @@
 		
 		<!-- Local fields -->
 		
-		<field id="handwritten" section="ucjeps" ui-search="single">
+		<field id="handwritten" section="herbarium" ui-search="single">
 			<options>
 				<option id="">Please select a value</option>
 				<option id="Unknown">Unknown</option>
@@ -41,20 +41,20 @@
 				<option id="no">No</option>
 			</options>
 		</field>
-		<field id="postToPublic" section="ucjeps" ui-search="single">
+		<field id="postToPublic" section="herbarium" ui-search="single">
 			<options>
 				<option id="">Please select a value</option>
 				<option id="no">No</option>
 				<option id="yes" default="yes">Yes</option>
 			</options>
 		</field>
-		<field id="scientificTaxonomy" in-title="yes" mini="summary,search,list,relate" section="ucjeps" autocomplete="taxon-taxon" ui-search="repeatable">
+		<field id="scientificTaxonomy" in-title="yes" mini="summary,search,list,relate" section="herbarium" autocomplete="taxon-taxon" ui-search="repeatable">
 			<title-selector>titleBar-media-scientificTaxonomy</title-selector>
 		</field>
 		
-		<repeat id="mediaOtherNumberList/mediaOtherNumber" section="ucjeps">
-			<field id="numberValue" section="ucjeps"/>
-			<field id="numberType" seperate_ui_container="true" section="ucjeps">
+		<repeat id="mediaOtherNumberList/mediaOtherNumber" section="herbarium">
+			<field id="numberValue" section="herbarium"/>
+			<field id="numberType" seperate_ui_container="true" section="herbarium">
 				<options>
 					<option id="">Please select a value</option>
 					<option id="Collector Number">Collector Number</option>
@@ -68,26 +68,26 @@
 			</field>
 		</repeat>
 		
-		<field id="majorCategory" autocomplete="vocab-majorcategories" ui-type="enum" section="ucjeps"/>
+		<field id="majorCategory" autocomplete="vocab-majorcategories" ui-type="enum" section="herbarium"/>
 
-		<repeat id="morphologyCategories" section="ucjeps">
-			<field id="morphologyCategory"  autocomplete="vocab-morphologycategories" ui-type="enum" section="ucjeps"/>
+		<repeat id="morphologyCategories" section="herbarium">
+			<field id="morphologyCategory"  autocomplete="vocab-morphologycategories" ui-type="enum" section="herbarium"/>
 		</repeat>
 		
-		<repeat id="persons" section="ucjeps">
-			<field id="person" autocomplete="person-person" section="ucjeps"/>
+		<repeat id="persons" section="herbarium">
+			<field id="person" autocomplete="person-person" section="herbarium"/>
 		</repeat>
 		
-		<repeat id="places" section="ucjeps">
-			<field id="place" autocomplete="place-place" section="ucjeps"/>
+		<repeat id="places" section="herbarium">
+			<field id="place" autocomplete="place-place" section="herbarium"/>
 		</repeat>
 		
-		<field id="collector" autocomplete="organization-organization" section="ucjeps"/>
+		<field id="collector" autocomplete="organization-organization" section="herbarium"/>
 		
-		<repeat id="mediaTaxaGroupList/mediaTaxaGroup" section="ucjeps">
-			<field id="associatedTaxon" autocomplete="taxon-taxon" section="ucjeps"/>
-			<field id="commonName" section="ucjeps"/>
-			<field id="interaction" section="ucjeps">
+		<repeat id="mediaTaxaGroupList/mediaTaxaGroup" section="herbarium">
+			<field id="associatedTaxon" autocomplete="taxon-taxon" section="herbarium"/>
+			<field id="commonName" section="herbarium"/>
+			<field id="interaction" section="herbarium">
 				<options>
 					<option id="">Please select a value</option>
 					<option id="lives/grows with">lives/grows with</option>
@@ -102,6 +102,6 @@
 	</section>
 	
  	<section id="localityInformation">
-		<field id="locality" ui-type="groupfield/locality/selfrenderer" ui-func="cspace.locality" section="ucjeps"></field>
+		<field id="locality" ui-type="groupfield/locality/selfrenderer" ui-func="cspace.locality" section="herbarium"></field>
 	</section>
 </record>

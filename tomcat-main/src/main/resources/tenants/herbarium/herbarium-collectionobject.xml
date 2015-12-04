@@ -1,5 +1,5 @@
 <record id="collection-object" is-extension="true">
-	<services-record-path id="ucjeps">collectionobjects_ucjeps:http://collectionspace.org/services/collectionobject/local/ucjeps,collectionobjects_ucjeps</services-record-path>
+	<services-record-path id="herbarium">collectionobjects_herbarium:http://collectionspace.org/services/collectionobject/local/herbarium,collectionobjects_herbarium</services-record-path>
 
 	<section id="coreInformation">
 		<!-- Remove mini -->
@@ -122,7 +122,7 @@
 
 		<!-- Local fields -->
 		
-		<field id="handwritten" section="ucjeps">
+		<field id="handwritten" section="herbarium">
 			<options>
 				<option id="" default="yes">Please select a value</option>
 				<option id="Unknown">Unknown</option>
@@ -130,7 +130,7 @@
 				<option id="no">No</option>
 			</options>
 		</field>
-		<field id="postToPublic" section="ucjeps">
+		<field id="postToPublic" section="herbarium">
 			<options>
 				<option id="">Please select a value</option>
 				<option id="no">No</option>
