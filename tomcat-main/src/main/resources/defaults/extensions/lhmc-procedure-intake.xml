@@ -1,0 +1,33 @@
+<record id="intake" is-extension="true" generate-services-schema="true" type="record,procedure">
+    <services-record-path id="lhmc">
+        intakes_lhmc:http://collectionspace.org/services/intake/domain/lhmc,intakes_lhmc
+    </services-record-path>
+    <section id="objectEntryInformation">
+        <field id="receivedBy" section="lhmc" autocomplete="person-person,organization-organization" />
+        <field id="intakeStatus" section="lhmc" autocomplete="vocab-intakestatus" ui-type="enum" />
+    </section>
+    <section id="insuranceInformation">
+        <field id="insuredBy" section="lhmc">
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="lender"> lender</option>
+                <option id="borrower"> borrower </option>
+            </options>
+        </field>
+        <repeat id="premiumGroupList/premiumGroup" section="lhmc">
+            <field id="premiumCurrency" section="lhmc" autocomplete="vocab-currency" ui-type="enum" />
+            <field id="premiumValue" section="lhmc" ui-type="validated" datatype="float" />
+        </repeat>
+
+        <repeat id="insuredValueGroupList/insuredValueGroup" section="lhmc">
+            <field id="insuredValueCurrency" section="lhmc" autocomplete="vocab-currency" ui-type="enum"/>
+            <field id="insuredValue" section="lhmc" ui-type="validated" datatype="float" />
+        </repeat>
+    </section>
+    <section id="locationInformation">
+        <field id="inventoriedBy" section="lhmc" autocomplete="person-person" />
+    </section>
+    <section id="conditionInformation">
+        <field id="condition" section="lhmc" autocomplete="vocab-condition" ui-type="enum" />
+    </section>
+</record>

@@ -1,0 +1,79 @@
+<root>
+    <services-record-path id="lhmc">
+        <!-- EXAMPLE service record path - Replace loanout with appropriate procedure you want to add this to -->
+        loansout_lhmc:http://collectionspace.org/services/loanout/domain/lhmc,loansout_lhmc
+    </services-record-path>
+    <section id="transportInformation" section="lhmc">
+        <field id="referenceNumber" chooser="yes" in-title="yes" ui-search="repeatable"
+               mini="number,search,list,relate" seperate_ui_container="true" section="lhmc">
+            <selector>transport-referenceNumber</selector>
+            <container-selector>transport-reference-number-patternChooserContainer</container-selector>
+            <options>
+                <option id="transport" sample="TR2015.1">Transport</option>
+            </options>
+        </field>
+        <repeat id="agentsGroupList/agentsGroup" section="lhmc">
+            <selector>transport-agentsGroup</selector>
+            <field id="agent" autocomplete="person-person,organization-organization" section="lhmc">
+                <selector>transport-agent</selector>
+            </field>
+            <field id="agentContact" autocomplete="person-person" section="lhmc">
+                <selector>transport-agentContact</selector>
+            </field>
+        </repeat>
+
+        <field id="departurePoint" autocomplete="person-person,organization-organization" section="lhmc">
+            <selector>transport-departurePoint</selector>
+        </field>
+        <field id="destination" autocomplete="person-person,organization-organization" section="lhmc">
+            <selector>transport-destination</selector>
+        </field>
+
+        <field id="departureDate" ui-type="date" datatype="date" section="lhmc">
+            <selector>transport-departureDate</selector>
+        </field>
+        <field id="departureTime" section="lhmc">
+            <selector>transport-departureTime</selector>
+        </field>
+
+        <field id="arrivalDate" ui-type="date" datatype="date" section="lhmc">
+            <selector>transport-arrivalDate</selector>
+        </field>
+        <field id="arrivalTime" section="lhmc">
+            <selector>transport-arrivalTime</selector>
+        </field>
+
+        <field id="numberOfCratesObjects" section="lhmc">
+            <selector>transport-numberOfCratesObjects</selector>
+        </field>
+
+        <repeat id="lendersGroupList/lendersGroup" section="lhmc">
+            <selector>transport-lenders</selector>
+            <field id="lender" autocomplete="person-person,organization-organization" section="lhmc">
+                <selector>transport-lender</selector>
+            </field>
+        </repeat>
+
+        <field id="method" autocomplete="vocab-transportmethod" ui-type="enum" section="lhmc">
+            <selector>transport-method</selector>
+        </field>
+
+        <field id="courier" autocomplete="person-person,organization-organization" section="lhmc">
+            <selector>transport-courier</selector>
+        </field>
+
+        <repeat id="insuranceIndemnityGroupList/insuranceIndemnityGroup" section="lhmc">
+            <selector>transport-insuranceIndemnityGroup</selector>
+            <field id="insuranceIndemnityCurrency" autocomplete="vocab-currency" ui-type="enum"  section="lhmc">
+                <selector>transport-insuranceIndemnityCurrency</selector>
+            </field>
+            <field id="insuranceIndemnityValue" ui-type="validated" datatype="float" section="lhmc">
+                <selector>transport-insuranceIndemnityValue</selector>
+            </field>
+        </repeat>
+
+        <field id="remarks" section="lhmc">
+            <selector>transport-remarks</selector>
+        </field>
+    </section>
+</root>

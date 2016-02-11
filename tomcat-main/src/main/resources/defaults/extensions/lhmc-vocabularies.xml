@@ -1,0 +1,118 @@
+<instances>
+    <instance id="vocab-limitationtype">
+        <web-url>limitationtype</web-url>
+        <title-ref>limitationtype</title-ref>
+        <title>Access Limitation Type</title>
+        <options>
+            <option id="displayvisual"> display/visual </option>
+            <option id="handlinggender">  handling - gender </option>
+            <option id="handlingother">  handling - other </option>
+            <option id="lending">  lending </option>
+            <option id="publication">  publication </option>
+            <option id="researchaccess">  research/access </option>
+            <option id="storage">  storage </option>
+            <option id="treatment">  treatment </option>
+            <option id="unknown"> unknown </option>
+        </options>
+    </instance>
+    <instance id="vocab-limitationlevel">
+        <web-url>limitationlevel</web-url>
+        <title-ref>limitationlevel</title-ref>
+        <title>Access Limitation Level</title>
+        <options>
+            <option id="preference"> preference </option>
+            <option id="recommendation">  recommendation </option>
+            <option id="restriction">  restriction </option>
+            <option id="unknown">  unknown </option>
+        </options>
+    </instance>
+    <instance id="vocab-condition">
+        <web-url>condition</web-url>
+        <title-ref>condition</title-ref>
+        <title>Condition</title>
+        <options>
+            <option id="needsnowork">Needs no work</option>
+            <option id="exhibitableneedswork">Exhibitable / needs work</option>
+            <option id="notexhibitablestable">Not exhibitable / stable</option>
+            <option id="injeopardy">In jeopardy</option>
+        </options>
+    </instance>
+    <instance id="vocab-conditionfacet">
+        <web-url>conditionfacet</web-url>
+        <title-ref>conditionfacet</title-ref>
+        <title>Condition Facet</title>
+        <options>
+            <option id="materials"> materials </option>
+            <option id="mechanism"> mechanism </option>
+            <option id="overall"> overall </option>
+            <option id="parts"> parts </option>
+            <option id="surface"> surface </option>
+            <option id="structure"> structure </option>
+        </options>
+    </instance>
+    <instance id="vocab-maintenancecycle">
+        <web-url>maintenancecycle</web-url>
+        <title-ref>maintenancecycle</title-ref>
+        <title>Maintenance Cycle</title>
+        <options>
+            <option id="">Please select an option</option>
+            <option id="weekly">weekly</option>
+            <option id="monthly">monthly</option>
+            <option id="quarterly">quarterly</option>
+            <option id="yearly">yearly</option>
+            <option id="everytwoyears">every two years</option>
+            <option id="everyfiveyears">every five years</option>
+            <option id="never">never</option>
+        </options>
+    </instance>
+    <instance id="vocab-intakestatus">
+        <web-url>intakestatus</web-url>
+        <title-ref>intakestatus</title-ref>
+        <title>Intake Status</title>
+        <options>
+            <option id="active">Active</option>
+            <option id="convertedyoacquisition">Converted to acquisition</option>
+            <option id="convertedtoloan">Converted to loan</option>
+            <option id="returned">Returned</option>
+        </options>
+    </instance>
+    <instance id="vocab-persontermqualifier">
+        <web-url>persontermqualifier</web-url>
+        <title-ref>persontermqualifier</title-ref>
+        <title>Person Authority Term Qualifier</title>
+        <options>
+            <option id="maiden">Maiden Name</option>
+            <option id="nickname">Nickname</option>
+            <option id="pseudonym">Pseudonym</option>
+        </options>
+    </instance>
+    <instance id="vocab-personrelationship">
+        <web-url>personrelationship</web-url>
+        <title-ref>personrelationship</title-ref>
+        <title>Related Person Relationship</title>
+        <options>
+            <option id="child"> child</option>
+            <option id="father"> father</option>
+            <option id="mother"> mother</option>
+            <option id="spouse"> spouse</option>
+        </options>
+    </instance>
+    <instance id="vocab-transportmethod">
+        <web-url>transportmethod</web-url>
+        <title-ref>transportmethod</title-ref>
+        <title>Transport Method</title>
+        <options>
+            <option id="cargoaircraft">cargo aircraft</option>
+            <option id="combiaircraft">combi aircraft</option>
+            <option id="commoncarrier">common carrier</option>
+            <option id="exclusiveusetruck">exclusive-use truck</option>
+            <option id="expeditedusefreight">expedited use freight</option>
+            <option id="lofofreight">LOFO freight</option>
+            <option id="mail">mail</option>
+            <option id="noncommercialcarrier">non-commercial carrier</option>
+            <option id="oceanfreight">ocean freight</option>
+            <option id="passengeraircraft">passenger aircraft</option>
+            <option id="shuttleservice">shuttle service</option>
+        </options>
+    </instance>
+</instances>

@@ -1,0 +1,9 @@
+<record id="place" is-extension="true">
+    <services-record-path id="lhmc">
+        places_lhmc:http://collectionspace.org/services/place/domain/lhmc,places_lhmc
+    </services-record-path>
+    <section id="placeAuthorityInformation">
+        <field id="width" section="lhmc" />
+        <field id="length" section="lhmc" />
+    </section>
+</record>

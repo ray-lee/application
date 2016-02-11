@@ -1,0 +1,16 @@
+<record id="person" is-extension="true">
+    <services-record-path id="lhmc">
+        persons_lhmc:http://collectionspace.org/services/person/domain/lhmc,persons_lhmc
+    </services-record-path>
+    <section id="personNameAuthorityInformation">
+        <field id="relatedPerson" section="lhmc" autocomplete="person-person,person-ulan_pa" />
+        <field id="relationshipType" section="lhmc" autocomplete="vocab-personrelationship" ui-type="enum" />
+        <field id="relationshipNote" section="lhmc" />
+        <field id="placeOrResidence" section="lhmc" autocomplete="place-place,place-tgn_place" />
+        <field id="placeNote" section="lhmc" />
+        <repeat id="publicationsGroupList/publicationsGroup" section="lhmc">
+            <field id="publication" section="lhmc" autocomplete="citation-citation,citation-worldcat" />
+            <field id="publicationNote" section="lhmc" />
+        </repeat>
+    </section>
+</record>
