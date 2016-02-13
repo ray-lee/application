@@ -51,13 +51,14 @@
             <url>http://localhost:@JEE_PORT@/cspace-services</url>
 			<tenant>
 				<id>501</id>
+				<domain>lhmc</domain>
 				<name>lhmc.collectionspace.org</name>
 				<version>0.1</version>
 				<display-name>Collectionspace lhmc Tenant</display-name>
 			</tenant>
 			<repository>
-				<domain>lhmc-domain</domain>
-                <name>lhmc</name>
+				<domain>lhmc</domain>
+				<name>lhmc</name>
 				<client>nuxeo-java</client>
 				<dateformats>
 					<pattern>MM/dd/yyyy</pattern>
