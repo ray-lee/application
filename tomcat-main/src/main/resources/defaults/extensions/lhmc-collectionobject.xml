@@ -1,20 +1,18 @@
-<record id="collection-object" is-extension="true"  generate-services-schema="true">
+<record id="collection-object" is-extension="true">
+    <services-record-path id="lhmc">collectionobjects_lhmc:http://collectionspace.org/services/collectionobject/domain/lhmc,collectionobjects_lhmc</services-record-path>
 
-    <services-record-path id="lhmc">
-        collectionobjects_lhmc:http://collectionspace.org/services/collectionobject/domain/collectionobject,collectionobjects_lhmc
-    </services-record-path>
-    <section id="culturalCare" section="lhmc">
+    <section id="culturalCare">
         <repeat id="culturalCareNotes" section="lhmc">
-            <field id="culturalCareNote" section="lhmc" />
+            <field id="culturalCareNote" section="lhmc"/>
         </repeat>
 
         <repeat id="accessLimitationsGroupList/accessLimitationsGroup" section="lhmc">
-            <field id="limitationType" autocomplete="vocab-limitationtype" ui-type="enum" section="lhmc" />
-            <field id="limitationLevel" autocomplete="vocab-limitationlevel" ui-type="enum" section="lhmc" />
-            <field id="limitationDetails" section="lhmc" />
-            <field id="requester"   autocomplete="person-person" section="lhmc" />
-            <field id="requestOnBehalfOf"  autocomplete="organization-organization" section="lhmc" />
-            <field id="requestDate" ui-type="date" datatype="date" section="lhmc" />
+            <field id="limitationType" section="lhmc" autocomplete="vocab-limitationtype" ui-type="enum"/>
+            <field id="limitationLevel" section="lhmc" autocomplete="vocab-limitationlevel" ui-type="enum"/>
+            <field id="limitationDetails" section="lhmc"/>
+            <field id="limitationRequester" section="lhmc" autocomplete="person-person"/>
+            <field id="limitationRequestOnBehalfOf" section="lhmc" autocomplete="organization-organization"/>
+            <field id="limitationRequestDate" section="lhmc" ui-type="date" datatype="date"/>
         </repeat>
     </section>
 </record>

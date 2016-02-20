@@ -1,0 +1,40 @@
+<record id="transport" in-recordlist="no" separate-record="false" services-type="transportGroup">
+    <section id="transportInformation">
+        <field id="transportNumber" chooser="yes" in-title="yes" ui-search="repeatable" mini="number,search,list,relate" seperate_ui_container="true">
+            <options>
+                <option id="transport" sample="TR2015.1">Transport</option>
+            </options>
+        </field>
+        
+        <repeat id="transportAgentGroupList/transportAgentGroup">
+            <field id="transportAgent" autocomplete="person-person,organization-organization"/>
+            <field id="transportAgentContact" autocomplete="person-person"/>
+        </repeat>
+
+        <field id="departurePoint" autocomplete="person-person,organization-organization"/>
+        <field id="destination" autocomplete="person-person,organization-organization"/>
+
+        <field id="departureDate" ui-type="date" datatype="date"/>
+        <field id="departureTime"/>
+
+        <field id="arrivalDate" ui-type="date" datatype="date"/>
+        <field id="arrivalTime"/>
+
+        <field id="numberOfCratesObjects"/>
+
+        <repeat id="transportLenders">
+            <field id="transportLender" autocomplete="person-person,organization-organization"/>
+        </repeat>
+
+        <field id="transportMethod" autocomplete="vocab-transportmethod" ui-type="enum"/>
+
+        <field id="courier" autocomplete="person-person,organization-organization"/>
+
+        <repeat id="insuranceIndemnityGroupList/insuranceIndemnityGroup">
+            <field id="insuranceIndemnityCurrency" autocomplete="vocab-currency" ui-type="enum"/>
+            <field id="insuranceIndemnityValue" ui-type="validated" datatype="float"/>
+        </repeat>
+
+        <field id="transportNote"/>
+    </section>
+</record>

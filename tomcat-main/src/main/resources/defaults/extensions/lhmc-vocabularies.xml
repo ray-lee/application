@@ -37,19 +37,6 @@
             <option id="injeopardy">In jeopardy</option>
         </options>
     </instance>
-    <instance id="vocab-conditionfacet">
-        <web-url>conditionfacet</web-url>
-        <title-ref>conditionfacet</title-ref>
-        <title>Condition Facet</title>
-        <options>
-            <option id="materials"> materials </option>
-            <option id="mechanism"> mechanism </option>
-            <option id="overall"> overall </option>
-            <option id="parts"> parts </option>
-            <option id="surface"> surface </option>
-            <option id="structure"> structure </option>
-        </options>
-    </instance>
     <instance id="vocab-maintenancecycle">
         <web-url>maintenancecycle</web-url>
         <title-ref>maintenancecycle</title-ref>

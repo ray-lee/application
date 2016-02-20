@@ -1,9 +1,6 @@
-<record id="acquisition" is-extension="true" generate-services-schema="true" type="record,procedure">
+<record id="acquisition" is-extension="true">
+    <services-record-path id="lhmc">acquisitions_lhmc:http://collectionspace.org/services/acquisition/domain/lhmc,acquisitions_lhmc</services-record-path>
 
-    <!-- Information about your extension schema goes here -->
-    <services-record-path id="lhmc">
-        acquisitions_lhmc:http://collectionspace.org/services/acquisition/domain/lhmc,acquisitions_lhmc
-    </services-record-path>
     <section id="acquisitionInformation">
         <repeat id="receivedGroupList/receivedGroup" section="lhmc">
             <group id="receivedDateGroup" section="lhmc" ui-type="groupfield/structureddate"
@@ -33,8 +30,8 @@
                 <field id="dateLatestScalarValue" section="lhmc"/>
                 <field id="scalarValuesComputed" section="lhmc"/>
             </group>
-            <field id="receivedBy" autocomplete="person-person" section="lhmc" />
+            
+            <field id="receivedBy" section="lhmc" autocomplete="person-person"/>
         </repeat>
-
     </section>
 </record>

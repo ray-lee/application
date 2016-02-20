@@ -1,0 +1,5 @@
+<record id="loanout">
+    <section id="transportInformation">
+        <field id="transport" ui-type="groupfield/transport/selfrenderer" ui-func="cspace.transport"/>
+    </section>
+</record>
