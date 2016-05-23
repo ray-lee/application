@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.collectionspace</groupId>
 		<artifactId>svcapp</artifactId>
-		<version>4.3-SNAPSHOT</version>
+		<version>4.3</version>
 	</parent>
 
 	<profiles>
@@ -58,6 +58,9 @@
 
 	<build>
 		<finalName>collectionspace</finalName>
+		<filters>
+            <filter>../build.properties</filter>
+        </filters>
 		<!-- We need the logging info in the war's classes, so it gets picked up -->
 		<resources>
 			<resource>
