@@ -30,7 +30,9 @@
       "claim",
       "conditioncheck",
       "exhibition",
-      "valuationcontrol"
+      "valuationcontrol",
+      "osteology",
+      "conservation"
     ], 
     "type": "array"
   }
