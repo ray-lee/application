@@ -1,0 +1,12 @@
+<record id="conditioncheck" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
+    <section id="conditionCheckInformation">
+        <field id="conditionCheckRefNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <selector>conditioncheck-numberPatternChooser-reference-number</selector>
+            <title-selector>titleBar-conditioncheck-reference-number</title-selector>
+            <container-selector>conditioncheck-reference-number-patternChooserContainer</container-selector>
+            <options>
+                <option id="conditioncheck" sample="CC2012-001">Condition Check</option>
+            </options>
+        </field>
+    </section>
+</record>
