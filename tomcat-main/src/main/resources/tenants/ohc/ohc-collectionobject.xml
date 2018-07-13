@@ -1,0 +1,28 @@
+<record id="collection-object" is-extension="true">
+	<services-record-path id="ohc">collectionobjects_ohc:http://collectionspace.org/services/collectionobject/domain/ohc,collectionobjects_ohc</services-record-path>
+
+	<section id="identificationInformation">
+		<!-- Add new Description level field -->
+		<field id="descriptionLevel" autocomplete="vocab-descriptionlevel" ui-type="enum" section="ohc" />
+		
+		<!-- Change from free text to controlled term -->
+		<repeat id="objectNameList/objectNameGroup">
+			<field id="objectName" ui-search="repeatable" in-title="yes" mini="search,list,relate" autocomplete="concept-concept" />
+		</repeat>
+	</section>
+
+	<section id="descriptionInformation">
+		<!-- Add new apparelSize field -->
+		<repeat id="apparelSizes" section="ohc">
+			<field id="apparelSize" autocomplete="vocab-apparelsizes" ui-type="enum" section="ohc" />
+		</repeat>
+	</section>
+	
+	<section id="associationInformation">
+		<!-- New fields -->
+		<repeat id="categoryGroupList/categoryGroup" section="ohc">
+			<field id="category" mini="search" autocomplete="concept-nomenclature" section="ohc" />
+			<field id="subCategory" mini="search" autocomplete="concept-nomenclature" section="ohc" />
+		</repeat>
+	</section>
+</record>
