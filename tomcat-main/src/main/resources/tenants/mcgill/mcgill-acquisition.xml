@@ -5,7 +5,7 @@
                         <title-selector>titleBar-acquisition-reference-number</title-selector>
                         <container-selector>acquisition-reference-number-patternChooserContainer</container-selector>
                         <options>
-                            <option id="accession" sample="2018-001">Accession</option>
+                            <option id="accession" sample="AC2018-001">Accession</option>
                             <option id="archive" sample="AR2018-001">Archives</option>
                             <option id="library" sample="LIB2018-001">Library</option>
                         </options>
