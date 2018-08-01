@@ -23,7 +23,7 @@
     <ui-props-cache-timeout>2592000</ui-props-cache-timeout>
   </admin>
   <email>
-    <baseurl>http://cspace.parsons.edu</baseurl>
+    <baseurl>https://parsons.lyrasistechnology.org</baseurl>
     <from>admin@cspace.parsons.edu</from>
     <to></to>
     <!-- if specified then all emails will send to this address - used for debugging -->
@@ -48,7 +48,7 @@
   </email>
   <persistence>
     <service>
-      <url>http://cspace.parsons.edu/cspace-services</url>
+      <url>http://localhost:@JEE_PORT@/cspace-services</url>
       <tenant>
         <id>100010</id>
         <name>cspace.parsons.edu</name>
