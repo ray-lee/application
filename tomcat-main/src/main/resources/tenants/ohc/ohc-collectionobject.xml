@@ -9,6 +9,16 @@
 		<repeat id="objectNameList/objectNameGroup">
 			<field id="objectName" ui-search="repeatable" in-title="yes" mini="search,list,relate" autocomplete="concept-concept" />
 		</repeat>
+		
+		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
+		<repeat id="taxonomicIdentGroupList/taxonomicIdentGroup" section="naturalhistory_extension">
+			<field id="taxon" in-title="yes" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon" section="naturalhistory_extension" />
+		</repeat>
+		
+		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
+		<repeat id="determinationHistoryGroupList/determinationHistoryGroup" section="naturalhistory_extension">
+			<field id="determinationTaxon" section="naturalhistory_extension" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon"/>
+		</repeat>
 	</section>
 
 	<section id="descriptionInformation">
