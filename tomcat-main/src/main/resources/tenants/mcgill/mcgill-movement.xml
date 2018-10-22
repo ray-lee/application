@@ -8,7 +8,21 @@
                             <option id="movement" sample="MV2018-001">Movement</option>
                         </options>
                     </field>
+                    <field id="reasonForMove" ui-search="repeatable">
+                        <options>
+                            <option id="" default="yes">Please select a value</option>
+                            <option id="campusloaninstallation">Campus Loan Installation</option>
+                            <option id="campusloanreturn">Campus Loan Return</option>
+                            <option id="conservation">Conservation</option>
+                            <option id="construction">Construction</option>
+                            <option id="exhibition">Exhibition</option>
+                            <option id="inventory">Inventory</option>
+                            <option id="loan">Loan</option>
+                            <option id="newstoragelocation">New Storage Location</option>
+                            <option id="photography">Photography</option>
+                            <option id="research">Research</option>
+                            <option id="temporary">Temporary Move</option>
+                        </options>
+                    </field>
                 </section>
             </record>
-
-					
