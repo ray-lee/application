@@ -1,0 +1,8 @@
+<record id="loanout">
+    <section id="loanoutInformation">
+        <!-- change autocomplete to only use person-person -->
+        <field id="borrower" ui-search="repeatable" autocomplete="person-person" mini="summary,list" in-title="yes">
+            <selector>loanOut-borrower</selector>
+        </field>
+    </section>
+</record>

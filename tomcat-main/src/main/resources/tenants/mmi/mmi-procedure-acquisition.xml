@@ -1,0 +1,46 @@
+<record id="acquisition" is-extension="true" type="record,procedure">
+
+    <services-record-path id="mmi">
+        acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi
+    </services-record-path>
+    <section id="acquisitionInformation">
+        <field id="mmiAccessionDate" datatype="date" ui-type="date"
+                section="mmi" >
+            <container-selector>acquisition-accessionDateGroup-container</container-selector>
+        </field>
+		<repeat id="mmiAcquisitionDates" section="mmi">
+            <field id="mmiAcquisitionDate" datatype="date" ui-type="date" section="mmi">
+                <selector>acquisition-mmiAcquisitionDate</selector>
+            </field>
+        </repeat>
+        <!-- updated option values -->
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true">
+			<selector>acquisition-acquisition-method</selector>
+            <options>
+                <option id="">Please select a value</option>
+                <option id="gift">Gift</option>
+                <option id="purchase">Purchase</option>
+                <option id="bequest">Bequest</option>
+                <option id="loan">Loan</option>
+                <option id="restrictedgifts">Restricted gifts</option>
+            </options>
+        </field>
+        <field id="acquisitionExtent" section="mmi" datatype="largetext" />
+		<repeat id="acquisitionSources">
+            <!-- change autocomplete to only use person-person -->
+			<field id="acquisitionSource" mini="summary,search,list,relate" in-title="yes"
+				ui-search="repeatable" autocomplete="person-person">
+				<selector>acquisition-acquisitionSource</selector>
+			</field>
+		</repeat>
+        <repeat id="owners">
+            <!-- change autocomplete to only use person-person -->
+            <field id="owner" autocomplete="person-person"/>
+        </repeat>
+        <repeat id="acquisitionFundingList/acquisitionFunding">
+            <!-- change autocomplete to only use person-person -->
+            <field id="acquisitionFundingSource" autocomplete="person-person" ui-search="repeatable"/>
+        </repeat>
+		
+    </section>
+</record>

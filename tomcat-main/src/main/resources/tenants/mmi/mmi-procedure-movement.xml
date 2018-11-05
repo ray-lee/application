@@ -1,0 +1,17 @@
+<record id="movement">
+    <section id="locationMovementInformation">
+        <!-- change autocomplete to only use person-person,location-location -->
+        <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location,person-person">
+            <title-selector>titleBar-currentLocation</title-selector>
+        </field>
+    </section>
+    <section id="movementControlInformation">
+        <field id="movementReferenceNumber" ui-search="repeatable" chooser="yes" in-title="no" mini="number,search,list,relate" seperate_ui_container="true">
+            <options>
+                <!-- removed location number pattern from drop down list -->
+                <option id="inventory" sample="INV2012.1">Inventory</option>
+                <option id="movement" sample="MV2012.1">Movement</option>
+            </options>
+        </field>
+    </section>
+</record>

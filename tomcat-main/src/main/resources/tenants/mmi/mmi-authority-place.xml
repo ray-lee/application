@@ -1,0 +1,29 @@
+<record id="place" type="authority">
+    <instances id="place">
+        <!-- remove place-tgn_place instance -->
+        <instance id="place-tgn_place">
+            <web-url>tgn_place</web-url>
+            <title-ref>tgn_place</title-ref>
+            <title>Thesaurus of Geographic Names</title>
+        </instance>
+        <instance id="place-place">
+            <web-url>place</web-url>
+            <title-ref>place</title-ref>
+            <!-- deactivating non-preferred terms in term completion -->
+            <nptAllowed>false</nptAllowed>
+            <title>Local Places</title>
+        </instance>
+    </instances>
+    <section id="placeAuthorityInformation">
+        <repeat id="placeOwnerGroupList/placeOwnerGroup">
+            <!-- removed org-org vocab -->
+            <field id="owner" autocomplete="person-person" ui-search="repeatable"/>
+        </repeat>
+    </section>
+    <section id="geoReferenceInformation">
+        <repeat id="placeGeoRefGroupList/placeGeoRefGroup">
+            <!-- removed org-org vocab -->
+            <field id="geoReferencedBy" autocomplete="person-person"/>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,11 @@
+<record id="concept" type="authority">
+    <instances id="concept">
+        <instance id="concept-concept">
+            <web-url>concept</web-url>
+            <title-ref>concept</title-ref>
+            <!-- deactivating non-preferred terms in term completion -->
+            <nptAllowed>false</nptAllowed>
+            <title>Associated Concepts</title>
+        </instance>
+    </instances>
+</record>

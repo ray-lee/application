@@ -1,0 +1,10 @@
+<record id="loanin">
+    <section id="loaninInformation">
+        <repeat id="lenderGroupList/lenderGroup">
+            <!-- change autocomplete to only use person-person -->
+            <field id="lender" ui-search="repeatable" autocomplete="person-person" in-title="yes" mini="summary,search,list">
+                <selector>loanIn-lender</selector>
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,725 @@
+<root>
+    <include src="extensions/variablemedia-vocabularies.xml" strip-root="yes" />
+    <instance id="vocab-worktermsource">
+		<web-url>worktermsource</web-url>
+		<title-ref>worktermsource</title-ref>
+		<title>Work Term Source</title>
+		<options>
+			<option id="afi">AFI Catalog: Feature Films</option>
+			<option id="amc">AllMovie.com</option>
+			<option id="ammiac">AMMI Acquisition Database</option>
+			<option id="ascap">ASCAP</option>
+			<option id="loc">Library of Congress</option>
+			<option id="oth">Other</option>
+			<option id="cdptn">The Complete Directory to Prime Time Network and Cable TV Shows</option>
+			<option id="tt">Total Television, 4th Edition</option>
+			<option id="roab">Rhizome.org Artbase</option>
+		</options>
+	</instance>
+	<instance id="vocab-numbertype">
+		<web-url>numbertype</web-url>
+		<title-ref>numbertype</title-ref>
+		<title>Number type</title>
+		<options> </options>
+	</instance>
+	<instance id="vocab-technique">
+		<web-url>technique</web-url>
+		<title-ref>technique</title-ref>
+		<title>Technique</title>
+		<options> </options>
+	</instance>
+	<instance id="vocab-productionrole">
+		<web-url>productionrole</web-url>
+		<title-ref>productionrole</title-ref>
+		<title>Object Production Entity Role</title>
+		<options>
+			<option id="creator">Creator</option>
+			<option id="designer">Designer</option>
+			<option id="distributor">Distributor</option>
+			<option id="licensor">Licensor</option>
+			<option id="illustrator">Illustrator</option>
+			<option id="manufacturer">Manufacturer</option>
+			<option id="producer">Producer</option>
+			<option id="publisher">Publisher</option>
+			<option id="owner">Owner</option>
+			<option id="authorwriter">Author/Writer</option>
+			<option id="exhibitor">Exhibitor</option>
+			<option id="performer">Performer</option>
+			<option id="signitor">Signitor</option>
+		</options>
+	</instance>
+	<instance id="vocab-associatedentitytype">
+		<web-url>associatedentitytype</web-url>
+		<title-ref>associatedentitytype</title-ref>
+		<title>Associated Entity Type</title>
+		<options>
+			<option id="creator">Creator</option>
+			<option id="designer">Designer</option>
+			<option id="distributor">Distributor</option>
+			<option id="licensor">Licensor</option>
+			<option id="illustrator">Illustrator</option>
+			<option id="manufacturer">Manufacturer</option>
+			<option id="producer">Producer</option>
+			<option id="publisher">Publisher</option>
+			<option id="owner">Owner</option>
+			<option id="authorwriter">Author/Writer</option>
+			<option id="exhibitor">Exhibitor</option>
+			<option id="performer">Performer</option>
+			<option id="signitor">Signitor</option>
+		</options>
+	</instance>
+	<instance id="vocab-material">
+		<web-url>material</web-url>
+		<title-ref>material</title-ref>
+		<title>Material</title>
+		<options>
+			<option id="acetatefilm">Acetate film</option>
+			<option id="cellophane">Cellophane</option>
+			<option id="cellulosenitratefilm">Cellulose nitrate film</option>
+			<option id="cement">Cement</option>
+			<option id="ceramic">Ceramic</option>
+			<option id="composition">Composition</option>
+			<option id="cork">Cork</option>
+			<option id="crystal">Crystal</option>
+			<option id="engineeredwood">Engineered wood</option>
+			<option id="fiberglass">Fiberglass</option>
+			<option id="foam">Foam</option>
+			<option id="fur">Fur</option>
+			<option id="glass">Glass</option>
+			<option id="glycerin">Glycerin</option>
+			<option id="hair">Hair</option>
+			<option id="latex">Latex</option>
+			<option id="leather">Leather</option>
+			<option id="metal">Metal</option>
+			<option id="neon">Neon</option>
+			<option id="paper">Paper</option>
+			<option id="photographicnegative">Photographic negative</option>
+			<option id="photographicpaper">Photographic paper</option>
+			<option id="photographicpapermountedontextile">Photographic paper mounted on textile</option>
+			<option id="plaster">Plaster</option>
+			<option id="plastic">Plastic</option>
+			<option id="polystyrene">Polystyrene</option>
+			<option id="polyurethane">Polyurethane</option>
+			<option id="resin">Resin</option>
+			<option id="rock">Rock</option>
+			<option id="rubber">Rubber</option>
+			<option id="soap">Soap</option>
+			<option id="textile">Textile</option>
+			<option id="vinyl">Vinyl</option>
+			<option id="wax">Wax</option>
+			<option id="wood">Wood</option>
+		</options>
+	</instance>
+	<instance id="vocab-workgenre">
+		<web-url>workgenre</web-url>
+		<title-ref>workgenre</title-ref>
+		<title>Work Genre</title>
+		<options>
+			<option id="short">Short</option>
+			<option id="feature">Feature</option>
+		</options>
+	</instance>
+	<instance id="vocab-workmedium">
+		<web-url>workmedium</web-url>
+		<title-ref>workmedium</title-ref>
+		<title>Work Medium</title>
+		<options>
+			<option id="film">Film</option>
+			<option id="internet">Internet</option>
+			<option id="television">Television</option>
+			<option id="videogame">Video game</option>
+		</options>
+	</instance>
+	<instance id="vocab-dateassociation">
+		<web-url>dateassociation</web-url>
+		<title-ref>dateassociation</title-ref>
+		<title>Date Association</title>
+		<options>
+			<option id="creation">Creation</option>
+			<option id="copyright">Copyright</option>
+			<option id="display">Display</option>
+			<option id="exhibition">Exhibition</option>
+			<option id="ownership">Ownership</option>
+			<option id="releasedate">Release</option>
+			<option id="production">Production</option>
+			<option id="publication">Publication</option>
+			<option id="running">Running</option>
+			<option id="use">Use</option>
+		</options>
+	</instance>
+	<instance id="vocab-contentworktype">
+		<web-url>contentworktype</web-url>
+		<title-ref>contentworktype</title-ref>
+		<title>Content - Work Type</title>
+		<options>
+			<option id="depicts">Depicts</option>
+			<option id="isFrom">Is from</option>
+			<option id="issueOf">Issue of</option>
+			<option id="references">References</option>
+		</options>
+	</instance>
+	<instance id="vocab-productiondateassoc">
+		<web-url>productiondateassoc</web-url>
+		<title-ref>productiondateassoc</title-ref>
+		<title>Production Date Association</title>
+		<options>
+			<option id="creation">Creation</option>
+			<option id="copyright">Copyright</option>
+			<option id="display">Display</option>
+			<option id="publication">Publication</option>
+		</options>
+	</instance>
+	<instance id="vocab-format">
+		<web-url>format</web-url>
+		<title-ref>format</title-ref>
+		<title>Format</title>
+		<options>
+			<option id="n1inch">1"</option>
+			<option id="n1slash2inch">1/2"</option>
+			<option id="n16mm">16mm</option>
+			<option id="n17dot5mm">17.5mm</option>
+			<option id="n2inch">2"</option>
+			<option id="n22mm">22mm</option>
+			<option id="n28mm">28mm</option>
+			<option id="n33sp1slash3sprpm">33 1/3 rpm</option>
+			<option id="n35mm">35mm</option>
+			<option id="n35mmslide">35mm slide</option>
+			<option id="n3d">3-D</option>
+			<option id="n45rpm">45 rpm</option>
+			<option id="n70mm">70mm</option>
+			<option id="n78rpm">78 rpm</option>
+			<option id="n8mm">8mm</option>
+			<option id="9dot5mm">9.5mm</option>
+			<option id="cd">CD</option>
+			<option id="cassettetape">cassette tape</option>
+			<option id="dvd">DVD</option>
+			<option id="halfsheet">half-sheet</option>
+			<option id="hardcover">hardcover</option>
+			<option id="insert">insert</option>
+			<option id="lanternslide">lantern slide</option>
+			<option id="leaflet">leaflet</option>
+			<option id="magazine">magazine</option>
+			<option id="negative">negative</option>
+			<option id="onesheet">one-sheet</option>
+			<option id="onestop">one-stop</option>
+			<option id="pamphlet">pamphlet</option>
+			<option id="paperback">paperback</option>
+			<option id="photograph">photograph</option>
+			<option id="sixsheet">sixsheet</option>
+			<option id="super8mm">Super 8mm</option>
+			<option id="threesheet">three-sheet</option>
+			<option id="transparency">transparency</option>
+			<option id="twentyfoursheet">twenty-four-sheet</option>
+			<option id="umatic">U-Matic</option>
+			<option id="vhs">VHS</option>
+		</options>
+	</instance>
+	<instance id="vocab-artifactclassworktype">
+		<web-url>artifactclassworktype</web-url>
+		<title-ref>artifactclassworktype</title-ref>
+		<title>Artifact Class Work Type</title>
+		<options>
+			<option id="wt350">~Undetermined</option>
+			<option id="wt5">Animation materials</option>
+			<option id="wt27">(Animation materials) Animation cameras</option>
+			<option id="wt28">(Animation materials) Animation cels</option>
+			<option id="wt29">(Animation materials) Animation discs</option>
+			<option id="wt30">(Animation materials) Animation drawings</option>
+			<option id="wt31">(Animation materials) Animation forms</option>
+			<option id="wt32">(Animation materials) Animation models</option>
+			<option id="wt33">(Animation materials) Animation software</option>
+			<option id="wt34">(Animation materials) Animation stands</option>
+			<option id="wt37">(Animation materials) Peg boards</option>
+			<option id="wt222">Annuals and yearbooks</option>
+			<option id="wt223">(Annuals and yearbooks) Annuals</option>
+			<option id="wt224">(Annuals and yearbooks) Calendars</option>
+			<option id="wt228">(Annuals and yearbooks) Yearbooks</option>
+			<option id="wt13">Apparel and related materials</option>
+			<option id="wt352">(Apparel and related materials) Aprons</option>
+			<option id="wt49">(Apparel and related materials) Badges</option>
+			<option id="wt354">(Apparel and related materials) Bathing suits</option>
+			<option id="wt355">(Apparel and related materials) Bathrobes</option>
+			<option id="wt50">(Apparel and related materials) Belts and belt buckles</option>
+			<option id="wt357">(Apparel and related materials) Bow biters</option>
+			<option id="wt51">(Apparel and related materials) Buttons</option>
+			<option id="wt456">(Apparel and related materials) Capes</option>
+			<option id="wt527">(Apparel and related materials) Children’s costume</option>
+			<option id="wt358">(Apparel and related materials) Coats and jackets</option>
+			<option id="wt359">(Apparel and related materials) Coin purses</option>
+			<option id="wt517">(Apparel and related materials) Costume</option>
+			<option id="wt465">(Apparel and related materials) Doublets</option>
+			<option id="wt52">(Apparel and related materials) Dresses</option>
+			<option id="wt360">(Apparel and related materials) Earmuffs</option>
+			<option id="wt361">(Apparel and related materials) Eyeglasses</option>
+			<option id="wt362">(Apparel and related materials) Fans</option>
+			<option id="wt363">(Apparel and related materials) Gloves</option>
+			<option id="wt364">(Apparel and related materials) Handkerchiefs</option>
+			<option id="wt53">(Apparel and related materials) Hats and headgear</option>
+			<option id="wt55">(Apparel and related materials) Jewelry</option>
+			<option id="wt365">(Apparel and related materials) Keychains</option>
+			<option id="wt366">(Apparel and related materials) Knapsacks</option>
+			<option id="wt367">(Apparel and related materials) Lighters</option>
+			<option id="wt56">(Apparel and related materials) Masks</option>
+			<option id="wt57">(Apparel and related materials) Neckties</option>
+			<option id="wt368">(Apparel and related materials) Negligees</option>
+			<option id="wt369">(Apparel and related materials) Outfits</option>
+			<option id="wt370">(Apparel and related materials) Pajamas</option>
+			<option id="wt507">(Apparel and related materials) Patches</option>
+			<option id="wt371">(Apparel and related materials) Patterns</option>
+			<option id="wt509">(Apparel and related materials) Pins</option>
+			<option id="wt383">(Apparel and related materials) Pipes [smoking equipment]</option>
+			<option id="wt373">(Apparel and related materials) Purses</option>
+			<option id="wt374">(Apparel and related materials) Raincoats</option>
+			<option id="wt375">(Apparel and related materials) Ribbons</option>
+			<option id="wt376">(Apparel and related materials) Robes</option>
+			<option id="wt377">(Apparel and related materials) Scarves</option>
+			<option id="wt378">(Apparel and related materials) Shawls</option>
+			<option id="wt58">(Apparel and related materials) Shirts</option>
+			<option id="wt379">(Apparel and related materials) Shoe polish</option>
+			<option id="wt59">(Apparel and related materials) Shoes</option>
+			<option id="wt60">(Apparel and related materials) Skirts</option>
+			<option id="wt61">(Apparel and related materials) Socks</option>
+			<option id="wt380">(Apparel and related materials) Suits</option>
+			<option id="wt381">(Apparel and related materials) Sunglasses</option>
+			<option id="wt382">(Apparel and related materials) Sweaters</option>
+			<option id="wt530">(Apparel and related materials) Sweatshirt</option>
+			<option id="wt63">(Apparel and related materials) T-shirts</option>
+			<option id="wt384">(Apparel and related materials) Tote bags</option>
+			<option id="wt62">(Apparel and related materials) Trousers</option>
+			<option id="wt386">(Apparel and related materials) Umbrellas</option>
+			<option id="wt385">(Apparel and related materials) Underwear</option>
+			<option id="wt64">(Apparel and related materials) Uniforms</option>
+			<option id="wt387">(Apparel and related materials) Vests</option>
+			<option id="wt388">(Apparel and related materials) Wallets</option>
+			<option id="wt65">(Apparel and related materials) Watches</option>
+			<option id="wt460">Books, literature, and periodicals</option>
+			<option id="wt418">(Books, literature, and periodicals) Children’s books</option>
+			<option id="wt447">(Books, literature, and periodicals) Children’s literature</option>
+			<option id="wt137">(Books, literature, and periodicals) Comic books</option>
+			<option id="wt225">(Books, literature, and periodicals) Fan magazines</option>
+			<option id="wt519">(Books, literature, and periodicals) Fanzines and fan fiction</option>
+			<option id="wt518">(Books, literature, and periodicals) Graphic novels</option>
+			<option id="wt421">(Books, literature, and periodicals) Humor books</option>
+			<option id="wt226">(Books, literature, and periodicals) Newsletters</option>
+			<option id="wt534">(Books, literature, and periodicals) Nonfiction</option>
+			<option id="wt276">(Books, literature, and periodicals) Novelizations</option>
+			<option id="wt446">(Books, literature, and periodicals) Novels</option>
+			<option id="wt227">(Books, literature, and periodicals) Periodicals</option>
+			<option id="wt436">(Books, literature, and periodicals) Tie-in books</option>
+			<option id="wt448">(Books, literature, and periodicals) Trade journals</option>
+			<option id="wt536">Computers and accessories</option>
+			<option id="wt538">(Computers and accessories) Monitor</option>
+			<option id="wt539">(Computers and accessories) Peripherals</option>
+			<option id="wt537">(Computers and accessories) Personal computer</option>
+			<option id="wt4">Containers and packaging materials</option>
+			<option id="wt6">(Containers and packaging materials) Bottles</option>
+			<option id="wt7">(Containers and packaging materials) Boxes</option>
+			<option id="wt8">(Containers and packaging materials) Film cans and reels</option>
+			<option id="wt510">(Containers and packaging materials) Food packaging</option>
+			<option id="wt469">(Containers and packaging materials) Ice cream lid</option>
+			<option id="wt461">(Containers and packaging materials) Merchandise displays</option>
+			<option id="wt9">(Containers and packaging materials) Packaging</option>
+			<option id="wt14">Drawings and related materials</option>
+			<option id="wt66">(Drawings and related materials) Blueprints</option>
+			<option id="wt67">(Drawings and related materials) Conceptual drawings</option>
+			<option id="wt547">(Drawings and related materials) Construction drawing</option>
+			<option id="wt71">(Drawings and related materials) Pattern sheets</option>
+			<option id="wt75">(Drawings and related materials) Sketches</option>
+			<option id="wt76">(Drawings and related materials) Storyboards</option>
+			<option id="wt15">Editing equipment</option>
+			<option id="wt77">(Editing equipment) Editing software</option>
+			<option id="wt78">(Editing equipment) Flat-bed editing machines</option>
+			<option id="wt79">(Editing equipment) Moviolas</option>
+			<option id="wt80">(Editing equipment) Rewinds</option>
+			<option id="wt81">(Editing equipment) Sound editing equipment</option>
+			<option id="wt82">(Editing equipment) Splicing equipment</option>
+			<option id="wt83">(Editing equipment) Viewers</option>
+			<option id="wt16">Exhibition announcements</option>
+			<option id="wt84">(Exhibition announcements) Broadsides</option>
+			<option id="wt85">(Exhibition announcements) Fliers</option>
+			<option id="wt86">(Exhibition announcements) Handbills</option>
+			<option id="wt87">(Exhibition announcements) Heralds</option>
+			<option id="wt88">(Exhibition announcements) Invitations</option>
+			<option id="wt89">(Exhibition announcements) Programs</option>
+			<option id="wt90">(Exhibition announcements) Tickets</option>
+			<option id="wt17">Figural forms</option>
+			<option id="wt91">(Figural forms) Action figures</option>
+			<option id="wt551">(Figural forms) Apparel and accessories</option>
+			<option id="wt92">(Figural forms) Costume design figures</option>
+			<option id="wt515">(Figural forms) Cutouts</option>
+			<option id="wt93">(Figural forms) Dolls</option>
+			<option id="wt94">(Figural forms) Figurines</option>
+			<option id="wt389">(Figural forms) Lifesize standups</option>
+			<option id="wt98">(Figural forms) Marionettes</option>
+			<option id="wt99">(Figural forms) Paper dolls</option>
+			<option id="wt100">(Figural forms) Puppets</option>
+			<option id="wt535">(Figural forms) Stands and display cases</option>
+			<option id="wt101">(Figural forms) Ventrioloquial figures</option>
+			<option id="wt18">Furnishings &amp; Utilitarian Equipment</option>
+			<option id="wt390">(Furnishings &amp; Utilitarian Equipment) Air fresheners</option>
+			<option id="wt391">(Furnishings &amp; Utilitarian Equipment) Ashtrays</option>
+			<option id="wt102">(Furnishings &amp; Utilitarian Equipment) Auto supplies</option>
+			<option id="wt103">(Furnishings &amp; Utilitarian Equipment) Bakeware</option>
+			<option id="wt104">(Furnishings &amp; Utilitarian Equipment) Barware</option>
+			<option id="wt466">(Furnishings &amp; Utilitarian Equipment) Baskets</option>
+			<option id="wt467">(Furnishings &amp; Utilitarian Equipment) Bedding</option>
+			<option id="wt392">(Furnishings &amp; Utilitarian Equipment) Candles</option>
+			<option id="wt393">(Furnishings &amp; Utilitarian Equipment) Cassette tape recorders</option>
+			<option id="wt545">(Furnishings &amp; Utilitarian Equipment) Cleaning supply</option>
+			<option id="wt394">(Furnishings &amp; Utilitarian Equipment) Clocks</option>
+			<option id="wt508">(Furnishings &amp; Utilitarian Equipment) Coin banks</option>
+			<option id="wt106">(Furnishings &amp; Utilitarian Equipment) Concession equipment and supplies</option>
+			<option id="wt397">(Furnishings &amp; Utilitarian Equipment) Cookie cutters</option>
+			<option id="wt533">(Furnishings &amp; Utilitarian Equipment) Cookie jar</option>
+			<option id="wt107">(Furnishings &amp; Utilitarian Equipment) Cookware</option>
+			<option id="wt108">(Furnishings &amp; Utilitarian Equipment) Cutlery</option>
+			<option id="wt109">(Furnishings &amp; Utilitarian Equipment) Decorations</option>
+			<option id="wt512">(Furnishings &amp; Utilitarian Equipment) Dishes</option>
+			<option id="wt110">(Furnishings &amp; Utilitarian Equipment) Draperies</option>
+			<option id="wt470">(Furnishings &amp; Utilitarian Equipment) Drinkware</option>
+			<option id="wt400">(Furnishings &amp; Utilitarian Equipment) Flashlights</option>
+			<option id="wt115">(Furnishings &amp; Utilitarian Equipment) Flatware</option>
+			<option id="wt401">(Furnishings &amp; Utilitarian Equipment) Frames</option>
+			<option id="wt116">(Furnishings &amp; Utilitarian Equipment) Furniture</option>
+			<option id="wt111">(Furnishings &amp; Utilitarian Equipment) General office supplies</option>
+			<option id="wt112">(Furnishings &amp; Utilitarian Equipment) General school supplies</option>
+			<option id="wt113">(Furnishings &amp; Utilitarian Equipment) Kitchen appliances</option>
+			<option id="wt468">(Furnishings &amp; Utilitarian Equipment) Lighting</option>
+			<option id="wt114">(Furnishings &amp; Utilitarian Equipment) Lunchboxes</option>
+			<option id="wt531">(Furnishings &amp; Utilitarian Equipment) Media storage</option>
+			<option id="wt403">(Furnishings &amp; Utilitarian Equipment) Musical instrument</option>
+			<option id="wt404">(Furnishings &amp; Utilitarian Equipment) Night lights</option>
+			<option id="wt405">(Furnishings &amp; Utilitarian Equipment) Ornaments</option>
+			<option id="wt118">(Furnishings &amp; Utilitarian Equipment) Pencil boxes</option>
+			<option id="wt406">(Furnishings &amp; Utilitarian Equipment) Pencils</option>
+			<option id="wt119">(Furnishings &amp; Utilitarian Equipment) Pens</option>
+			<option id="wt408">(Furnishings &amp; Utilitarian Equipment) Radios</option>
+			<option id="wt409">(Furnishings &amp; Utilitarian Equipment) Record dusters</option>
+			<option id="wt122">(Furnishings &amp; Utilitarian Equipment) Rugs</option>
+			<option id="wt123">(Furnishings &amp; Utilitarian Equipment) Serveware</option>
+			<option id="wt410">(Furnishings &amp; Utilitarian Equipment) Snow globes</option>
+			<option id="wt126">(Furnishings &amp; Utilitarian Equipment) Stationery</option>
+			<option id="wt127">(Furnishings &amp; Utilitarian Equipment) Stemware</option>
+			<option id="wt411">(Furnishings &amp; Utilitarian Equipment) Stencils</option>
+			<option id="wt128">(Furnishings &amp; Utilitarian Equipment) Studio furnishings</option>
+			<option id="wt472">(Furnishings &amp; Utilitarian Equipment) Swords</option>
+			<option id="wt129">(Furnishings &amp; Utilitarian Equipment) Table linens</option>
+			<option id="wt412">(Furnishings &amp; Utilitarian Equipment) Telephones</option>
+			<option id="wt132">(Furnishings &amp; Utilitarian Equipment) Theater furnishings</option>
+			<option id="wt413">(Furnishings &amp; Utilitarian Equipment) Tins</option>
+			<option id="wt133">(Furnishings &amp; Utilitarian Equipment) Towels</option>
+			<option id="wt407">(Furnishings &amp; Utilitarian Equipment) Turntables</option>
+			<option id="wt414">(Furnishings &amp; Utilitarian Equipment) Vases</option>
+			<option id="wt415">(Furnishings &amp; Utilitarian Equipment) Wastebaskets</option>
+			<option id="wt19">Games and play objects</option>
+			<option id="wt134">(Games and play objects) Activity books</option>
+			<option id="wt416">(Games and play objects) Activity sets</option>
+			<option id="wt417">(Games and play objects) Balloons</option>
+			<option id="wt135">(Games and play objects) Board and table games</option>
+			<option id="wt136">(Games and play objects) Card games</option>
+			<option id="wt139">(Games and play objects) Dice games</option>
+			<option id="wt419">(Games and play objects) Fantasy games</option>
+			<option id="wt140">(Games and play objects) Flip books</option>
+			<option id="wt422">(Games and play objects) Kites</option>
+			<option id="wt423">(Games and play objects) Marbles</option>
+			<option id="wt511">(Games and play objects) Model kits</option>
+			<option id="wt141">(Games and play objects) Phenakistoscopes</option>
+			<option id="wt506">(Games and play objects) Playsets</option>
+			<option id="wt142">(Games and play objects) Praxinoscopes</option>
+			<option id="wt143">(Games and play objects) Puzzles</option>
+			<option id="wt144">(Games and play objects) Sporting goods</option>
+			<option id="wt152">(Games and play objects) Stereo image viewer</option>
+			<option id="wt145">(Games and play objects) Thaumatropes</option>
+			<option id="wt146">(Games and play objects) Toy projectors</option>
+			<option id="wt147">(Games and play objects) Toys</option>
+			<option id="wt153">(Games and play objects) Zoetropes</option>
+			<option id="wt20">General photographic documentation</option>
+			<option id="wt154">(General photographic documentation) Behind-the-scenes photographs</option>
+			<option id="wt155">(General photographic documentation) Equipment photographs</option>
+			<option id="wt156">(General photographic documentation) Frame enlargements</option>
+			<option id="wt157">(General photographic documentation) Frame grabs</option>
+			<option id="wt158">(General photographic documentation) Marketing event photographs</option>
+			<option id="wt159">(General photographic documentation) Merchandise photographs</option>
+			<option id="wt160">(General photographic documentation) Studio site photographs</option>
+			<option id="wt161">(General photographic documentation) Theater site photographs</option>
+			<option id="wt21">General production documentation</option>
+			<option id="wt162">(General production documentation) Call sheets</option>
+			<option id="wt163">(General production documentation) Continuities</option>
+			<option id="wt458">(General production documentation) Costume continuity notes</option>
+			<option id="wt164">(General production documentation) General production records</option>
+			<option id="wt165">(General production documentation) Location site photographs</option>
+			<option id="wt166">(General production documentation) Production reports</option>
+			<option id="wt550">(General production documentation) Production research material</option>
+			<option id="wt167">(General production documentation) Production schedules</option>
+			<option id="wt168">(General production documentation) Technique sample photographs</option>
+			<option id="wt169">Laboratory equipment</option>
+			<option id="wt170">(Laboratory equipment) Cleaning equipment</option>
+			<option id="wt171">(Laboratory equipment) Conditioning equipment</option>
+			<option id="wt173">(Laboratory equipment) Development equipment</option>
+			<option id="wt172">(Laboratory equipment) Duplication equipment</option>
+			<option id="wt174">(Laboratory equipment) Printing equipment</option>
+			<option id="wt175">Lighting equipment</option>
+			<option id="wt176">(Lighting equipment) Bulbs</option>
+			<option id="wt177">(Lighting equipment) Carbon arc lamps</option>
+			<option id="wt178">(Lighting equipment) Diffusers</option>
+			<option id="wt179">(Lighting equipment) Electric switchgear</option>
+			<option id="wt473">(Lighting equipment) Gels</option>
+			<option id="wt180">(Lighting equipment) Lamp stands</option>
+			<option id="wt181">(Lighting equipment) Lamps</option>
+			<option id="wt182">(Lighting equipment) Light meters</option>
+			<option id="wt12">Makeup, hair, and grooming materials</option>
+			<option id="wt38">(Makeup, hair, and grooming materials) Combs and hairbrushes</option>
+			<option id="wt40">(Makeup, hair, and grooming materials) Hair accessories</option>
+			<option id="wt39">(Makeup, hair, and grooming materials) Hair design tools</option>
+			<option id="wt95">(Makeup, hair, and grooming materials) Life masks</option>
+			<option id="wt43">(Makeup, hair, and grooming materials) Makeup</option>
+			<option id="wt462">(Makeup, hair, and grooming materials) Makeup appliances and prosthetics</option>
+			<option id="wt463">(Makeup, hair, and grooming materials) Makeup reconstructions</option>
+			<option id="wt44">(Makeup, hair, and grooming materials) Makeup tools</option>
+			<option id="wt464">(Makeup, hair, and grooming materials) Masks</option>
+			<option id="wt549">(Makeup, hair, and grooming materials) Mold</option>
+			<option id="wt45">(Makeup, hair, and grooming materials) Perfume and cologne</option>
+			<option id="wt314">(Makeup, hair, and grooming materials) Prostheses (non-facial)</option>
+			<option id="wt46">(Makeup, hair, and grooming materials) Toiletry materials</option>
+			<option id="wt47">(Makeup, hair, and grooming materials) Wig design tools</option>
+			<option id="wt48">(Makeup, hair, and grooming materials) Wigs and hairpieces</option>
+			<option id="wt183">Models</option>
+			<option id="wt184">(Models) Matte paintings</option>
+			<option id="wt185">(Models) Miniatures</option>
+			<option id="wt186">(Models) Scale models</option>
+			<option id="wt74">(Models) Set models</option>
+			<option id="wt187">(Models) Study models</option>
+			<option id="wt188">Motion picture cameras and related equipment</option>
+			<option id="wt529">(Motion picture cameras and related equipment) Blimp</option>
+			<option id="wt189">(Motion picture cameras and related equipment) Cranks</option>
+			<option id="wt459">(Motion picture cameras and related equipment) Dollies</option>
+			<option id="wt190">(Motion picture cameras and related equipment) Electric rheostats</option>
+			<option id="wt191">(Motion picture cameras and related equipment) Lenses</option>
+			<option id="wt192">(Motion picture cameras and related equipment) Magazines</option>
+			<option id="wt520">(Motion picture cameras and related equipment) Motion picture camera accessories</option>
+			<option id="wt193">(Motion picture cameras and related equipment) Motion picture cameras</option>
+			<option id="wt194">(Motion picture cameras and related equipment) Pedestals</option>
+			<option id="wt195">(Motion picture cameras and related equipment) Shutters</option>
+			<option id="wt196">(Motion picture cameras and related equipment) Spreaders</option>
+			<option id="wt198">(Motion picture cameras and related equipment) Switching power supplies</option>
+			<option id="wt197">(Motion picture cameras and related equipment) Tripods</option>
+			<option id="wt199">Motion picture projectors, viewers, and related equipment</option>
+			<option id="wt200">(Motion picture projectors, viewers, and related equipment) Amplifiers</option>
+			<option id="wt474">(Motion picture projectors, viewers, and related equipment) Bulbs</option>
+			<option id="wt475">(Motion picture projectors, viewers, and related equipment) Gear heads</option>
+			<option id="wt201">(Motion picture projectors, viewers, and related equipment) Kinetoscopes</option>
+			<option id="wt202">(Motion picture projectors, viewers, and related equipment) Lamphouses</option>
+			<option id="wt476">(Motion picture projectors, viewers, and related equipment) Lenses</option>
+			<option id="wt203">(Motion picture projectors, viewers, and related equipment) Loudspeakers</option>
+			<option id="wt521">(Motion picture projectors, viewers, and related equipment) Motion picture projector accessories</option>
+			<option id="wt548">(Motion picture projectors, viewers, and related equipment) Motion picture projector head</option>
+			<option id="wt204">(Motion picture projectors, viewers, and related equipment) Motion picture projectors</option>
+			<option id="wt449">(Motion picture projectors, viewers, and related equipment) Mutoscope reels</option>
+			<option id="wt35">(Motion picture projectors, viewers, and related equipment) Mutoscopes</option>
+			<option id="wt477">(Motion picture projectors, viewers, and related equipment) Pedestals</option>
+			<option id="wt478">(Motion picture projectors, viewers, and related equipment) Shutters</option>
+			<option id="wt524">(Motion picture projectors, viewers, and related equipment) Spirographs</option>
+			<option id="wt479">(Motion picture projectors, viewers, and related equipment) Switching power supplies</option>
+			<option id="wt205">Moving image media</option>
+			<option id="wt206">(Moving image media) Behind-the-scenes footage</option>
+			<option id="wt544">(Moving image media) Digital media</option>
+			<option id="wt523">(Moving image media) Film and video stock</option>
+			<option id="wt526">(Moving image media) Film leaders</option>
+			<option id="wt207">(Moving image media) Motion picture films</option>
+			<option id="wt208">(Moving image media) Trailers</option>
+			<option id="wt209">(Moving image media) Video recordings</option>
+			<option id="wt210">Novelties and ephemera</option>
+			<option id="wt211">(Novelties and ephemera) Coins</option>
+			<option id="wt532">(Novelties and ephemera) Collectible replica</option>
+			<option id="wt212">(Novelties and ephemera) Decals</option>
+			<option id="wt213">(Novelties and ephemera) Emblems</option>
+			<option id="wt214">(Novelties and ephemera) General novelties</option>
+			<option id="wt428">(Novelties and ephemera) Labels</option>
+			<option id="wt426">(Novelties and ephemera) Magnets</option>
+			<option id="wt215">(Novelties and ephemera) Medals</option>
+			<option id="wt427">(Novelties and ephemera) Milkcaps</option>
+			<option id="wt424">(Novelties and ephemera) Party favors</option>
+			<option id="wt514">(Novelties and ephemera) Passes</option>
+			<option id="wt216">(Novelties and ephemera) Pennants</option>
+			<option id="wt217">(Novelties and ephemera) Plaques</option>
+			<option id="wt218">(Novelties and ephemera) Postage stamps</option>
+			<option id="wt445">(Novelties and ephemera) Souvenir spoons</option>
+			<option id="wt220">(Novelties and ephemera) Souvenirs</option>
+			<option id="wt221">(Novelties and ephemera) Stickers</option>
+			<option id="wt429">(Novelties and ephemera) Tags</option>
+			<option id="wt453">Oral Histories</option>
+			<option id="wt454">(Oral Histories) From Harlem to Hollywood</option>
+			<option id="wt455">(Oral Histories) New York Motion Picture Industry</option>
+			<option id="wt25">Portraits</option>
+			<option id="wt230">(Portraits) Group portraits</option>
+			<option id="wt229">(Portraits) Individual portraits</option>
+			<option id="wt231">Postcards and other paper cards</option>
+			<option id="wt430">(Postcards and other paper cards) Business cards</option>
+			<option id="wt232">(Postcards and other paper cards) Cigarette cards</option>
+			<option id="wt233">(Postcards and other paper cards) Collecting cards</option>
+			<option id="wt431">(Postcards and other paper cards) Coupons</option>
+			<option id="wt234">(Postcards and other paper cards) Greeting cards</option>
+			<option id="wt433">(Postcards and other paper cards) Membership cards</option>
+			<option id="wt236">(Postcards and other paper cards) Postcards</option>
+			<option id="wt22">Posters and related display materials</option>
+			<option id="wt24">(Posters and related display materials) Banners</option>
+			<option id="wt23">(Posters and related display materials) Lobby cards</option>
+			<option id="wt480">(Posters and related display materials) Marquees</option>
+			<option id="wt238">(Posters and related display materials) Pinups</option>
+			<option id="wt481">(Posters and related display materials) Placards</option>
+			<option id="wt239">(Posters and related display materials) Posters</option>
+			<option id="wt482">(Posters and related display materials) Signs</option>
+			<option id="wt240">(Posters and related display materials) Window cards</option>
+			<option id="wt241">Promotional materials</option>
+			<option id="wt242">(Promotional materials) Ad sheets</option>
+			<option id="wt243">(Promotional materials) Advertisements</option>
+			<option id="wt244">(Promotional materials) Campaign books</option>
+			<option id="wt543">(Promotional materials) Press card</option>
+			<option id="wt245">(Promotional materials) Press kits</option>
+			<option id="wt246">(Promotional materials) Pressbooks</option>
+			<option id="wt247">(Promotional materials) Souvenir books</option>
+			<option id="wt248">Props, scenery, and related construction materials</option>
+			<option id="wt249">(Props, scenery, and related construction materials) Backdrops</option>
+			<option id="wt250">(Props, scenery, and related construction materials) Grip equipment</option>
+			<option id="wt251">(Props, scenery, and related construction materials) Scenery</option>
+			<option id="wt252">(Props, scenery, and related construction materials) Stage props</option>
+			<option id="wt256">Records</option>
+			<option id="wt257">(Records) Administrative records</option>
+			<option id="wt258">(Records) Bookkeeping records</option>
+			<option id="wt435">(Records) Certificates</option>
+			<option id="wt546">(Records) Correspondence</option>
+			<option id="wt259">(Records) Personal papers</option>
+			<option id="wt260">(Records) Personnel records</option>
+			<option id="wt261">(Records) Sales records</option>
+			<option id="wt262">(Records) Shipping records</option>
+			<option id="wt263">Reference books, manuals, and pamphlets</option>
+			<option id="wt264">(Reference books, manuals, and pamphlets) General manuals</option>
+			<option id="wt483">(Reference books, manuals, and pamphlets) Maps</option>
+			<option id="wt265">(Reference books, manuals, and pamphlets) Pamphlets</option>
+			<option id="wt266">(Reference books, manuals, and pamphlets) Reference books</option>
+			<option id="wt267">(Reference books, manuals, and pamphlets) Technical manuals</option>
+			<option id="wt268">Sales catalogs and related materials</option>
+			<option id="wt269">(Sales catalogs and related materials) Brochures</option>
+			<option id="wt270">(Sales catalogs and related materials) Catalogs</option>
+			<option id="wt505">(Sales catalogs and related materials) Directories</option>
+			<option id="wt484">(Sales catalogs and related materials) Fliers</option>
+			<option id="wt253">Scene stills</option>
+			<option id="wt254">(Scene stills) Film stills</option>
+			<option id="wt255">(Scene stills) Television stills</option>
+			<option id="wt541">(Scene stills) Time-based work still</option>
+			<option id="wt271">Scrapbooks, clippings, and albums</option>
+			<option id="wt438">(Scrapbooks, clippings, and albums) Autograph albums</option>
+			<option id="wt273">(Scrapbooks, clippings, and albums) Clippings</option>
+			<option id="wt437">(Scrapbooks, clippings, and albums) Diaries</option>
+			<option id="wt439">(Scrapbooks, clippings, and albums) Photograph albums</option>
+			<option id="wt440">(Scrapbooks, clippings, and albums) Postcard albums</option>
+			<option id="wt274">(Scrapbooks, clippings, and albums) Scrapbooks</option>
+			<option id="wt441">(Scrapbooks, clippings, and albums) Stamp albums</option>
+			<option id="wt275">Scripts and related materials</option>
+			<option id="wt343">(Scripts and related materials) Intertitles</option>
+			<option id="wt278">(Scripts and related materials) Scripts</option>
+			<option id="wt485">(Scripts and related materials) Title cards</option>
+			<option id="wt279">(Scripts and related materials) Treatments</option>
+			<option id="wt280">Slide projectors, slides, and related material</option>
+			<option id="wt281">(Slide projectors, slides, and related material) Advertising slides</option>
+			<option id="wt282">(Slide projectors, slides, and related material) Atmospheric slides</option>
+			<option id="wt283">(Slide projectors, slides, and related material) Lantern slides</option>
+			<option id="wt284">(Slide projectors, slides, and related material) Magic lanterns</option>
+			<option id="wt516">(Slide projectors, slides, and related material) Personality slides</option>
+			<option id="wt285">(Slide projectors, slides, and related material) Preview slides</option>
+			<option id="wt286">(Slide projectors, slides, and related material) Slide projectors</option>
+			<option id="wt287">(Slide projectors, slides, and related material) Song slides</option>
+			<option id="wt288">(Slide projectors, slides, and related material) Special message slides</option>
+			<option id="wt289">Sound</option>
+			<option id="wt513">(Sound) CD Liners</option>
+			<option id="wt290">(Sound) Cue sheets</option>
+			<option id="wt442">(Sound) Player piano rolls</option>
+			<option id="wt293">(Sound) Scores</option>
+			<option id="wt294">(Sound) Sheet music</option>
+			<option id="wt295">(Sound) Songbooks</option>
+			<option id="wt296">(Sound) Sound effects recordings</option>
+			<option id="wt297">(Sound) Sound recordings</option>
+			<option id="wt298">(Sound) Sound tracks</option>
+			<option id="wt299">(Sound) Soundtrack album</option>
+			<option id="wt300">Sound recording equipment</option>
+			<option id="wt486">(Sound recording equipment) Amplifiers</option>
+			<option id="wt301">(Sound recording equipment) Dubbers</option>
+			<option id="wt302">(Sound recording equipment) Magnetic sound recording equipment</option>
+			<option id="wt303">(Sound recording equipment) Microphone booms</option>
+			<option id="wt304">(Sound recording equipment) Microphones</option>
+			<option id="wt305">(Sound recording equipment) Optical sound recording equipment</option>
+			<option id="wt306">(Sound recording equipment) Sound effects devices</option>
+			<option id="wt307">(Sound recording equipment) Sound effects software</option>
+			<option id="wt542">(Sound recording equipment) Sound recording support equipment</option>
+			<option id="wt308">(Sound recording equipment) Sound-on-disc recording equipment</option>
+			<option id="wt309">Special effects materials</option>
+			<option id="wt310">(Special effects materials) Blue-screen equipment</option>
+			<option id="wt313">(Special effects materials) Motion capture equipment</option>
+			<option id="wt315">(Special effects materials) Special effects devices</option>
+			<option id="wt316">(Special effects materials) Special effects software</option>
+			<option id="wt317">Specialty photographs</option>
+			<option id="wt318">(Specialty photographs) Motion photographs</option>
+			<option id="wt319">(Specialty photographs) Personal photographs</option>
+			<option id="wt320">(Specialty photographs) Stereopticons</option>
+			<option id="wt321">Television cameras and related equipment</option>
+			<option id="wt322">(Television cameras and related equipment) Capacitors</option>
+			<option id="wt528">(Television cameras and related equipment) Dolly</option>
+			<option id="wt323">(Television cameras and related equipment) Kinescope equipment</option>
+			<option id="wt487">(Television cameras and related equipment) Lenses</option>
+			<option id="wt324">(Television cameras and related equipment) Mixing circuits</option>
+			<option id="wt488">(Television cameras and related equipment) Pedestals</option>
+			<option id="wt489">(Television cameras and related equipment) Spreaders</option>
+			<option id="wt490">(Television cameras and related equipment) Switching power supplies</option>
+			<option id="wt325">(Television cameras and related equipment) Telecine equipment</option>
+			<option id="wt326">(Television cameras and related equipment) Television camera tubes</option>
+			<option id="wt327">(Television cameras and related equipment) Television cameras</option>
+			<option id="wt328">(Television cameras and related equipment) Transistors</option>
+			<option id="wt491">(Television cameras and related equipment) Tripods</option>
+			<option id="wt329">Television receivers and related equipment</option>
+			<option id="wt330">(Television receivers and related equipment) Cable television equipment and supplies</option>
+			<option id="wt332">(Television receivers and related equipment) Radio transmission equipment</option>
+			<option id="wt333">(Television receivers and related equipment) Remote controls</option>
+			<option id="wt334">(Television receivers and related equipment) Satellite television equipment and supplies</option>
+			<option id="wt335">(Television receivers and related equipment) Television antenna systems</option>
+			<option id="wt540">(Television receivers and related equipment) Television receiver related equipment</option>
+			<option id="wt336">(Television receivers and related equipment) Television receivers</option>
+			<option id="wt331">(Television receivers and related equipment) Vacuum tubes</option>
+			<option id="wt337">Testing and repair equipment</option>
+			<option id="wt338">(Testing and repair equipment) Motion picture repair equipment</option>
+			<option id="wt339">(Testing and repair equipment) Motion picture testing equipment</option>
+			<option id="wt340">(Testing and repair equipment) Video system repair equipment</option>
+			<option id="wt341">(Testing and repair equipment) Video system testing equipment</option>
+			<option id="wt344">Video cameras and related equipment</option>
+			<option id="wt492">(Video cameras and related equipment) Lenses</option>
+			<option id="wt493">(Video cameras and related equipment) Spreaders</option>
+			<option id="wt494">(Video cameras and related equipment) Switching power supplies</option>
+			<option id="wt495">(Video cameras and related equipment) Tripods</option>
+			<option id="wt345">(Video cameras and related equipment) Video cameras</option>
+			<option id="wt498">Video games</option>
+			<option id="wt499">(Video games) Arcade games</option>
+			<option id="wt500">(Video games) Computer game software</option>
+			<option id="wt501">(Video games) Handheld games</option>
+			<option id="wt502">(Video games) Video game console peripherals</option>
+			<option id="wt503">(Video games) Video game consoles</option>
+			<option id="wt504">(Video games) Video game software</option>
+			<option id="wt346">Video players, recorders and related equipment</option>
+			<option id="wt347">(Video players, recorders and related equipment) Analog video players and recorders</option>
+			<option id="wt348">(Video players, recorders and related equipment) Digital media players and recorders</option>
+			<option id="wt496">(Video players, recorders and related equipment) Remote controls</option>
+			<option id="wt497">(Video players, recorders and related equipment) Switching power supplies</option>
+			<option id="wt522">(Video players, recorders and related equipment) Video player and recorder related equipment</option>
+		</options>
+	</instance>
+	<instance id="vocab-organizationtype">
+		<web-url>organizationtype</web-url>
+		<title-ref>organizationtype</title-ref>
+		<title>Organization Types</title>
+		<options>
+			<option id="corporatebody">corporate body</option>
+			<option id="family">family</option>
+			<option id="repository">repository</option>
+			<option id="studio">studio</option>
+			<option id="workshop">workshop</option>
+		</options>
+	</instance>
+</root>

@@ -1,0 +1,18 @@
+<record id="work" type="authority">
+    <section id="workAuthorityInformation">
+    	<repeat id="workDateGroupList/workDateGroup">
+            <!-- custom workStructuredDate module -->
+    		<group id="workDate" xxx-services-no-repeat="true" 
+    			ui-type="groupfield/structureddate" primarykey="dateDisplayDate"
+    			ui-search="range" ui-func="cspace.workStructuredDate"/>
+    	</repeat>
+        <repeat id="creatorGroupList/creatorGroup">
+            <!-- change autocomplete to only use person-person,person-person_shared -->
+            <field id="creator" ui-search="repeatable" autocomplete="person-person,person-person_shared"/>
+        </repeat>
+        <repeat id="publisherGroupList/publisherGroup">
+            <!-- change autocomplete to only use person-person,person-person_shared -->
+            <field id="publisher" ui-search="repeatable" autocomplete="person-person,person-person_shared"/>
+        </repeat>
+    </section>
+</record>
