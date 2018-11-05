@@ -4,8 +4,8 @@
         collectionobjects_variablemedia:http://collectionspace.org/services/collectionobject/domain/collectionobject,collectionobjects_variablemedia
     </services-record-path>
     <section id="descriptionInformation">
-
-        <repeat id="contentWorksList/contentWorksGroup" section="variablemedia">
+        <!-- renaming contentWorksList to vmContentWorksList -->
+        <repeat id="vmContentWorksList/vmContentWorksGroup" section="variablemedia">
             <field id="contentWork" section="variablemedia"
                 autocomplete="work-work,work-work_shared,work-cona_work" />
             <field id="contentWorkType" section="variablemedia"
