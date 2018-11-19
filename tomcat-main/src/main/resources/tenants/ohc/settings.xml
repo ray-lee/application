@@ -55,7 +55,7 @@
 				<domain>ohc</domain>
 				<version>0.1</version>
 				<display-name>CollectionSpace ohcpology Tenant</display-name>
-				<create-disabled>false</create-disabled>
+				<create-disabled>${CSPACE_OHC_CREATE_DISABLED_OPT}</create-disabled>
 			</tenant>
 			<repository>
 				<domain>ohc</domain>
