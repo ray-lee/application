@@ -8,5 +8,19 @@
                             <option id="loanout" sample="LO2018-001">Loan Out</option>
                         </options>
                     </field>
+                    <field id="loanPurpose" ui-search="repeatable" seperate_ui_container="true">
+                        <selector>loanOut-loanPurpose</selector>
+                        <options>
+                            <option id="" default="yes">Please select a value</option>
+                            <option id="exhibition">Exhibition</option>
+                            <option id="campusloan">Campus Loan</option>
+                            <option id="research">Research</option>
+                            <option id="scientificorexhibitpreparation">Scientific or exhibit preparation</option>
+                            <option id="analysis">Analysis</option>
+                            <option id="photography">Photography</option>
+                            <option id="conservationotherrequestedservices">Conservation or other requested services</option>
+                            <option id="longtermcollectionsmanagementandstorage">Long-term collections management and storage</option>
+                        </options>
+                    </field>
                 </section>
             </record>
