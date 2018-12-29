@@ -12,6 +12,17 @@
     </instances>
 
 	<section id="identificationInformation">
+		<field id="objectNumber" ui-search="repeatable" chooser="yes" in-title="yes" in-tab="yes"
+		display-name="yes" mini="number,search,list,relate" seperate_ui_container="true" services-refnameDisplayName="true">
+			<selector>object-identification-object-number</selector>
+      		<title-selector>titleBar-object-identification-object-number</title-selector>
+			<!-- update options -->
+			<options>
+				<option id="intake" sample="IN2019.001">Intake</option>
+				<option id="accession" sample="2019.001.0001">Accession</option>
+				<option id="mmi-loanin" sample="IL2019.001.0001">Loans In</option>
+			</options>
+		</field>
 		<field id="administrativeRemarks" section="mmi" datatype="largetext">
 			<selector>object-identification-administrativeRemarks</selector>
 		</field>

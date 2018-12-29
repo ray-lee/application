@@ -4,6 +4,17 @@
         acquisitions_mmi:http://collectionspace.org/services/acquisition/local/mmi,acquisitions_mmi
     </services-record-path>
     <section id="acquisitionInformation">
+        <field id="acquisitionReferenceNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <selector>acquisition-numberPatternChooser-reference-number</selector>
+            <title-selector>titleBar-acquisition-reference-number</title-selector>
+            <container-selector>acquisition-reference-number-patternChooserContainer</container-selector>
+            <!-- update options -->
+            <options>
+                <option id="accession-activity" sample="2019.001">Accession</option>
+                <!--option id="archive" sample="AR2019.001">Archives</option-->
+                <!--option id="library" sample="LIB2019.001">Library</option-->
+            </options>
+        </field>
         <field id="mmiAccessionDate" datatype="date" ui-type="date"
                 section="mmi" >
             <container-selector>acquisition-accessionDateGroup-container</container-selector>

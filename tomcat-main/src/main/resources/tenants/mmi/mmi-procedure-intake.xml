@@ -1,5 +1,16 @@
 <record id="intake">
     <section id="objectEntryInformation">
+        <field id="entryNumber" chooser="yes" in-title="yes" ui-search="repeatable" mini="number,search,list,relate" 
+            seperate_ui_container="true">
+            <selector>intake-entry-number</selector>
+            <title-selector>titleBar-intake-entry-number</title-selector>
+            <!-- update options -->
+            <options>
+                <option id="mmi-intake" sample="PA2019.001">Intake</option>
+                <!--option id="study" sample="ST2019.001">Study</option-->
+                <!--option id="evaluation" sample="EV2019.001">Evaluation</option-->
+            </options>
+        </field>
         <field id="entryReason" ui-search="repeatable" seperate_ui_container="true">
             <selector>intake-entry-reason</selector>
             <!-- changed options list  -->

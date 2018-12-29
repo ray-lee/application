@@ -62,7 +62,7 @@
 			<include src="base-other-dimension.xml,mmi-other-dimension.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-other-address.xml"/>
 			<include src="base-other-hierarchy.xml"/>
-			<include src="base-other-idgenerator.xml"/>
+			<include src="base-other-idgenerator.xml,mmi-other-idgenerator.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-other-structureddate.xml,mmi-other-structureddate.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-other-termlist.xml"/>
 			<include src="base-other-termlistitem.xml"/>
