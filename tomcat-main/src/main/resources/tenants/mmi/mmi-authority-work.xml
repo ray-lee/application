@@ -14,5 +14,8 @@
             <!-- change autocomplete to only use person-person,person-person_shared -->
             <field id="publisher" ui-search="repeatable" autocomplete="person-person,person-person_shared"/>
         </repeat>
+
+        <!-- adding ui-search attribute -->
+        <field id="genre" autocomplete="vocab-workgenre" ui-type="enum" ui-search="repeatable" />
     </section>
 </record>
