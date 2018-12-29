@@ -60,11 +60,14 @@
 		-->
 		<repeat id="otherNumberList/otherNumber">
 			<selector>object-identification-otherNumbers</selector>
-			<field id="numberValue" in-tab="yes">
+			<!-- adding ui-search attribute -->
+			<field id="numberValue" in-tab="yes" ui-search="repeatable">
 				<selector>object-identification-other-number</selector>
 			</field>
 			<!-- change autocomplete to use vocab-numbertype -->
-			<field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum" seperate_ui_container="true">
+			<!-- adding ui-search attribute -->
+			<field id="numberType" in-tab="yes" autocomplete="vocab-numbertype" ui-type="enum" ui-search="repeatable" 
+				seperate_ui_container="true">
 				<selector>object-identification-other-number-type</selector>
 			</field>
 		</repeat>
