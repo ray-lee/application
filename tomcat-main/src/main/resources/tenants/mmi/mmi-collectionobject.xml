@@ -1,16 +1,6 @@
 <record id="collection-object" is-extension="true" generate-services-schema="true" type="record">
 	<services-record-path id="mmi"> collectionobjects_mmi:http://collectionspace.org/services/collectionobject/local/mmi,collectionobjects_mmi </services-record-path>
 
-	<instances id="location">
-        <instance id="location-location">
-            <web-url>location</web-url>
-            <title-ref>location</title-ref>
-            <!-- deactivating non-preferred terms in term completion -->
-            <nptAllowed>false</nptAllowed>
-            <title>Local Storage Locations</title>
-        </instance>
-    </instances>
-
 	<section id="identificationInformation">
 		<field id="objectNumber" ui-search="repeatable" chooser="yes" in-title="yes" in-tab="yes"
 		display-name="yes" mini="number,search,list,relate" seperate_ui_container="true" services-refnameDisplayName="true">
