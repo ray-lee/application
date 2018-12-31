@@ -1,7 +1,7 @@
 <record id="movement">
     <section id="locationMovementInformation">
-        <!-- change autocomplete to only use person-person,location-location -->
-        <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location,person-person">
+        <!-- change autocomplete to only use location-location -->
+        <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location">
             <title-selector>titleBar-currentLocation</title-selector>
         </field>
     </section>
