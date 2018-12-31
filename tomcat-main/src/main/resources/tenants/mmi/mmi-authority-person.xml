@@ -2,11 +2,13 @@
     <services-record-path id="mmi">
         persons_mmi:http://collectionspace.org/services/person/local/mmi,persons_mmi
     </services-record-path>
-   <instances id="person">
+    <instances id="person">
         <instance id="person-person">
             <web-url>person</web-url>
             <title-ref>person</title-ref>
             <title>Local Entity</title>
+            <!-- deactivating non-preferred terms in term completion -->
+            <nptAllowed>false</nptAllowed>
         </instance>
     </instances>
     <section id="personNameAuthorityInformation">
