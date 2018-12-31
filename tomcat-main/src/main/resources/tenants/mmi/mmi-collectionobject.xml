@@ -100,6 +100,9 @@
 				<option id="completeddonotpublish">Completed/Do Not Publish</option>
 			</options>
 		</field>
+		<!-- adding ui-search attribute -->
+		<field id="computedCurrentLocation" ui-type="valueDeURNed" services-readonly="true" ui-search="single" 
+			authref-in-services="true"></field>
 	</section>
 
 	<section id="descriptionInformation">
