@@ -1,4 +1,8 @@
-<record id="loanin">
+<record id="loanin" is-extension="true" type="record,procedure">
+
+    <services-record-path id="mmi">
+        loansin_mmi:http://collectionspace.org/services/loanin/local/mmi,loansin_mmi
+    </services-record-path>
     <section id="loaninInformation">
     	<field id="loanInNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" 
     		seperate_ui_container="true">
@@ -16,5 +20,6 @@
                 <selector>loanIn-lender</selector>
             </field>
         </repeat>
+        <field id="loanInCreditLine" section="mmi"></field>
     </section>
 </record>
