@@ -11,6 +11,7 @@
 				<option id="private">Private</option>
 			</options>
 		</field>
+		<field id="mediaView" autocomplete="vocab-mediaview" ui-search="single" ui-type="enum" section="mmi"></field>
 		<!-- change autocomplete to only use person-person -->
 		<field id="creator" ui-search="repeatable" autocomplete="person-person"></field>
 		<!-- change autocomplete to only use person-person -->

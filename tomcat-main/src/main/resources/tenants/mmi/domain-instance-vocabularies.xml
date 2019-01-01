@@ -722,4 +722,16 @@
 			<option id="workshop">workshop</option>
 		</options>
 	</instance>
+	<instance id="vocab-mediaview">
+		<web-url>mediaview</web-url>
+		<title-ref>mediaview</title-ref>
+		<title>Media View</title>
+		<options>
+			<option id="overview">overview</option>
+			<option id="right">right</option>
+			<option id="left">left</option>
+			<option id="recto">recto</option>
+			<option id="verso">verso</option>
+		</options>
+	</instance>
 </root>
