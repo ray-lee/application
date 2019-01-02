@@ -8,4 +8,15 @@
             <title>Associated Concepts</title>
         </instance>
     </instances>
+
+    <section id="conceptAuthorityInformation">
+        <repeat id="citationGroupList/citationGroup">
+            <!-- add autocomplete to use citation-citation -->
+            <field id="citationSource" autocomplete="citation-citation"></field>
+        </repeat>
+        <repeat id="additionalSourceGroupList/additionalSourceGroup">
+            <!-- add autocomplete to use citation-citation -->
+            <field id="additionalSource" autocomplete="citation-citation"></field>
+        </repeat>
+    </section>
 </record>
