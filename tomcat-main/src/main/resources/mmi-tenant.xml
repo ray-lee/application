@@ -23,7 +23,7 @@
 			<include src="base-procedure-loanin.xml,mmi-procedure-loanin.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-loanout.xml,mmi-procedure-loanout.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-media.xml,mmi-procedure-media.xml" merge="xmlmerge-mmi.properties"/>
-			<include src="base-procedure-valuationcontrol.xml"/>
+			<include src="base-procedure-valuationcontrol.xml,mmi-procedure-valuationcontrol.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-movement.xml,mmi-procedure-movement.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-objectexit.xml,mmi-procedure-objectexit.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-conservation.xml"/>

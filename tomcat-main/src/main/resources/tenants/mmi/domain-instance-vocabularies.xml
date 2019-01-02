@@ -734,4 +734,15 @@
 			<option id="verso">verso</option>
 		</options>
 	</instance>
+	<instance id="vocab-valuetype">
+		<web-url>valuetype</web-url>
+		<title-ref>valuetype</title-ref>
+		<title>Value Type</title>
+		<options>
+			<option id="current_value">Current Value</option>
+			<option id="original_value">Original Value</option>
+			<option id="replacement_value">Replacement Value</option>
+			<option id="licensing_fee">Licensing Fee</option>
+		</options>
+	</instance>
 </root>
