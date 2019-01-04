@@ -1,4 +1,6 @@
 <record id="movement">
+    <!-- removing ability to lock records -->
+    <supportslocking>false</supportslocking>
     <section id="locationMovementInformation">
         <!-- change autocomplete to only use location-location -->
         <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location">
