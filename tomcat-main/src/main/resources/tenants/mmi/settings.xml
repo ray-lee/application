@@ -5,18 +5,18 @@
 		<tenant>42</tenant>
 		<tenantname>mmi</tenantname>
 		<cookievalidformins>60</cookievalidformins>
-		<!-- termLists, autocomplete instance lists, specs, and schemas,
-						 static UI elements, etc.
-						 will cache for a month (60*60*24*30) by default -->
-		<termlist-cache-timeout>2592000</termlist-cache-timeout>
-		<autocompletelist-cache-timeout>2592000</autocompletelist-cache-timeout>
-		<reportlist-cache-timeout>2592000</reportlist-cache-timeout>
+		<!-- termLists, autocomplete instance lists will cache for an hour (60*60) (3600) -->
+		<!-- specs, and schemas, static UI elements, etc. will cache for a week (60*60*24*7) (604800) -->
+		<!-- static UI elements, etc. will cache for a month (60*60*24*30) (2592000) -->
+		<termlist-cache-timeout>3600</termlist-cache-timeout>
+		<autocompletelist-cache-timeout>3600</autocompletelist-cache-timeout>
+		<reportlist-cache-timeout>3600</reportlist-cache-timeout>
 		<!-- This is for user-uploaded media, not static UI images -->
-		<uploaded-media-cache-timeout>2592000</uploaded-media-cache-timeout>
-		<uispecschema-cache-timeout>2592000</uispecschema-cache-timeout>
-		<ui-html-cache-timeout>2592000</ui-html-cache-timeout>
-		<ui-css-cache-timeout>2592000</ui-css-cache-timeout>
-		<ui-js-cache-timeout>2592000</ui-js-cache-timeout>
+		<uploaded-media-cache-timeout>604800</uploaded-media-cache-timeout>
+		<uispecschema-cache-timeout>604800</uispecschema-cache-timeout>
+		<ui-html-cache-timeout>604800</ui-html-cache-timeout>
+		<ui-css-cache-timeout>604800</ui-css-cache-timeout>
+		<ui-js-cache-timeout>604800</ui-js-cache-timeout>
 		<!-- This is for static UI images like icons, not uploaded images -->
 		<ui-media-cache-timeout>2592000</ui-media-cache-timeout>
 		<!-- This is for the message bundles properties -->
