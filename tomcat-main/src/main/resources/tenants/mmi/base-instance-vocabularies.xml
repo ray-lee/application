@@ -517,6 +517,7 @@
 			<option id="popular">popular name</option>
 		</options>
 	</instance>
+	<!-- altered persontermflag -->
 	<instance id="vocab-persontermflag">
 		<web-url>persontermflag</web-url>
 		<title-ref>persontermflag</title-ref>
@@ -524,6 +525,7 @@
 		<options>
 			<option id="birth">birth name</option>
 			<option id="pseudonym">pseudonym</option>
+			<option id="alternatespelling">alternate spelling</option>
 		</options>
 	</instance>
 	<instance id="vocab-placetermflag">
