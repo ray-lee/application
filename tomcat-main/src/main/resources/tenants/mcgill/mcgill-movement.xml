@@ -24,14 +24,17 @@
                             <option id="temporary">Temporary Move</option>
                         </options>
                     </field>
-                    <field id="movementMethod" ui-search="repeatable">
-                         <options>
-                             <option id="" default="yes">Please select a value</option>
-                             <option id="forklift">Forklift</option>
-                             <option id="handcarried">Handcarried</option>
-                             <option id="trolley">Trolley</option>
-                             <option id="transportvehicle">Transport Vehicle</option>
-                         </options>
-                    </field>
+                    <repeat id="movementMethods">
+                        <field id="movementMethod" ui-search="repeatable">
+                            <selector>movement-movementMethods</selector>
+                            <options>
+                                <option id="" default="yes">Please select a value</option>
+                                <option id="forklift">Forklift</option>
+                                <option id="handcarried">Handcarried</option>
+                                <option id="trolley">Trolley</option>
+                                <option id="transportvehicle">Transport Vehicle</option>
+                            </options>
+                        </field>
+                    </repeat>
                 </section>
             </record>
