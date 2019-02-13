@@ -19,7 +19,13 @@
 		<repeat id="determinationHistoryGroupList/determinationHistoryGroup" section="naturalhistory_extension">
 			<field id="determinationTaxon" section="naturalhistory_extension" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon"/>
 		</repeat>
-	</section>
+  </section>
+
+  <section id="objectProductionInformation">
+    <repeat id="namedTimePeriods">
+      <field id="namedTimePeriod" autocomplete="vocab-namedtimeperiods" ui-type="enum" section="ohc" />
+    </repeat>
+  </section>
 
 	<section id="descriptionInformation">
 		<!-- Add new apparelSize field -->

@@ -1,0 +1,16 @@
+            <record id="loanout" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
+                <section id="loanoutInformation">
+                    <repeat id="loanStatusGroupList/loanStatusGroup">
+                        <field id="loanStatus" ui-search="repeatable" autocomplete="vocab-lostatus" ui-type="enum">
+                            <selector>loanOut-loanedObjectStatus</selector>
+                        </field>
+                        <field id="loanStatusContact" autocomplete="person-person,person-person_shared"/>
+                        <field id="loanStatusDate" ui-type="date" datatype="date">
+                            <selector>loanOut-loanedObjectStatusDate</selector>
+                        </field>
+                        <field id="loanStatusNote">
+                            <selector>loanOut-loanedObjectStatusNote</selector>
+                        </field>
+                    </repeat>
+                </section>
+            </record>

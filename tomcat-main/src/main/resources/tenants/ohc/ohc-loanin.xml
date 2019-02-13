@@ -1,0 +1,10 @@
+<record id="loanin" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
+                <section id="loaninInformation">
+                    <repeat id="loanStatusGroupList/loanStatusGroup">
+                        <field id="loanStatus" ui-search="repeatable" autocomplete="vocab-lostatus" ui-type="enum"></field>
+                        <field id="loanStatusContact" autocomplete="person-person,person-person_shared"></field>
+                        <field id="loanStatusDate" ui-type="date" datatype="date"></field>
+                        <field id="loanStatusNote"></field>
+                    </repeat>
+                </section>
+            </record>
