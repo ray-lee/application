@@ -9,6 +9,8 @@
 		<repeat id="objectNameList/objectNameGroup">
 			<field id="objectName" ui-search="repeatable" in-title="yes" mini="search,list,relate" autocomplete="concept-concept" />
 		</repeat>
+
+    <field id="namedCollection" autocomplete="work-work" section="ohc" />
 		
 		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
 		<repeat id="taxonomicIdentGroupList/taxonomicIdentGroup" section="naturalhistory_extension">
@@ -19,13 +21,29 @@
 		<repeat id="determinationHistoryGroupList/determinationHistoryGroup" section="naturalhistory_extension">
 			<field id="determinationTaxon" section="naturalhistory_extension" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon"/>
 		</repeat>
-	</section>
+  </section>
+
+  <section id="objectProductionInformation">
+    <repeat id="namedTimePeriods" section="ohc">
+      <field id="namedTimePeriod" autocomplete="vocab-namedtimeperiods" ui-type="enum" section="ohc" />
+    </repeat>
+
+    <repeat id="materialGroupList/materialGroup">
+      <field id="material" ui-search="repeatable" autocomplete="concept-material_ca" />
+      <field id="materialComponent" />
+      <field id="materialComponentNote" />
+      <field id="materialName" />
+      <field id="materialSource" />
+    </repeat>
+  </section>
 
 	<section id="descriptionInformation">
 		<!-- Add new apparelSize field -->
 		<repeat id="apparelSizes" section="ohc">
 			<field id="apparelSize" autocomplete="vocab-apparelsizes" ui-type="enum" section="ohc" />
 		</repeat>
+
+		<field id="majorTaxon" autocomplete="vocab-majortaxon" ui-type="enum" section="ohc" />
 	</section>
 	
 	<section id="associationInformation">

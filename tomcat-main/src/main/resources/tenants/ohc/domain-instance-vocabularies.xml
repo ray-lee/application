@@ -41,6 +41,50 @@
 			<option id="adultunisex">adult unisex</option>
 		</options>
 	</instance>
+
+  <instance id="vocab-namedtimeperiods">
+    <web-url>namedtimeperiods</web-url>
+    <title-ref>namedtimeperiods</title-ref>
+    <title>Named Time Periods</title>
+    <options>
+      <option id="18thcentury">18th century</option>
+      <option id="19thcentury">19th century</option>
+      <option id="20thcentury">20th century</option>
+      <option id="21stcentury">21st century</option>
+      <option id="archaic">Archaic</option>
+      <option id="earlyarchaic">Early Archaic</option>
+      <option id="earlyhistoric">Early Historic</option>
+      <option id="earlylatewoodland">early Late Woodland</option>
+      <option id="earlypaleoindian">Early Paleoindian</option>
+      <option id="earlywoodland">Early Woodland</option>
+      <option id="historic">Historic</option>
+      <option id="latearchaic">Late Archaic</option>
+      <option id="latemiddlewoodland">late Middle Woodland</option>
+      <option id="latepaleoindian">late Paleoindian</option>
+      <option id="lateprehistoric">Late Prehistoric</option>
+      <option id="latewoodland">Late Woodland</option>
+      <option id="middlearchaic">Middle Archaic</option>
+      <option id="middlewoodland">Middle Woodland</option>
+      <option id="modern">Modern</option>
+      <option id="paleoindian">Paleoindian</option>
+      <option id="prehistoric">Prehistoric</option>
+      <option id="woodland">Woodland</option>
+    </options>
+  </instance>
+
+  <instance id="vocab-majortaxon">
+    <web-url>majortaxon</web-url>
+    <title-ref>majortaxon</title-ref>
+    <title>Major Taxon Groups</title>
+    <options>
+      <option id="extinctfossil">Extinct/Fossil</option>
+      <option id="fungus">Fungus</option>
+      <option id="modernspecies">Modern Species</option>
+      <option id="rockmineral">Rock/Mineral</option>
+      <option id="underreview">under review</option>
+    </options>
+  </instance>
+
 	
 	<instance id="vocab-prodtechniquetype">
 		<web-url>prodtechniquetype</web-url>

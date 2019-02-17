@@ -1,0 +1,11 @@
+<record id="loanin" is-extension="true">
+              <services-record-path id="ohc">loansin_ohc:http://collectionspace.org/services/loansin/domain/ohc,loansin_ohc</services-record-path>
+                <section id="loaninInformation">
+                    <repeat id="loanStatusOHCGroupList/loanStatusOHCGroup" section="ohc">
+                        <field id="loanStatusOHC" ui-search="repeatable" autocomplete="vocab-lostatus" ui-type="enum" section="ohc"></field>
+                        <field id="loanStatusOHCContact" autocomplete="person-person" section="ohc"></field>
+                        <field id="loanStatusOHCDate" ui-type="date" datatype="date" section="ohc"></field>
+                        <field id="loanStatusOHCNote" section="ohc"></field>
+                    </repeat>
+                </section>
+            </record>
