@@ -1,16 +1,11 @@
-            <record id="loanout" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
+            <record id="loanout" is-extension="true">
+            <services-record-path id="ohc">loansout_ohc:http://collectionspace.org/services/loansout/domain/ohc,loansout_ohc</services-record-path>
                 <section id="loanoutInformation">
-                    <repeat id="loanStatusGroupList/loanStatusGroup">
-                        <field id="loanStatus" ui-search="repeatable" autocomplete="vocab-lostatus" ui-type="enum">
-                            <selector>loanOut-loanedObjectStatus</selector>
-                        </field>
-                        <field id="loanStatusContact" autocomplete="person-person,person-person_shared"/>
-                        <field id="loanStatusDate" ui-type="date" datatype="date">
-                            <selector>loanOut-loanedObjectStatusDate</selector>
-                        </field>
-                        <field id="loanStatusNote">
-                            <selector>loanOut-loanedObjectStatusNote</selector>
-                        </field>
+                    <repeat id="loanStatusOHCGroupList/loanStatusOHCGroup" section="ohc">
+                      <field id="loanStatusOHC" ui-search="repeatable" autocomplete="vocab-lostatus" ui-type="enum" section="ohc"/>
+                        <field id="loanStatusOHCContact" autocomplete="person-person,person-person_shared" section="ohc"/>
+                        <field id="loanStatusOHCDate" ui-type="date" datatype="date" section="ohc" />
+                        <field id="loanStatusOHCNote" section="ohc" />
                     </repeat>
                 </section>
             </record>
