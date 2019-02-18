@@ -14,16 +14,4 @@
             <title>Local Places</title>
         </instance>
     </instances>
-    <section id="placeAuthorityInformation">
-        <repeat id="placeOwnerGroupList/placeOwnerGroup">
-            <!-- removed org-org vocab -->
-            <field id="owner" autocomplete="person-person" ui-search="repeatable"/>
-        </repeat>
-    </section>
-    <section id="geoReferenceInformation">
-        <repeat id="placeGeoRefGroupList/placeGeoRefGroup">
-            <!-- removed org-org vocab -->
-            <field id="geoReferencedBy" autocomplete="person-person"/>
-        </repeat>
-    </section>
 </record>

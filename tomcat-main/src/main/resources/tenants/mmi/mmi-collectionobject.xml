@@ -112,7 +112,7 @@
         </repeat>
 		<section id="contentInformation">
 			<repeat id="contentEntityList/contentEntityGroup" section="mmi">
-				<field id="contentEntity" autocomplete="person-person" section="mmi">
+				<field id="contentEntity" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi">
 					<selector>object-description-contentEntity</selector>
 				</field>
 				<field id="contentEntityType" section="mmi">
@@ -171,8 +171,8 @@
                 ui-func="cspace.catalogingStructuredDate"/>
         </repeat>
 		<repeat id="objProdEntityList/objProdEntityGroup" section="mmi">
-			<!-- add autocomplete to only use person-person; remove ui-search -->
-			<field id="objProdEntity" autocomplete="person-person" section="mmi">
+			<!-- remove ui-search -->
+			<field id="objProdEntity" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi">
 				<selector>object-production-objProdEntity</selector>
 			</field>
 			<!-- add autocomplete to use vocab-productionrole -->
@@ -209,8 +209,7 @@
 		</field>
 		<section id="associationInformation">
 			<repeat id="assocOrganizationGroupList/assocOrganizationGroup">
-				<!-- add autocomplete to only use person-person -->
-				<field id="assocOrganization" autocomplete="person-person"></field>
+				<field id="assocOrganization" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared"></field>
 				<!-- add autocomplete to use vocab-associatedentitytype -->
 				<field id="assocOrganizationType" ui-type="enum" autocomplete="vocab-associatedentitytype"></field>
 				<field id="assocOrganizationNote"></field>

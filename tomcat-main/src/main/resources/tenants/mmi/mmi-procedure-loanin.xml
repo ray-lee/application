@@ -15,9 +15,9 @@
             </options>
         </field>
         <repeat id="lenderGroupList/lenderGroup">
-            <!-- change autocomplete to only use person-person -->
-            <field id="lender" ui-search="repeatable" autocomplete="person-person" in-title="yes" mini="summary,search,list">
-                <selector>loanIn-lender</selector>
+            <!-- update autocomplete to use organization vocabs -->
+            <field id="lendersContact" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared">
+                <selector>loanIn-lendersContact</selector>
             </field>
         </repeat>
         <field id="loanInCreditLine" section="mmi"></field>

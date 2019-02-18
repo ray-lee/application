@@ -17,8 +17,7 @@
                 </options>
             </field>
             <repeat id="dimensionSubGroupList/dimensionSubGroup">
-                <!-- removed autocomplate vocab -->
-                <field id="measuredBy" autocomplete="person-person"></field>
+                <field id="measuredBy" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared"></field>
                 <field id="dimension" seperate_ui_container="true">
                     <!-- adding new term 'quality' -->
                     <options>

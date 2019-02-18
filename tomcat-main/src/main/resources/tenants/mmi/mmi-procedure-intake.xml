@@ -21,14 +21,6 @@
                 <option id="loan">Loan</option>
             </options>
         </field>
-        <field id="currentOwner" in-title="yes" mini="summary,search,list,relate" ui-search="repeatable" autocomplete="person-person">
-            <!-- change autocomplete to only use person-person  -->
-            <selector>intake-current-owner</selector>
-        </field>
-        <field id="depositor" ui-search="repeatable" autocomplete="person-person">
-            <!-- change autocomplete to only use person-person  -->
-            <selector>intake-depositor</selector>
-        </field>
     </section>
     <section id="conditionInformation">
         <repeat id="conditionCheckMethods">
@@ -38,10 +30,6 @@
         <repeat id="conditionCheckReasons">
             <!-- remove autocomplete attribute  -->
             <field id="conditionCheckReason"></field>
-        </repeat>
-        <repeat id="conditionCheckersOrAssessors">
-            <!-- change autocomplete to only use person-person -->
-            <field id="conditionCheckerOrAssessor" autocomplete="person-person"></field>
         </repeat>
     </section>
 </record> 

@@ -1,8 +1,4 @@
 <record id="objectexit">
 	<section id="objectexitInformation">
-		<!-- change autocomplete to only use person-person -->
-	    <field id="currentOwner" ui-search="repeatable" autocomplete="person-person" mini="summary,list" in-title="yes"></field>
-	    <!-- change autocomplete to only use person-person -->
-	    <field id="depositor" ui-search="repeatable" autocomplete="person-person"></field>
 	</section>
 </record>

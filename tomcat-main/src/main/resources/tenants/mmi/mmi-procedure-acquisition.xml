@@ -37,21 +37,5 @@
             </options>
         </field>
         <field id="acquisitionExtent" section="mmi" datatype="largetext" />
-		<repeat id="acquisitionSources">
-            <!-- change autocomplete to only use person-person -->
-			<field id="acquisitionSource" mini="summary,search,list,relate" in-title="yes"
-				ui-search="repeatable" autocomplete="person-person">
-				<selector>acquisition-acquisitionSource</selector>
-			</field>
-		</repeat>
-        <repeat id="owners">
-            <!-- change autocomplete to only use person-person -->
-            <field id="owner" autocomplete="person-person"/>
-        </repeat>
-        <repeat id="acquisitionFundingList/acquisitionFunding">
-            <!-- change autocomplete to only use person-person -->
-            <field id="acquisitionFundingSource" autocomplete="person-person" ui-search="repeatable"/>
-        </repeat>
-		
     </section>
 </record>

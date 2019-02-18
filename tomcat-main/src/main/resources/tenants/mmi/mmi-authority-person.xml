@@ -14,7 +14,7 @@
     <section id="personNameAuthorityInformation">
         <repeat id="affiliatedPersonOrgGroupList/affiliatedPersonOrgGroup"
                 section="mmi">
-            <field id="affiliatedPersonOrg" autocomplete="person-person" section="mmi">
+            <field id="affiliatedPersonOrg" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi">
             </field>
             <field id="affiliatedPersonOrgType" section="mmi">
                 <options>
@@ -28,7 +28,7 @@
         </repeat>
         <field id="lifeSpan" section="mmi"/>
         <repeat id="orgContactNames" section="mmi">
-            <field id="orgContactName" autocomplete="person-person" section="mmi" />
+            <field id="orgContactName" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi" />
         	<selector>person-orgContactName</selector>
         </repeat>
         <repeat id="orgFunctions" section="mmi">
