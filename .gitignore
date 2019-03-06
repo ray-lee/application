@@ -20,3 +20,4 @@ target/
 war-entry/tmp/
 *.xlsx
 .vscode
+.factorypath
