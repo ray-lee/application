@@ -5,8 +5,6 @@
 	    <!-- Used by the Botanical Garden and Anthropology profiles -->
 	    <repeat id="taxonomicIdentGroupList/taxonomicIdentGroup" section="naturalhistory_extension">
 	        <field id="taxon" in-title="yes" ui-search="repeatable" mini="summary,search,list,relate" autocomplete="taxon-taxon" section="naturalhistory_extension" >
-	            <selector>taxonomic-identification-taxon</selector>
-	            <title-selector>titleBar-taxonomic-identification-taxon</title-selector>
 	        </field>
 	    	<repeat id="computedTaxonCommonNames" section="naturalhistory_extension">
 	    		<field id="computedTaxonCommonName" ui-search="repeatable" mini="search" section="naturalhistory_extension" />
