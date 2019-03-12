@@ -37,10 +37,10 @@
         <title-ref>uocmethods</title-ref>
         <title>Use of Collections Methods</title>
         <options>
-            <option id="class">Class</option>
-            <option id="exhibition">Exhibition</option>
-            <option id="publication">Publication</option>
-            <option id="research">Research</option>
+            <option id="class">class</option>
+            <option id="exhibition">exhibition</option>
+            <option id="publication">publication</option>
+            <option id="research">research</option>
         </options>
     </instance>
     <instance id="vocab-uocusertypes">
@@ -48,18 +48,18 @@
         <title-ref>uocusertypes</title-ref>
         <title>Use of Collections User Types</title>
         <options>
-            <option id="exhibitionorganizer">Exhibition organizer</option>
-            <option id="faculty">Faculty</option>
-            <option id="lecturer">Lecturer</option>
-            <option id="presenter">Presenter</option>
-            <option id="publisher">Publisher</option>
-            <option id="researcher">Researcher</option>
+            <option id="exhibitionorganizer">exhibition organizer</option>
+            <option id="faculty">faculty</option>
+            <option id="lecturer">lecturer</option>
+            <option id="presenter">presenter</option>
+            <option id="publisher">publisher</option>
+            <option id="researcher">researcher</option>
         </options>
     </instance>     
     <instance id="vocab-publishto">
         <web-url>publishto</web-url>
         <title-ref>publishto</title-ref>
-        <title>A publishing destination</title>
+        <title>Publishing Destination</title>
         <options>
             <option id="all">All</option>
             <option id="none">None</option>
@@ -590,6 +590,7 @@
             <option id="abbreviation">abbreviation</option>
             <option id="commercial">commercial</option>
             <option id="common">common</option>
+            <option id="scientific">scientific name</option>
         </options>
     </instance>
     <instance id="vocab-materialuse">
@@ -1149,7 +1150,7 @@
     <instance id="vocab-deaccessionapprovalgroup">
         <web-url>deaccessionapprovalgroup</web-url>
         <title-ref>deaccessionapprovalgroup</title-ref>
-        <title>Deaccession Approval Group</title>
+        <title>Approval Group</title>
         <options>
             <option id="collection_committee">collection committee</option>
             <option id="executive_committee">executive committee</option>
@@ -1159,7 +1160,7 @@
     <instance id="vocab-deaccessionapprovalstatus">
         <web-url>deaccessionapprovalstatus</web-url>
         <title-ref>deaccessionapprovalstatus</title-ref>
-        <title>Deaccession Approval Status</title>
+        <title>Approval Status</title>
         <options>
             <option id="approved">approved</option>
             <option id="not_approved">not approved</option>
