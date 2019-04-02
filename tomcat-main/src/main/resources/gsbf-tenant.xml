@@ -73,9 +73,6 @@
       <include src="base-other-batchoutput.xml"/>
       <include src="base-other-invocationresults.xml"/>
       <include src="base-other-searchall.xml"/>
-
-
     </records>
-
   </spec>
 </cspace-config>
