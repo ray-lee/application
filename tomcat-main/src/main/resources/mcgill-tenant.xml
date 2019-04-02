@@ -31,6 +31,7 @@
 			<include src="base-procedure-movement.xml,mcgill-movement.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-objectexit.xml,mcgill-objectexit.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-conservation.xml,mcgill-conservation.xml" merge="xmlmerge.properties"/>
+			<include src="base-procedure-uoc.xml"/>
 
 			<include src="base-authority-contact.xml"/>
                         <!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
