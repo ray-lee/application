@@ -39,7 +39,8 @@
     </smtp>
     <passwordreset>
       <token>
-        <daysvalid>7</daysvalid>
+          <!-- <daysvalid>1</daysvalid> --> <!-- As of v5.0, this field is no longer used. -->
+          <tokenExpirationSeconds>300</tokenExpirationSeconds>
       </token>
       <loginpage>/cspace/parsons/resetpw</loginpage>
       <subject>CollectionSpace Password reset request</subject>
@@ -53,7 +54,7 @@
         <id>100010</id>
         <name>cspace.parsons.edu</name>
         <version>0.1</version>
-        <display-name>Collectionspace PARSONS Tenant</display-name>
+        <display-name>Collectionspace Parsons Tenant</display-name>
         <create-disabled>${CSPACE_PARSONS_CREATE_DISABLED_OPT}</create-disabled>
       </tenant>
       <repository>
