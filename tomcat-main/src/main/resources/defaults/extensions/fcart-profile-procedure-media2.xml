@@ -1,0 +1,13 @@
+<!--
+This file existed dts-v4.4-delta, adding the media_fcart schema extension with the mediaViewType
+field. The mediaViewType field does not appear to be used, so it should be possible to remove this
+file, and update the the hierarchy table, setting primarytype to 'Media' where it is currently
+'MediaTenant100006'.
+-->
+<record id="media" is-extension="true">
+  <services-record-path id="fcart">media_fcart:http://collectionspace.org/services/media/domain/fcart,media_fcart</services-record-path>
+
+  <section id="mediaInformation">
+    <field id="mediaViewType" autocomplete="vocab-mediaviewtype" ui-type="enum" section="fcart"/>
+  </section>
+</record>

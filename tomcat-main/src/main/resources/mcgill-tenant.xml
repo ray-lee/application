@@ -25,7 +25,7 @@
 			<include src="base-procedure-intake.xml,mcgill-intake.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanin.xml,mcgill-loanin.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-loanout.xml,mcgill-loanout.xml" merge="xmlmerge.properties"/>
-      <include src="base-procedure-media.xml,extensions/fcart-profile-procedure-media.xml,mcgill-media.xml"
+      <include src="base-procedure-media.xml,extensions/fcart-profile-procedure-media.xml,extensions/fcart-profile-procedure-media2.xml,mcgill-media.xml"
 					 merge="xmlmerge.properties"/>
 			<include src="base-procedure-valuationcontrol.xml,mcgill-valuationcontrol.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-movement.xml,mcgill-movement.xml" merge="xmlmerge.properties"/>
