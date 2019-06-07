@@ -13,7 +13,7 @@
     <field id="namedCollection" autocomplete="work-work" section="ohc" />
 
     <section id="objectCollectionInformation">
-      <repeat id="oaiSiteGroupList/oaiSiteGroup>
+      <repeat id="oaiSiteGroupList/oaiSiteGroup">
         <field id="oaiCollectionPlace" autocomplete="place-place,place-place_shared,place-tgn_place"/>
         <field id="oaiLocVerbatim"/>
       </repeat>
