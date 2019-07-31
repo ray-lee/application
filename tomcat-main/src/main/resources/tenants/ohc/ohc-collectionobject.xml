@@ -4,17 +4,17 @@
 	<section id="identificationInformation">
 		<!-- Change from free text to controlled term -->
 		<repeat id="objectNameList/objectNameGroup">
-			<field id="objectName" ui-search="repeatable" in-title="yes" mini="search,list,relate" autocomplete="concept-concept" />
+			<field id="objectName" autocomplete="concept-concept" />
 		</repeat>
 
 		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
-		<repeat id="taxonomicIdentGroupList/taxonomicIdentGroup" section="naturalhistory_extension">
-			<field id="taxon" in-title="yes" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon" section="naturalhistory_extension" />
+		<repeat id="taxonomicIdentGroupList/taxonomicIdentGroup">
+			<field id="taxon" mini="search,list" />
 		</repeat>
 
 		<!-- In the Natural History extension, this field was a "summary" field (aka, object name in generic search results).  For OHC, we want to use the default objectName field as the summary. -->
 		<repeat id="determinationHistoryGroupList/determinationHistoryGroup" section="naturalhistory_extension">
-			<field id="determinationTaxon" section="naturalhistory_extension" ui-search="repeatable" mini="search,list,relate" autocomplete="taxon-taxon"/>
+			<field id="determinationTaxon" mini="search,list"/>
 		</repeat>
 
 		<!-- New fields -->
@@ -37,6 +37,10 @@
   </section>
 
 	<section id="descriptionInformation">
+		<repeat id="materialGroupList/materialGroup">
+			<field id="material" autocomplete="concept-material_ca" />
+		</repeat>
+
 		<!-- Add new apparelSize field -->
 		<repeat id="apparelSizes" section="ohc">
 			<field id="apparelSize" autocomplete="vocab-apparelsizes" ui-type="enum" section="ohc" />
@@ -48,14 +52,6 @@
 	<section id="objectProductionInformation">
 		<repeat id="namedTimePeriods" section="ohc">
 			<field id="namedTimePeriod" autocomplete="vocab-namedtimeperiods" ui-type="enum" section="ohc" />
-		</repeat>
-
-		<repeat id="materialGroupList/materialGroup">
-			<field id="material" ui-search="repeatable" autocomplete="concept-material_ca" />
-			<field id="materialComponent" />
-			<field id="materialComponentNote" />
-			<field id="materialName" />
-			<field id="materialSource" />
 		</repeat>
 	</section>
 </record>
