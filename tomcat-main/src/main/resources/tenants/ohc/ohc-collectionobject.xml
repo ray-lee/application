@@ -54,4 +54,12 @@
 			<field id="namedTimePeriod" autocomplete="vocab-namedtimeperiods" ui-type="enum" section="ohc" />
 		</repeat>
 	</section>
+
+	<section id="objectHistoryAssociationInformation">
+		<section id="associationInformation">
+			<repeat id="assocPeopleGroupList/assocPeopleGroup">
+				<field id="assocPeople" autocomplete="true" />
+			</repeat>
+		</section>
+	</section>
 </record>
