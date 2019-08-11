@@ -147,14 +147,14 @@
 			<option id="use">Use</option>
 		</options>
 	</instance>
-	<instance id="vocab-mmicontentworktype">
-		<web-url>mmicontentworktype</web-url>
-		<title-ref>mmicontentworktype</title-ref>
-		<title>Content - Work Type (MMI)</title>
+	<instance id="vocab-contentworktype">
+		<web-url>contentworktype</web-url>
+		<title-ref>contentworktype</title-ref>
+		<title>Content - Work Type</title>
 		<options>
 			<option id="depicts">Depicts</option>
-			<option id="isFrom">Is from</option>
-			<option id="issueOf">Issue of</option>
+			<option id="isfrom">Is from</option>
+			<option id="issueof">Issue of</option>
 			<option id="references">References</option>
 		</options>
 	</instance>
