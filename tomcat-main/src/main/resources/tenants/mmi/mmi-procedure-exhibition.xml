@@ -1,0 +1,10 @@
+<record id="exhibition" type="record,procedure">
+    <section id="exhibitionInformation">
+        <repeat id="venueGroupList/venueGroup">
+            <!-- removing location-location,location-offsite_sla vocabs -->
+            <field id="venue" ui-search="repeatable"
+                autocomplete="organization-organization,organization-organization_shared,organization-ulan_oa,place-place,place-place_shared,place-tgn_place"
+            />
+        </repeat>
+    </section>
+</record>
