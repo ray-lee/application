@@ -26,7 +26,7 @@
 			<include src="base-procedure-valuationcontrol.xml,mmi-procedure-valuationcontrol.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-movement.xml,mmi-procedure-movement.xml" merge="xmlmerge-mmi.properties"/>
 			<include src="base-procedure-objectexit.xml,mmi-procedure-objectexit.xml" merge="xmlmerge-mmi.properties"/>
-			<include src="base-procedure-conservation.xml"/>
+			<include src="base-procedure-conservation.xml,mmi-procedure-conservation.xml" merge="xmlmerge-mmi.properties"/>
 
 			<include src="base-authority-contact.xml,mmi-authority-contact.xml" merge="xmlmerge-mmi.properties"/>
 			<!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->

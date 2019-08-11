@@ -1,0 +1,13 @@
+<record id="conservation" is-extension="true" type="record,procedure">
+    <section id="objectTreatmentInformation">
+        <repeat id="conservators">
+            <!-- update autocomplete to use organization vocabs -->
+            <field id="conservator" ui-search="repeatable" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared"/>
+        </repeat>
+
+        <repeat id="otherPartyGroupList/otherPartyGroup">
+            <!-- update autocomplete to use organization vocabs -->
+            <field id="otherParty" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared"/>
+        </repeat>
+    </section>
+</record>
