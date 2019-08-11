@@ -144,7 +144,7 @@
 				<field id="contentWork" autocomplete="work-work" ui-search="repeatable" section="mmi" >
 					<selector>object-content-contentWork</selector>
 				</field>
-				<field id="contentWorkType" autocomplete="vocab-contentworktype" ui-type="enum" section="mmi">
+				<field id="contentWorkType" autocomplete="vocab-mmicontentworktype" ui-type="enum" section="mmi">
 					<selector>object-content-contentWorkType</selector>
 					<enum>
 						<blank-value>Please select a value</blank-value>
