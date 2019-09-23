@@ -745,4 +745,16 @@
 			<option id="licensing_fee">Licensing Fee</option>
 		</options>
 	</instance>
+	<instance id="vocab-exhibitionobjecttype">
+		<web-url>exhibitionobjecttype</web-url>
+		<title-ref>exhibitionobjecttype</title-ref>
+		<title>Exhibition Object Type</title>
+		<options>
+			<option id="3dwork">3D Work</option>
+			<option id="flatwork">Flat work</option>
+			<option id="frame">Frame</option>
+			<option id="interactive">Interactive</option>
+			<option id="projection">Projection</option>
+		</options>
+	</instance>
 </root>
