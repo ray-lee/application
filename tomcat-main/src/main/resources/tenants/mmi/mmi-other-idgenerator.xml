@@ -1,5 +1,5 @@
 <record id="id">
-	<section>
+	<section id="idGeneratorInformation">
 		<field id="mmi-intake">
 			<selector>57602930-0b17-11e9-b353-5b98fea7f455</selector>
 		</field>
