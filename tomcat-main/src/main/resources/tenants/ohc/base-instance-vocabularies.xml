@@ -1,3 +1,4 @@
+<!-- Add options to entrymethod and publishto. -->
 <instances>
     <include src="domain-instance-vocabularies.xml" strip-root="yes"/>
     <instance id="vocab-inventorystatus">
@@ -65,6 +66,7 @@
             <option id="none">None</option>
             <option id="cultureobject">Culture Object</option>
             <option id="dpla">DPLA</option>
+            <option id="nagpra">NAGPRA</option>
             <option id="omeka">Omeka</option>
         </options>
     </instance>
