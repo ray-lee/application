@@ -14,29 +14,79 @@
 	</section>
 
 	<section id="uocInformation">
-		<field id="referenceNumber" mini="number,list" />
+		<field id="referenceNumber" mini="number,list"/>
+
+		<field id="projectId" autocomplete="true" ui-type="enum"/>
+		<field id="projectDescription"/>
 
 		<repeat id="methodList" services-type-anonymous="false">
 			<field id="method" autocomplete="true" ui-type="enum" />
 		</repeat>
 
-		<field id="title" mini="summary,list" />
+		<field id="subcollection" autocomplete="true" ui-type="enum"/>
 
-		<field id="authorizedBy" autocomplete="true" mini="list" />
-		<field id="authorizationDate" datatype="date" />
-		<field id="authorizationNote" />
+		<field id="title" mini="summary,list"/>
 
-		<field id="startSingleDate" datatype="date" />
-		<field id="endDate" datatype="date" />
-
-		<repeat id="userGroupList/userGroup">
-			<field id="user" autocomplete="true" mini="list" />
-			<field id="userType" autocomplete="true" ui-type="enum" />
+		<repeat id="authorizationGroupList/authorizationGroup">
+			<field id="authorizedBy" autocomplete="true" mini="list"/>
+			<field id="authorizationDate" datatype="date"/>
+			<field id="authorizationNote"/>
+			<field id="authorizationStatus" autocomplete="true" ui-type="enum"/>
 		</repeat>
 
-		<field id="location" autocomplete="true" />
-		<field id="note" />
-		<field id="provisos" />
-		<field id="result" />
+		<repeat id="useDateGroupList/useDateGroup">
+			<field id="useDate" datatype="date"/>
+			<field id="useDateNumberOfVisitors" datatype="int"/>
+			<field id="useDateHoursSpent" datatype="float"/>
+			<field id="useDateVisitorNote"/>
+			<field id="useDateTimeNote"/>
+		</repeat>
+
+		<field id="endDate" datatype="date"/>
+
+		<repeat id="userGroupList/userGroup">
+			<field id="user" autocomplete="true" mini="list"/>
+			<field id="userInstitutionRole" autocomplete="true" ui-type="enum"/>
+			<field id="userUocRole" autocomplete="true" ui-type="enum"/>
+			<field id="userInstitution" autocomplete="true"/>
+		</repeat>
+
+		<repeat id="locationList">
+			<field id="location" autocomplete="true"/>
+		</repeat>
+
+		<field id="dateRequested" datatype="date"/>
+		<field id="dateCompleted" datatype="date"/>
+		<field id="note"/>
+		<field id="provisos"/>
+		<field id="result"/>
+
+		<repeat id="occasionList">
+			<field id="occasion" autocomplete="true"/>
+		</repeat>
+
+		<repeat id="feeGroupList/feeGroup">
+			<field id="feeCurrency" autocomplete="true" ui-type="enum"/>
+			<field id="feeValue" datatype="float"/>
+			<field id="feeNote"/>
+			<field id="feePaid" datatype="boolean"/>
+		</repeat>
+
+		<field id="obligationsFulfilled" datatype="boolean"/>
+
+		<repeat id="staffGroupList/staffGroup">
+			<field id="staffName" autocomplete="true"/>
+			<field id="staffRole" autocomplete="true" ui-type="enum"/>
+			<field id="staffHours" datatype="float"/>
+			<field id="staffNote"/>
+		</repeat>
+
+		<repeat id="collectionTypeList">
+			<field id="collectionType" autocomplete="true" ui-type="enum"/>
+		</repeat>
+
+		<repeat id="materialTypeList">
+			<field id="materialType" autocomplete="true" ui-type="enum"/>
+		</repeat>
 	</section>
 </record>
