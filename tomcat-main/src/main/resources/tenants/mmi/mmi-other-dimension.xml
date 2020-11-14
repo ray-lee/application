@@ -11,6 +11,7 @@
                     <option id="framed">framed</option>
                     <option id="image-size">image size</option>
                     <option id="mount">mount</option>
+                    <option id="packaging">packaging</option>
                     <option id="paper-size">paper size</option>
                     <option id="plate-size">plate size</option>
                     <option id="unframed">unframed</option>
