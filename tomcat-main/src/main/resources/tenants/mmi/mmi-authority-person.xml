@@ -47,5 +47,16 @@
     		<selector>personAuthority-deathDate</selector>
     		<title-selector>titleBar-deathDate</title-selector>
     	</field>
+	<field id="gender" ui-search="repeatable" seperate_ui_container="true">
+            <selector>personAuthority-gender</selector>
+ 	    <!-- updating options list -->
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="male">Male</option>
+                <option id="female">Female</option>
+                <option id="transgender">Transgender</option>
+                <option id="nonbinary">Nonbinary</option>
+            </options>
+        </field>
     </section>
 </record>

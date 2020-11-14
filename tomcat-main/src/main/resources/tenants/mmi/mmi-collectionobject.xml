@@ -101,6 +101,17 @@
 				<selector>object-description-mmiInscriptionContent</selector>
 			</field>
 		</repeat>
+		<field id="sex" ui-search="repeatable" seperate_ui_container="true">
+			<selector>object-description-sex</selector>
+			<!-- updating option values -->
+      			<options>
+        			<option id="">Please select a value</option>
+        			<option id="male">male</option>
+        			<option id="female">female</option>
+        			<option id="transgender">transgender</option>
+        			<option id="nonbinary">nonbinary</option>
+      			</options>
+    		</field>
 		<repeat id="objectComponentGroupList/objectComponentGroup">
             <!-- removed option values -->
             <field id="objectComponentName" ui-search="repeatable" seperate_ui_container="true">
