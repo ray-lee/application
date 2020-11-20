@@ -17,8 +17,6 @@
                			<option id="newacquisition">New acquisition</option>
             		</options>
         	</field>
-		<field id="conditionCheckReasonExhibition" ui-search="repeatable" section="mmi">
-			<selector>conditioncheck-conditionCheckReasonExhibition</selector>
-		</field>
+		<field id="conditionCheckReasonExhibition" ui-search="repeatable" section="mmi"></field>
 	</section>
 </record>
