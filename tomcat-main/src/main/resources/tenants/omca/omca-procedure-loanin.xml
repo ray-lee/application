@@ -1,0 +1,47 @@
+<record id="loanin" is-extension="true">
+    <services-record-path id="omca">loansin_omca:http://collectionspace.org/services/loanin/local/omca,loansin_omca</services-record-path>
+    <section id="loaninInformation">
+        <field id="loanInNumber" sortKey="sortableLoanInNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_loanin" sample="LI2015.1">Loan In</option>
+                <option id="omca_cataloging_loanin_alt" sample="EX">Loans In (EX)</option>
+            </options>
+        </field>
+        <field id="loanPurpose" ui-search="repeatable" seperate_ui_container="true" autocomplete="vocab-loanpurpose" ui-type="enum">
+            <!-- removing options block; adding vocab-loanpurpose vocab -->
+            <options action='delete'/>
+        </field>
+        <repeat id="loanStatusGroupList/loanStatusGroup">
+            <field id="loanStatus" ui-search="repeatable" autocomplete="vocab-loaninstatus" ui-type="enum">
+                <!-- changing vocab to vocab-loaninstatus -->
+            </field>
+        </repeat>
+        <field id="sortableLoanInNumber" section="omca" mini="list" ui-type="computed" ui-args="loanInNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <repeat id="loaninFeesGroupList/loaninFeesGroup" section="omca">
+            <field id="loaninFeesCurrency" autocomplete="vocab-currency" ui-type="enum" section="omca">
+                <enum>
+                    <default>urn:cspace:museumca.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+            <field id="loaninFeesAmount" ui-type="validated" datatype="float" section="omca"></field>
+            <field id="loaninFeesDatePaid" ui-type="date" section="omca"></field>
+        </repeat>
+        <field id="loaninCourierInfo" section="omca"></field>
+        <field id="lenderNote" section="omca"></field>
+        <field id="creditLine" section="omca"></field>
+        <field id="anonymous" datatype="boolean" section="omca"></field>
+    </section>
+    <section id="loaninInsuranceInformation" section="omca">
+        <!-- new section -->
+        <repeat id="loaninInsuranceInsurers" section="omca">
+            <field id="loaninInsuranceInsurer" autocomplete="person-person,organization-organization" section="omca"></field>
+        </repeat>
+        <field id="loaninInsurancePolicyNumber" section="omca"></field>
+        <field id="loaninInsuranceRenewalDate" ui-type="date" section="omca"></field>
+        <field id="loaninInsuranceReferenceNumber" section="omca"></field>
+        <field id="loaninInsuranceNote" section="omca"></field>
+    </section>
+</record>

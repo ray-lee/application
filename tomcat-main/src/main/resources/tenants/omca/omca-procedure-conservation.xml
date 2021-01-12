@@ -1,0 +1,19 @@
+<record id="conservation" is-extension="true">
+    <services-record-path id="omca">conservation_omca:http://collectionspace.org/services/conservation/local/omca,conservation_omca</services-record-path>
+
+    <section id="objectTreatmentInformation">
+        <field id="conservationNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true" sortKey="sortableConservationNumber">
+            <!-- adding sortKey attribute; updating number chooser label -->
+            <options>
+                <option id="conservation" sample="CT2015.1">Conservation Reference Number</option>
+            </options>
+        </field>
+        <field id="treatmentPurpose" ui-search="repeatable" autocomplete="vocab-omcatreatmentpurpose" ui-type="enum">
+            <!-- changing vocab to vocab-loaninstatus -->
+        </field>
+        <field id="sortableConservationNumber" section="omca" mini="list" ui-type="computed" ui-args="conservationNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <field id="dateOfAnalysis" ui-type="date" datatype="date" section="omca"></field>
+    </section>
+</record>

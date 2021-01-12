@@ -1,0 +1,83 @@
+<cspace-config tenantname="omca">
+    <tenantid>35</tenantid>
+    <version>11</version>
+    <include src="omca-settings.xml,host-settings.xml,cache-settings.xml" required="false" qmerge="xmlmerge-settings.properties"
+        strip-root="yes" />
+
+    <spec>
+        <include src="base-relations.xml"/>
+        <include src="base-schemas.xml"/>
+
+        <records>
+            <enum-blank>no value selected</enum-blank>
+
+            <include src="base-collectionobject.xml,anthropology-collectionobject.xml,omca-collectionobject.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority.xml"/>
+
+            <include src="base-procedure-acquisition.xml,omca-procedure-acquisition.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-blobs.xml"/>
+            <include src="base-procedure-conditioncheck.xml,omca-procedure-conditioncheck.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-exhibition.xml,omca-procedure-exhibition.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-groups.xml"/>
+            <include src="base-procedure-intake.xml,omca-procedure-intake.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-loanin.xml,omca-procedure-loanin.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-loanout.xml,omca-procedure-loanout.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-media.xml,omca-procedure-media.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-valuationcontrol.xml,omca-procedure-valuationcontrol.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-movement.xml,omca-procedure-movement.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-objectexit.xml,omca-procedure-objectexit.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-conservation.xml,omca-procedure-conservation.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-uoc.xml" />
+            <include src="base-procedure-restrictedmedia.xml,omca-procedure-restrictedmedia.xml" merge="xmlmerge.properties"/>
+            <include src="base-procedure-claim.xml,omca-procedure-claim.xml" merge="xmlmerge.properties"/>
+
+            <include src="base-authority-contact.xml,omca-authority-contact.xml" merge="xmlmerge.properties"/>
+            <!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
+            <include src="base-authority-location-termList.xml,omca-authority-location-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-location.xml,omca-authority-location.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-organization-termList.xml,omca-authority-organization-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-organization.xml,omca-authority-organization.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-person-termList.xml,omca-authority-person-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-person.xml,omca-authority-person.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-citation-termList.xml,omca-authority-citation-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-citation.xml,omca-authority-citation.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-place-termList.xml,omca-authority-place-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-place.xml,omca-authority-place.xml" merge="xmlmerge.properties"/>
+
+            <include src="base-authority-taxon-termList.xml,omca-authority-taxon-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-taxon.xml,omca-authority-taxon.xml" merge="xmlmerge.properties"/>
+
+            <include src="base-authority-concept-termList.xml,omca-authority-concept-termList.xml" merge="xmlmerge.properties"/>
+            <include src="base-authority-concept.xml,omca-authority-concept.xml" merge="xmlmerge.properties"/>
+            <!--include src="base-authority-work-termList.xml"/-->
+            <!--include src="base-authority-work.xml"/-->
+
+            <include src="base-vocabularies.xml"/>
+
+            <include src="base-authz-accountrole.xml"/>
+            <include src="base-authz-permission.xml"/>
+            <include src="base-authz-permrole.xml"/>
+            <include src="base-authz-role.xml"/>
+            <include src="base-authz-userperm.xml"/>
+            <include src="base-authz-userrole.xml"/>
+            <include src="base-authz-users.xml"/>
+
+            <include src="base-other-dimension.xml,omca-other-dimension.xml" merge="xmlmerge.properties"/>
+            <include src="base-other-address.xml" />
+            <include src="base-other-hierarchy.xml"/>
+            <include src="base-other-idgenerator.xml,omca-other-idgenerator.xml" merge="xmlmerge.properties"/>
+            <include src="base-other-structureddate.xml"/>
+            <include src="base-other-termlist.xml"/>
+            <include src="base-other-termlistitem.xml"/>
+            <include src="base-other-reporting.xml"/>
+            <include src="base-other-reportingoutput.xml"/>
+            <include src="base-other-batch.xml" />
+            <include src="base-other-batchoutput.xml" />
+            <include src="base-other-invocationresults.xml" />
+            <include src="base-other-searchall.xml"/>
+
+
+        </records>
+
+    </spec>
+</cspace-config>

@@ -1,0 +1,6 @@
+<record id="citation" is-extension="true">
+    <services-record-path id="omca">citations_omca:http://collectionspace.org/services/citation/local/omca,citations_omca</services-record-path>        
+    <section id="citationNameAuthorityInformation">
+        <field id="publicationType" ui-search="repeatable" ui-type="enum" autocomplete="vocab-publicationtype" section="omca"></field>  
+    </section>       
+</record>

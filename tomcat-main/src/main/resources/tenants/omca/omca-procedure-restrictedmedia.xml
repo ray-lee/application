@@ -1,0 +1,28 @@
+<record id="restrictedmedia" is-extension="true">
+    <services-record-path id="omca">restrictedmedia_omca:http://collectionspace.org/services/restrictedmedia/local/omca,restrictedmedia_omca</services-record-path>
+    <section id="mediaInformation">
+        <field id="title" ui-search="repeatable" mini="search,list,relate" services-schema-qualify="true">
+            <!-- removing summary value from mini attribute -->
+        </field>
+        <field id="contributor" ui-search="repeatable" autocomplete="person-person,organization-organization">
+            <!-- adding repeatable value for ui-search -->
+        </field>
+        <field id="identificationNumber" sortKey="sortableIdentificationNumber">
+            <!-- adding sortKey attribute -->
+        </field>
+        <repeat id="types">
+            <field id="type" ui-search="repeatable" autocomplete="vocab-mediaType" ui-type="enum">
+                <!-- removing options block; adding vocab-mediaType vocab -->
+                <options action="delete"/>
+            </field>
+        </repeat>
+        <field id="originalFileName" mini="summary,list,relate" section="omca">
+            <!-- adding mini attribute -->
+        </field>
+        <field id="isPrimary" datatype="boolean" section="omca"></field>
+        <field id="approveForPublic" datatype="boolean" section="omca"></field>
+        <field id="sortableIdentificationNumber" section="omca" mini="list" ui-type="computed" ui-args="identificationNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+    </section>
+</record>

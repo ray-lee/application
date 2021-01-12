@@ -1,0 +1,14 @@
+<record id="preferredTA" in-recordlist="no" separate-record="false">
+    <section id="termInformation">
+        <repeat id="taxonTermGroupList/taxonTermGroup">
+            <field id="termType" autocomplete="vocab-taxontermtype" ui-type="enum">
+                <!-- adding taxontermtype authority; deleting options list -->
+                <options action="delete" />
+            </field>
+            <field id="taxonomicStatus" ui-search="repeatable" autocomplete="vocab-taxonomicstatus" ui-type="enum">
+                <!-- adding taxonomicstatus authority; deleting options list -->
+                <options action="delete" />
+            </field>
+        </repeat>
+    </section>
+</record>

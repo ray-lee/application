@@ -10,7 +10,8 @@
 		<records>
 			<enum-blank>Please select a value</enum-blank>
 
-			<include src="base-collectionobject.xml,extensions/naturalhistory-collectionobject.xml,herbarium-collectionobject.xml" merge="xmlmerge.properties" />
+			<!-- <include src="base-collectionobject.xml,extensions/naturalhistory-collectionobject.xml,herbarium-collectionobject.xml" merge="xmlmerge.properties" /> -->
+			<include src="base-collectionobject.xml" />
 
 			<include src="base-procedure-blobs.xml" />
 			<include src="base-procedure-conditioncheck.xml" />

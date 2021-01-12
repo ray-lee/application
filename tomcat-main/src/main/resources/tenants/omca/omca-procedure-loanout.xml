@@ -1,0 +1,49 @@
+<record id="loanout" is-extension="true">
+    <services-record-path id="omca">loansout_omca:http://collectionspace.org/services/loanout/local/omca,loansout_omca</services-record-path>
+    <section id="loanoutInformation">
+         <field id="loanOutNumber" sortKey="sortableLoanOutNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_loanout" sample="LO2015.1">Loan Out</option>
+            </options>
+        </field>
+        <field id="loanPurpose" ui-search="repeatable" autocomplete="vocab-loanpurpose" ui-type="enum" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-loanpurpose vocab -->
+            <options action='delete'/>
+        </field>
+        <repeat id="loanStatusGroupList/loanStatusGroup">
+            <field id="loanStatus" ui-search="repeatable" autocomplete="vocab-omcaloanoutstatus" ui-type="enum">
+                <!-- changing vocab to vocab-omcaloanoutstatus -->
+            </field>
+        </repeat>
+        <field id="sortableLoanOutNumber" section="omca" mini="list" ui-type="computed" ui-args="loanOutNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <field id="loanoutExhibitionTitle" section="omca"></field>
+        <repeat id="loanoutVenuesGroupList/loanoutVenuesGroup" section="omca">
+            <field id="loanoutVenue" autocomplete="person-person,organization-organization" section="omca"></field>
+            <field id="loanoutVenueOpeningDate" ui-type="date" section="omca"></field>
+            <field id="loanoutVenueClosingDate" ui-type="date" section="omca"></field>
+        </repeat>
+        <repeat id="loanoutFeesGroupList/loanoutFeesGroup" section="omca">
+            <field id="loanoutFeesCurrency" autocomplete="vocab-currency" ui-type="enum" section="omca">
+                <enum>
+                    <default>urn:cspace:museumca.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+            <field id="loanoutFeesAmount" ui-type="validated" datatype="float" section="omca"></field>
+            <field id="loanoutFeesDatePaid" ui-type="date" section="omca"></field>
+        </repeat>
+        <field id="loanoutCourierInfo" section="omca"></field>
+    </section>
+    <section id="loanoutInsuranceInformation" section="omca">
+        <!-- new section -->
+        <repeat id="loanoutInsuranceInsurers" section="omca">
+            <field id="loanoutInsuranceInsurer" autocomplete="person-person,organization-organization" section="omca"></field>
+        </repeat>
+        <field id="loanoutInsurancePolicyNumber" section="omca"></field>
+        <field id="loanoutInsuranceRenewalDate" ui-type="date" section="omca"></field>
+        <field id="loanoutInsuranceReferenceNumber" section="omca"></field>
+        <field id="loanoutInsuranceNote" section="omca"></field>
+    </section>
+</record>

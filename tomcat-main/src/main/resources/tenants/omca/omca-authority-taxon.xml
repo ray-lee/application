@@ -1,0 +1,27 @@
+<record id="taxon" is-extension="true">
+    <services-record-path id="omca">taxon_omca:http://collectionspace.org/services/taxonomy/local/omca,taxon_omca</services-record-path>
+    <section id="taxonNameAuthorityInformation">
+        <field id="taxonRank" ui-search="repeatable" seperate_ui_container="true" autocomplete="vocab-taxonrank" ui-type="enum">
+            <!-- adding taxonrank authority; deleting options list -->
+            <options action="delete" />
+        </field>
+        <field id="taxonCurrency" ui-search="repeatable" seperate_ui_container="true" autocomplete="vocab-taxoncurrency" ui-type="enum">
+            <!-- adding taxoncurrency authority; deleting options list -->
+            <options action="delete" />
+        </field>
+        <repeat id="taxonAuthorGroupList/taxonAuthorGroup" has-primary="yes">
+            <field id="taxonAuthorType" seperate_ui_container="true" autocomplete="vocab-taxonauthortype" ui-type="enum">
+                <!-- adding taxonauthortype authority; deleting options list -->
+                <options action="delete" />
+            </field>
+        </repeat>
+        <repeat id="commonNameGroupList/commonNameGroup" has-primary="yes">
+            <field id="commonName" ui-search="repeatable" autocomplete="concept-concept">
+                <!-- adding concept authority vocab -->
+            </field>
+        </repeat>
+        <field id="legacyArgusNotes" section="omca"></field>
+        <field id="legacyParents" section="omca"></field>
+        <field id="legacySeeAlso" section="omca"></field>
+    </section>
+</record>

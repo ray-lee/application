@@ -1,0 +1,29 @@
+<record id="valuationcontrol" is-extension="true">
+	<services-record-path id="omca">valuationcontrols_omca:http://collectionspace.org/services/valuationcontrol/local/omca,valuationcontrols_omca</services-record-path>
+    <section id="objectValuationInformation">
+    	<field id="valuationcontrolRefNumber" sortKey="sortableValuationcontrolRefNumber">
+            <!-- adding sortKey attribute; updating number picker pattern -->
+            <options>
+                <option id="omca_valuationcontrol" sample="V2015.1">Valuation Control</option>
+            </options>
+        </field>
+        <repeat id="valueAmountsList/valueAmounts">
+            <field id="valueCurrency" autocomplete="vocab-currency" ui-type="enum">
+                <!-- adding default currency value -->
+                <enum>
+                    <default>urn:cspace:museumca.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+        </repeat>
+        <field id="valueType" autocomplete="vocab-valueType" ui-type="enum" ui-search="repeatable" in-title="yes" mini="search,list,relate">
+            <!-- removing options block; adding vocab-valueType vocab; removing summary value for mini attribute -->
+            <options action='delete'/>
+        </field>
+        <field id="sortableValuationcontrolRefNumber" section="omca" mini="list" ui-type="computed" ui-args="valuationcontrolRefNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <field id="computedValuationControlSummary" mini="summary,list" ui-type="computed" ui-args="valueAmounts.0.valueAmount,valueType" ui-func="omca.mergeFields" ui-readonly="true" section="omca">
+            <!-- combine valueAmount and valueType to a single summary field -->
+        </field>
+    </section>
+</record>

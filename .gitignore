@@ -23,3 +23,4 @@ war-entry/tmp/
 .vscode
 .factorypath
 .flattened-pom.xml
+tomcat-main/src/main/resources/tenants/omca/host-settings.xml

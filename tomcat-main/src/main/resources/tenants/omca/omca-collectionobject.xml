@@ -1,0 +1,360 @@
+<record id="collection-object" is-extension="true">
+    <services-record-path id="omca">collectionobjects_omca:http://collectionspace.org/services/collectionobject/local/omca,collectionobjects_omca</services-record-path>
+    <section id="coreInformation">
+        <field id="nametitle" mini="search,list,relate" exists-in-services="false" service-field-alias="dhName">
+            <!-- updating merge fields; ignoring this field for the computedCatalogingSummary field -->
+            <merges>
+                <merge id="objectName" rank="1"/>
+                <merge id="dhName" rank="2"/>
+            </merges>
+        </field>
+    </section>
+    <section id="identificationInformation">
+        <field id="objectNumber" sortKey="sortableObjectNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_cataloging_accession" sample="2015.1.1">Accession</option>
+                <option id="omca_cataloging_intake" sample="IN2015.1.1">Intake</option>
+                <option id="omca_cataloging_loanin" sample="LI2015.1.1">Loans In</option>
+                <option id="omca_cataloging_loanin_alt" sample="EX2015.1.1">Loans In (EX)</option>
+            </options>
+        </field>
+        <repeat id="otherNumberList/otherNumber">
+            <field id="numberType" in-tab="yes" autocomplete="vocab-numberType" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-numberType vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="responsibleDepartments" has-primary="yes">
+            <field id="responsibleDepartment" autocomplete="vocab-responsibleDepartment" ui-type="enum" ui-search="repeatable" mini="search,list" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-responsibleDepartment vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <field id="collection" ui-search="repeatable" autocomplete="vocab-collection" ui-type="enum" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-collection vocab -->
+            <options action='delete'/>
+        </field>
+        <field id="recordStatus" autocomplete="vocab-recordStatus" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-recordStatus vocab -->
+            <options action='delete'/>
+            <!-- adding default recordStatus value -->
+            <enum>
+                <default>urn:cspace:museumca.org:vocabularies:name(recordStatus):item:name(new)'New'</default>
+            </enum>
+        </field>
+        <field id="computedCurrentLocation" ui-search="repeatable" autocomplete="location-location" ui-type="" services-readonly="true" authref-in-services="true">
+            <!-- adding to advanced search -->
+        </field>
+        <repeat id="titleGroupList/titleGroup">
+            <repeat id="titleTranslationSubGroupList/titleTranslationSubGroup">
+                <field id="titleTranslationLanguage" autocomplete="vocab-languages" ui-type="enum">
+                    <!-- overriding enum values -->
+                    <enum>
+                        <default/>
+                        <blank-value>no value selected</blank-value>
+                    </enum>
+                </field>
+            </repeat>
+            <field id="titleType" autocomplete="vocab-titletype" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-titletype vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="objectNameList/objectNameGroup">
+            <field id="objectNameCurrency" seperate_ui_container="true">
+                <!-- replacing default value -->
+                <options>
+                    <option id="">no value selected</option>
+                    <option id="current">Current</option>
+                    <option id="archaic">Archaic</option>
+                </options>
+            </field>
+            <field id="objectNameLevel" seperate_ui_container="true">
+                <!-- replacing default value -->
+                <options>
+                    <option id="">no value selected</option>
+                    <option id="group">Group</option>
+                    <option id="subgroup">Subgroup</option>
+                </options>
+            </field>
+            <field id="objectNameSystem" autocomplete="vocab-objectnamesystem" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-objectnamesystem vocab -->
+                <options action='delete'/>
+            </field>
+            <field id="objectNameType" seperate_ui_container="true">
+                <!-- updating options list -->
+                <options>
+                    <option id="">no value selected</option>
+                    <option id="classified">Classified</option>
+                    <option id="denomination">Denomination</option>
+                    <option id="simple">Simple</option>
+                    <option id="taxonomic">Taxonomic</option>
+                    <option id="typological">Typological</option>
+                    <option id="questionable">Questionable</option>
+                </options>
+            </field>
+            <field id="objectNameLanguage" autocomplete="vocab-languages" ui-type="enum">
+                <!-- overriding enum values -->
+                <enum>
+                    <default/>
+                    <blank-value>no value selected</blank-value>
+                </enum>
+            </field>
+            <field id="objectName" autocomplete="concept-concept" ui-search="repeatable" mini="search,list">
+                <!-- adding concept authority -->
+            </field>
+        </repeat>
+        <field id="computedCurrentLocationDisplay" section="omca" services-readonly="true" ui-readonly="true">
+            <!-- read-only version of computedCurrentLocation -->
+        </field>
+        <field id="computedCatalogingSummary" mini="summary,list" ui-type="computed" 
+            ui-args="objectNameGroup.0.objectName,determinationHistoryGroup.0.dhName,objectProductionPersonGroup.0.objectProductionPerson" 
+            ui-func="omca.mergeFields" ui-readonly="true" section="omca">
+            <!-- combine objectName, dhName and objectProductionPerson into a single summary field -->
+        </field>
+        <field id="argusCount" section="omca"></field>
+        <repeat id="categories" section="omca">
+            <!-- this field is not used any more. leaving here for the time being -->
+            <field id="category" autocomplete="vocab-category" ui-type="enum" section="omca"></field>
+        </repeat>
+        <field id="art" ui-search="single" datatype="boolean" section="omca"></field>
+        <field id="history" ui-search="single" datatype="boolean" section="omca"></field>
+        <field id="science" ui-search="single" datatype="boolean" section="omca"></field>
+        <field id="doNotPublishOnWeb" datatype="boolean" section="omca">
+            <default>true</default>
+        </field>
+        <repeat id="photos" section="omca">
+            <field id="photo" section="omca"></field>
+        </repeat>
+        <repeat id="determinationHistoryGroupList/determinationHistoryGroup" section="omca">
+            <field id="dhName" mini="list" autocomplete="taxon-taxon" ui-search="repeatable" section="omca">
+                <!-- making searchable -->
+            </field>
+            <field id="dhQualifier" autocomplete="vocab-determinationQualifier" ui-type="enum" section="omca"></field>
+            <field id="identBy" autocomplete="person-person" section="omca"></field>
+            <field id="identDate" ui-type="date" section="omca"></field>
+            <field id="institution" autocomplete="organization-organization" section="omca"></field>
+            <field id="identKind" autocomplete="vocab-determinationKind" ui-type="enum" section="omca"></field>
+            <field id="dhReference" section="omca"></field>
+            <field id="dhPage" section="omca"></field>
+            <field id="dhNotes" section="omca"></field>
+        </repeat>
+        <field id="sortableObjectNumber" section="omca" ui-search="range" mini="list" ui-type="computed" ui-search-args="objectNumberRangeSearch" ui-args="objectNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <field id="objectNumberRangeSearch" ui-search="range" exists-in-services="false" query-behavior="ignore">
+            <!-- This is an app-layer-only field, used in advanced search to enter "regular" object numbers, which will be computed into sortableObjectNumber for range search. -->
+        </field>
+        <field id="ipAudit" ui-search="repeatable" autocomplete="vocab-ipaudit" ui-type="enum" section="omca"></field>
+        <field id="copyrightHolder" autocomplete="person-person,organization-organization" section="omca"></field>
+    </section>
+    <section id="descriptionInformation">
+        <field id="sex" autocomplete="vocab-sex" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-objectnamesystem vocab -->
+            <options action='delete'/>
+        </field>
+        <field id="phase" autocomplete="vocab-phase" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-phase vocab -->
+            <options action='delete'/>
+        </field>
+        <repeat id="forms">
+            <field id="form" autocomplete="vocab-form" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-form vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="colors">
+            <field id="color" autocomplete="concept-concept">
+                <!-- adding concept authority -->
+            </field>
+        </repeat>
+        <repeat id="materialGroupList/materialGroup">
+            <field id="material" autocomplete="concept-concept" ui-search="repeatable">
+                <!-- adding concept authority -->
+            </field>
+        </repeat>
+        <repeat id="objectComponentGroupList/objectComponentGroup">
+            <field id="objectComponentName" autocomplete="vocab-objectcomponentname" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-form vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="technicalAttributeGroupList/technicalAttributeGroup">
+            <field id="technicalAttribute" autocomplete="vocab-technicalattribute" ui-type="enum" ui-search="repeatable" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-technicalattribute vocab -->
+                <options action='delete'/>
+            </field>
+            <field id="technicalAttributeMeasurement" autocomplete="vocab-technicalattributemeasurement" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-technicalattributemeasurement vocab -->
+                <options action='delete'/>
+            </field>
+            <field id="technicalAttributeMeasurementUnit" autocomplete="vocab-technicalattributemeasurementunit" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-technicalattributemeasurementunit vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <section id="contentInformation">
+            <repeat id="contentLanguages">
+                <field id="contentLanguage" autocomplete="vocab-languages" ui-type="enum" ui-search="repeatable">
+                    <!-- overriding enum values; making searchable -->
+                    <enum>
+                        <default/>
+                        <blank-value>no value selected</blank-value>
+                    </enum>
+                </field>
+            </repeat>
+            <repeat id="contentConcepts">
+                <field id="contentConcept" autocomplete="concept-concept,concept-material_ca" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <repeat id="contentPersons">
+                <field id="contentPerson" autocomplete="person-person,person-ulan_pa" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <repeat id="contentPlaces">
+                <field id="contentPlace" autocomplete="place-place" ui-search="repeatable">
+                    <!-- adding place authority; making searchable -->
+                </field>
+            </repeat>
+            <repeat id="contentOrganizations">
+                <field id="contentOrganization" autocomplete="organization-organization,organization-ulan_oa" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <field id="argusSubject" section="omca"></field>
+            <field id="signatureOMCA" section="omca"></field>
+            <field id="inscriptionOMCA" section="omca"></field>
+        </section>
+        <section id="textualInscriptionInformation">
+            <repeat id="textualInscriptionGroupList/textualInscriptionGroup">
+                <field id="inscriptionContentLanguage" autocomplete="vocab-languages" ui-type="enum">
+                    <!-- overriding enum values -->
+                    <enum>
+                        <default/>
+                        <blank-value>no value selected</blank-value>
+                    </enum>
+                </field>
+                <field id="inscriptionContentPosition" seperate_ui_container="true">
+                    <!-- updating options list -->
+                    <options>
+                        <option id="">no value selected</option>
+                        <option id="back">back</option>
+                        <option id="base">base</option>
+                        <option id="bottom">bottom</option>
+                        <option id="front">front</option>
+                        <option id="inside">inside</option>
+                        <option id="left">left</option>
+                        <option id="outside">outside</option>
+                        <option id="right">right</option>
+                        <option id="rim">rim</option>
+                        <option id="top">top</option>
+                    </options>
+                </field>
+                <field id="inscriptionContentScript" autocomplete="vocab-inscriptioncontentscript" ui-type="enum" seperate_ui_container="true">
+                    <!-- removing options block; adding vocab-inscriptioncontentscript vocab -->
+                    <options action='delete'/>
+                </field>
+                <field id="inscriptionContentType" autocomplete="vocab-inscriptioncontenttype" ui-type="enum" seperate_ui_container="true">
+                    <!-- removing options block; adding vocab-inscriptioncontenttype vocab -->
+                    <options action='delete'/>
+                </field>
+            </repeat>
+        </section>
+        <field id="argusDescription" section="omca"></field>
+        <field id="argusRemarks" section="omca"></field>
+        <field id="accessory" section="omca"></field>
+    </section>
+    <section id="objectProductionInformation">
+        <repeat id="objectProductionPlaceGroupList/objectProductionPlaceGroup">
+            <field id="objectProductionPlace" autocomplete="place-place" ui-search="repeatable">
+                <!-- adding place authority -->
+            </field>
+        </repeat>
+        <repeat id="objectProductionPersonGroupList/objectProductionPersonGroup">
+            <field id="objectProductionPerson" ui-search="repeatable" mini="list" autocomplete="person-person">
+                <!-- adding mini=list attribute -->
+            </field>
+        </repeat>
+        <field id="argusMade" section="omca"></field>
+    </section>
+    <section id="objectHistoryAssociationInformation">
+        <field id="ownershipCategory" seperate_ui_container="true">
+            <!-- replacing default value -->
+            <options>
+                <option id="">no value selected</option>
+                <option id="company">company</option>
+                <option id="public">public</option>
+                <option id="private">private</option>
+            </options>
+        </field>
+        <field id="ownershipExchangeMethod" seperate_ui_container="true">
+            <!-- replacing default value -->
+            <options>
+                <option id="">no value selected</option>
+                <option id="bequest">bequest</option>
+                <option id="exchange">exchange</option>
+                <option id="gift">gift</option>
+                <option id="purchase">purchase</option>
+                <option id="transfer">transfer</option>
+                <option id="treasure">treasure</option>
+            </options>
+        </field>
+        <section id="associationInformation">
+            <repeat id="assocConceptGroupList/assocConceptGroup">
+                <field id="assocConcept" autocomplete="concept-concept" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <repeat id="assocCulturalContextGroupList/assocCulturalContextGroup">
+                <field id="assocCulturalContext" autocomplete="concept-concept" ui-search="repeatable">
+                    <!-- adding concept authority; making searchable -->
+                </field>
+            </repeat>
+            <repeat id="assocOrganizationGroupList/assocOrganizationGroup">
+                <field id="assocOrganization" autocomplete="organization-organization" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <repeat id="assocPersonGroupList/assocPersonGroup">
+                <field id="assocPerson" autocomplete="person-person" ui-search="repeatable">
+                    <!-- making searchable -->
+                </field>
+            </repeat>
+            <repeat id="assocPlaceGroupList/assocPlaceGroup">
+                <field id="assocPlace" autocomplete="place-place" ui-search="repeatable">
+                    <!-- adding place authority; making searchable -->
+                </field>
+            </repeat>
+        </section>
+        <field id="argusFoundAndUsed" section="omca"></field>
+        <repeat id="exhibitionHistories" section="omca">
+            <field id="exhibitionHistory" section="omca" ui-search="repeatable"></field>
+        </repeat>
+        <repeat id="previousOwnersGroupList/previousOwnersGroup" section="omca">
+            <field id="previousOwner" autocomplete="person-person,organization-organization" section="omca"></field>
+            <field id="provenanceInformation" section="omca"></field>
+        </repeat>
+    </section>
+    <section id="objectViewerContributionInformation">
+        <repeat id="viewerContributionGroupList/viewerContributionGroup" section="omca">
+            <field id="viewerName" autocomplete="person-person" section="omca"></field>
+            <field id="viewerRole" autocomplete="vocab-viewersrole" ui-type="enum" section="omca"></field>
+            <field id="viewerContribution" section="omca"></field>
+            <field id="viewerContributionDate" ui-type="date" datatype="date" section="omca"></field>
+            <repeat id="viewerReferences" section="omca">
+                <field id="viewerReference" datatype="largetext" section="omca"></field>
+            </repeat>
+            <field id="viewerContributionNote" section="omca"></field>
+        </repeat>
+    </section>
+    <section id="objectCollectionInformation">
+        <repeat id="fieldCollectionMethods">
+            <field id="fieldCollectionMethod" autocomplete="vocab-fieldcollectionmethod" ui-type="enum">
+                <!-- changed vocab type -->
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,24 @@
+<record id="organization" is-extension="true">
+    <services-record-path id="omca">organizations_omca:http://collectionspace.org/services/organization/local/omca,organizations_omca</services-record-path>
+    <section id="organizationNameAuthorityInformation">
+        <field id="foundingPlace" ui-search="repeatable" autocomplete="place-place">
+            <!-- adding place authority vocab -->
+            <selector>orgAuthority-foundingPlace</selector>
+        </field>
+        <repeat id="groups">
+            <field id="group" ui-search="repeatable" autocomplete="concept-concept">
+                <!-- adding concept authority vocab -->
+                <selector>orgAuthority-group</selector>
+            </field>
+        </repeat>
+        <repeat id="functions">
+            <field id="function" ui-search="repeatable" autocomplete="vocab-organizationfunction" ui-type="enum">
+                <!-- adding organizationfunction authority -->
+                <selector>orgAuthority-function</selector>
+            </field>
+        </repeat>
+        <field id="legacyArgusNotes" section="omca"></field>
+        <field id="legacyParents" section="omca"></field>
+        <field id="legacySeeAlso" section="omca"></field>
+    </section>
+</record>

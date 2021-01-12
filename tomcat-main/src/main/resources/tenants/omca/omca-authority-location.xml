@@ -1,0 +1,8 @@
+<record id="location">
+    <section id="locationTermInformation">
+        <field id="locationType" ui-search="repeatable" autocomplete="vocab-omcalocationtype" ui-type="enum">
+            <!-- changing vocabulary to omcalocationtype -->
+            <selector>location-type</selector>
+        </field>
+    </section>
+</record>

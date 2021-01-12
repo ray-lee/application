@@ -1,0 +1,41 @@
+<record id="intake" is-extension="true">
+    <services-record-path id="omca">intakes_omca:http://collectionspace.org/services/intake/local/omca,intakes_omca</services-record-path>
+    <section id="objectEntryInformation">
+        <field id="entryNumber" sortKey="sortableEntryNumber">
+            <!-- adding sortKey attribute -->
+            <!-- updating options list -->
+            <options>
+                <option id="intake" sample="IN2015.1">Intake</option>
+            </options>
+        </field>
+        <field id="entryReason" mini="summary,search,list,relate" ui-search="repeatable" autocomplete="vocab-entryReason" ui-type="enum" seperate_ui_container="true">
+            <!-- removing options block; adding vocab-entryReason vocab -->
+            <options action='delete'/>
+        </field>
+        <repeat id="entryMethods">
+            <field id="entryMethod" ui-search="repeatable" autocomplete="vocab-omcaentrymethod" ui-type="enum">
+                <!-- adding omcaentrymethod vocab -->
+            </field>
+        </repeat>
+        <repeat id="currentOwners">
+            <field id="currentOwner" in-title="no" mini="search,list" ui-search="repeatable" autocomplete="person-person,organization-organization">
+                <!-- removing summary value from mini attribute -->
+            </field>
+        </repeat>
+        <field id="sortableEntryNumber" section="omca" mini="list" ui-type="computed" ui-args="entryNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <repeat id="depositorOMCAGroupList/depositorOMCAGroup" section="omca">
+            <field id="depositorOMCA" ui-search="repeatable" autocomplete="person-person,organization-organization" section="omca"></field>
+            <field id="depositorsRequirementsOMCA" section="omca"></field>
+        </repeat>
+    </section>
+    <section id="objectCollectionInformation">
+        <field id="fieldCollectionPlace" autocomplete="place-place">
+            <!-- adding place authority -->
+        </field>
+    </section>
+    <section id="valuationInformation">
+        <field id="estimatedValue" ui-type="validated" datatype="float" section="omca"></field>
+    </section>
+</record>

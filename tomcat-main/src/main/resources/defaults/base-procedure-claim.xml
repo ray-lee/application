@@ -1,32 +1,177 @@
 <record id="claim" in-findedit="yes" type="record,procedure" cms-type="default" generate-services-schema="true">
-	<services-url>claims</services-url>
-	<services-tenant-singular>Claim</services-tenant-singular>
-	<services-tenant-plural>Claims</services-tenant-plural>
-	<web-url>claim</web-url>
-	<tab-url>claim-tab</tab-url>
+    <services-url>claims</services-url>
+    <services-tenant-singular>Claim</services-tenant-singular>
+    <services-tenant-plural>Claims</services-tenant-plural>
+    <web-url>claim</web-url>
+    <tab-url>claim-tab</tab-url>    
 
-	<services-list-path>abstract-common-list/list-item</services-list-path>
-	<services-record-path>claims_common:http://collectionspace.org/services/claim,claims_common</services-record-path>
-	<services-record-path id="collectionspace_core">collectionspace_core:http://collectionspace.org/collectionspace_core/,collectionspace_core</services-record-path>
+    <services-list-path>abstract-common-list/list-item</services-list-path>
+    <services-record-path>claims_common:http://collectionspace.org/services/claim,claims_common</services-record-path>
+    <services-record-path id="collectionspace_core">collectionspace_core:http://collectionspace.org/collectionspace_core/,collectionspace_core</services-record-path>
+    <hassoftdelete>true</hassoftdelete>
 
-	<include src="domain-procedure-claim.xml" strip-root="yes" />
+    <structures>
+        <structure id="search">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="screen">
+            <view>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+        </structure>
+        <structure id="tab">
+            <view>
+                <titlebar show="false"></titlebar>
+                <sidebar show="false"></sidebar>
+                <edit-section id="details" show="true"></edit-section>
+                <list-section id="list" show="false"></list-section>
+                <label-section id="messagekeys" show="true"></label-section>
+            </view>
+            <repeat id="list" asSibling="true">
+                <selector>recordList-row:</selector>
+                <field id="summary" ui-type="list">
+                    <selector>related-summary</selector>
+                </field>
+                <field id="number" ui-type="list">
+                    <selector>related-number</selector>
+                </field>
+            </repeat>
+        </structure>
+    </structures>
+    
+    <include src="domain-procedure-claim.xml" strip-root="yes"/>
+    
+    <row-selector>.csc-recordList-row:</row-selector>
+    
+    <section id="coreInformation">
+        <include src="core-fields.xml"  strip-root="yes" />
+    </section>
+    
+    <section id="claimInformation">
+        <field id="claimNumber" ui-search="repeatable" in-title="yes" chooser="yes" mini="number,search,list,relate" seperate_ui_container="true">
+            <title-selector>titleBar-claimNumber</title-selector>
+            <container-selector>claim-claimNumber-container</container-selector>
+            <options>
+                <option id="claim" sample="CL2015.1">Claim</option>
+            </options>
+        </field>
+        <field id="claimName"/>
+        <repeat id="altClaimNamesGroupList/altClaimNamesGroup">
+            <field id="altClaimName"></field>
+            <field id="altClaimNote"></field>
+        </repeat>
+        <repeat id="claimClaimantGroupList/claimClaimantGroup">
+            <field id="filedBy" ui-search="repeatable" mini="summary,search,list,relate" autocomplete="person-person,organization-organization"></field>
+            <field id="filedOnBehalfOf" ui-search="repeatable" autocomplete="person-person,organization-organization"></field>
+            <field id="claimantNote"></field>
+        </repeat>
+        <repeat id="claimTypes">
+            <field id="claimType" autocomplete="vocab-claimtype" ui-type="enum"></field>
+        </repeat>
+        <repeat id="claimFiledDatesGroupList/claimFiledDatesGroup">
+            <field id="claimFiledDate" ui-search="range" ui-type="date"></field>
+            <field id="claimFiledNote"></field>
+        </repeat>
+        <repeat id="claimNotes">
+            <field id="claimNote"></field>
+        </repeat>
+    </section>
+    <section id="claimContextInformation">
+        <repeat id="sitesInvolvedGroupList/sitesInvolvedGroup">
+            <field id="siteOrPlaceName" autocomplete="place-place,place-tgn_place"></field>
+            <field id="siteOrPlaceNote"></field>
+        </repeat>
+        <repeat id="culturalGroupsInvolvedGroupList/culturalGroupsInvolvedGroup">
+            <field id="culturalGroupName"></field>
+            <field id="culturalGroupNote"></field>
+        </repeat>
+        <repeat id="timePeriodsRepresentedGroupList/timePeriodsRepresentedGroup">
+            <group id="periodOrDateGroup" ui-type="groupfield/structureddate"
+                primarykey="dateDisplayDate" ui-func="cspace.structuredDate">
+            </group>
+            <field id="periodOrDateNote"></field>
+        </repeat>
+    </section>
+    <section id="claimsProcessingInformation">
+        <repeat id="initialResponseDatesGroupList/initialResponseDatesGroup">
+            <field id="initialResponseDate" ui-type="date"></field>
+            <field id="initialResponseDateNote"></field>
+        </repeat>
+        <repeat id="sentNAGPRACommitteeDatesGroupList/sentNAGPRACommitteeDatesGroup">
+            <field id="sentNAGPRACommitteeDate" ui-type="date"></field>
+            <field id="sentNAGPRACommitteeNote"></field>
+        </repeat>
+        <repeat id="recommendationsNAGPRACommitteeGroupList/recommendationsNAGPRACommitteeGroup">
+            <field id="recommendationNAGPRACommitteeDate" ui-type="date"></field>
+            <field id="recommendationNAGPRACommitteeNote"></field>
+        </repeat>
+        <repeat id="sentNationalNAGPRADatesGroupList/sentNationalNAGPRADatesGroup">
+            <field id="sentNationalNAGPRADate" ui-type="date"></field>
+            <field id="sentNationalNAGPRANote"></field>
+        </repeat>
+        <repeat id="responsesNationalNAGPRAGroupList/responsesNationalNAGPRAGroup">
+            <field id="responseNationalNAGPRADate" ui-type="date"></field>
+            <field id="responseNationalNAGPRANote"></field>
+        </repeat>
+        <repeat id="publicationsNationalNAGPRAGroupList/publicationsNationalNAGPRAGroup">
+            <field id="publicationNationalNAGPRADate" ui-type="date"></field>
+            <field id="publicationNationalNAGPRANote"></field>
+        </repeat>
+        <repeat id="nationalNAGPRA30DayNoticesGroupList/nationalNAGPRA30DayNoticesGroup">
+            <field id="nationalNAGPRA30DayNoticeDate" ui-type="date"></field>
+            <field id="nationalNAGPRA30DayNoticeType">
+                <options>
+                    <option id="" default="yes">Please select a value</option>
+                    <option id="period-begins">period begins</option>
+                    <option id="period-ends">period ends</option>
+                </options>
+            </field>
+            <field id="nationalNAGPRA30DayNoticeNote"></field>
+        </repeat>
+        <repeat id="transferDatesGroupList/transferDatesGroup">
+            <field id="transferDate" ui-type="date" datatype="date"></field>
+            <field id="transferNote"></field>
+        </repeat>
 
-	<section id="coreInformation">
-		<include src="core-fields.xml" strip-root="yes" />
-	</section>
+        <field id="dispositionPossibilitiesDiscussed" datatype="boolean"/>
+        <field id="dispositionPossibilitiesDiscussedNote"/>
 
-	<section id="claimInformation">
-		<field id="claimNumber" mini="number,list" />
+        <field id="surroundingTribesContacted" datatype="boolean"/>
+        <field id="surroundingTribesContactedNote"/>
 
-		<repeat id="claimantGroupList/claimantGroup">
-			<field id="claimFiledBy" autocomplete="true" />
-			<field id="claimFiledOnBehalfOf" mini="summary,list" autocomplete="true" />
-			<field id="claimantNote" />
-		</repeat>
+        <field id="institutionalNAGPRATeamNotified" datatype="boolean"/>
+        <field id="institutionalNAGPRATeamNotifiedNote"/>
 
-		<repeat id="claimReceivedGroupList/claimReceivedGroup">
-			<field id="claimReceivedDate" datatype="date" />
-			<field id="claimReceivedNote" />
-		</repeat>
-	</section>
+        <field id="siteFileResearchCompleted" datatype="boolean"/>
+        <field id="siteFileResearchCompletedNote"/>
+
+        <field id="accessionFileResearchCompleted" datatype="boolean"/>
+        <field id="accessionFileResearchCompletedNote"/>
+
+        <field id="objectsLocatedCounted" datatype="boolean"/>
+        <field id="objectsLocatedCountedNote"/>
+
+        <field id="objectsConsolidated" datatype="boolean"/>
+        <field id="objectsConsolidatedNote"/>
+
+        <field id="objectsPhotographed" datatype="boolean"/>
+        <field id="objectsPhotographedNote"/>
+
+        <field id="registrationDocumentsDrawnUp" datatype="boolean"/>
+        <field id="registrationDocumentsDrawnUpNote"/>
+
+        <field id="tribeContactedForPackingStorageInstructions" datatype="boolean"/>
+        <field id="tribeContactedForPackingStorageInstructionsNote"/>
+
+        <field id="dateArrangedPickupTransfer" datatype="boolean"/>
+        <field id="dateArrangedPickupTransferNote"/>
+
+        <field id="objectsMarkedDeaccessioned" datatype="boolean"/>
+        <field id="objectsMarkedDeaccessionedNote"/>
+
+        <field id="claimDocumentsArchives" datatype="boolean"/>
+        <field id="claimDocumentsArchivesNote"/>
+    </section>
 </record>

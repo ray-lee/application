@@ -1,0 +1,1491 @@
+<instances>
+    <instance id="vocab-termtype">
+        <web-url>termtype</web-url>
+        <title-ref>termtype</title-ref>
+        <title>Term Type</title>
+        <options>
+            <option id="descriptor">Descriptor</option>
+            <option id="alternate_descriptor">Alternate descriptor</option>
+            <option id="used_for_term">Used for term</option>
+        </options>
+    </instance>
+    <instance id="vocab-termstatus">
+        <web-url>termstatus</web-url>
+        <title-ref>termstatus</title-ref>
+        <title>Term Status</title>
+        <options>
+            <option id="provisional">Provisional</option>
+            <option id="under_review">Under Review</option>
+            <option id="accepted">Accepted</option>
+            <option id="rejected">Rejected</option>
+        </options>
+    </instance>
+    <instance id="vocab-publicationtype">
+        <web-url>publicationtype</web-url>
+        <title-ref>publicationtype</title-ref>
+        <title>Publication Type</title>
+        <options>
+            <option id="atlas">Atlas</option>
+            <option id="book">Book</option>
+            <option id="brochure">Brochure</option>
+            <option id="condition_report">Condition report</option>
+            <option id="contract">Contract</option>
+            <option id="diary">Diary</option>
+            <option id="dictionary">Dictionary</option>
+            <option id="encyclopedia">Encyclopedia</option>
+            <option id="exhibition_catalog">Exhibition catalog</option>
+            <option id="guide_book">Guide book</option>
+            <option id="inventory">Inventory</option>
+            <option id="journal_article">Journal article</option>
+            <option id="letter">Letter</option>
+            <option id="monograph">Monograph</option>
+            <option id="newspaper_article">Newspaper article</option>
+            <option id="obituary">Obituary</option>
+            <option id="verbal_opinion">Verbal opinion</option>
+            <option id="online_publication">Online publication</option>
+        </options>
+    </instance>
+    <instance id="vocab-persontitle">
+        <web-url>persontitle</web-url>
+        <title-ref>persontitle</title-ref>
+        <title>Person Title</title>
+        <options>
+            <option id="Mr">Mr.</option>
+            <option id="Mrs">Mrs.</option>
+            <option id="Ms">Ms.</option>
+            <option id="Miss">Miss</option>
+            <option id="Dr">Dr.</option>
+            <option id="Prof">Prof.</option>
+            <option id="Capt">Capt.</option>
+            <option id="Rev">Rev.</option>
+        </options>
+    </instance>
+    <instance id="vocab-gender">
+        <web-url>gender</web-url>
+        <title-ref>gender</title-ref>
+        <title>Gender</title>
+        <options>
+            <option id="female">female</option>
+            <option id="male">male</option>
+            <option id="non_binary">non-binary</option>
+            <option id="transgender">transgender</option>
+        </options>
+    </instance>
+    <instance id="vocab-salutation">
+        <web-url>salutation</web-url>
+        <title-ref>salutation</title-ref>
+        <title>Salutation</title>
+        <options>
+            <option id="dear">Dear</option>
+            <option id="hello">Hello</option>
+            <option id="to">To</option>
+        </options>
+    </instance>
+    <instance id="vocab-numberType">
+        <web-url>numberType</web-url>
+        <title-ref>numberType</title-ref>
+        <title>Number Type</title>
+        <options>
+            <option id="doorbook_number">doorbook number</option>
+            <option id="old_number">old number</option>
+            <option id="old_count">old count</option>
+            <option id="Lange_number">Lange number</option>
+            <option id="MoMA_number">MoMA number</option>
+            <option id="negative_number">negative number</option>
+            <option id="old_accession_number">old accession number</option>
+            <option id="maker_number">maker number</option>
+            <option id="lender_number">Lender number</option>
+        </options>
+    </instance>
+    <instance id="vocab-responsibleDepartment">
+        <web-url>responsibleDepartment</web-url>
+        <title-ref>responsibleDepartment</title-ref>
+        <title>Responsible Department</title>
+        <options>
+            <option id="Art_Department">Art Department</option>
+            <option id="History_Department">History Department</option>
+            <option id="Science_Department">Science Department</option>
+            <option id="Professional_Services_Department">Professional Services Department</option>
+            <option id="Education_Department">Education Department</option>
+            <option id="Multiple">Multiple</option>
+            <option id="CIA">CIA</option>
+            <option id="CPC">CPC</option>
+        </options>
+    </instance>
+    <instance id="vocab-recordStatus">
+        <web-url>recordStatus</web-url>
+        <title-ref>recordStatus</title-ref>
+        <title>Record Status</title>
+        <options>
+            <option id="approved">Approved</option>
+            <option id="new">New</option>
+            <option id="temporary">Temporary</option>
+            <option id="pending_curatorial_review">Pending curatorial review</option>
+            <option id="priority_cleanup">Priority cleanup</option>
+        </options>
+    </instance>
+    <instance id="vocab-determinationQualifier">
+        <web-url>determinationQualifier</web-url>
+        <title-ref>determinationQualifier</title-ref>
+        <title>Determination Qualifier</title>
+        <options>
+            <option id="Genus_species">Genus species</option>
+            <option id="Family">Family</option>
+            <option id="Common_Name">Common Name</option>
+        </options>
+    </instance>
+    <instance id="vocab-determinationKind">
+        <web-url>determinationKind</web-url>
+        <title-ref>determinationKind</title-ref>
+        <title>Determination Kind</title>
+        <options>
+            <option id="original_label_determination">original label determination</option>
+            <option id="fide">fide</option>
+            <option id="nomenclatural_change">nomenclatural change</option>
+            <option id="taxonomic_change">taxonomic change</option>
+        </options>
+    </instance>
+    <instance id="vocab-collection">
+        <web-url>collection</web-url>
+        <title-ref>collection</title-ref>
+        <title>Collection</title>
+        <options>
+            <option id="All_Of_Us_Or_None">All Of Us Or None</option>
+            <option id="Andrew_J_Russell">Andrew J. Russell</option>
+            <option id="Arthur_and_Lucia_Mathews">Arthur and Lucia Mathews</option>
+            <option id="Bob_Walker">Bob Walker</option>
+            <option id="Dorothea_Lange">Dorothea Lange</option>
+            <option id="Helen_Nestor">Helen Nestor</option>
+            <option id="Kahn_Collection">Kahn Collection</option>
+            <option id="Moses_Cohen">Moses Cohen</option>
+            <option id="Margaret_De_Patta">Margaret De Patta</option>
+            <option id="Ted_and_Ruth_Nash">Ted and Ruth Nash</option>
+            <option id="Tribune">Tribune</option>
+        </options>
+    </instance>
+    <instance id="vocab-organizationfunction">
+        <web-url>organizationfunction</web-url>
+        <title-ref>organizationfunction</title-ref>
+        <title>Organization Function</title>
+        <options>
+            <option id="printer">Printer</option>
+            <option id="publisher">Publisher</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcalocationtype">
+        <web-url>omcalocationtype</web-url>
+        <title-ref>omcalocationtype</title-ref>
+        <title>OMCA Location Types</title>
+        <options>
+            <option id="clss">Conservation Lab: Secure storage</option>
+            <option id="musclass">Museum: Classroom</option>
+            <option id="musgallery">Museum: Gallery</option>
+            <option id="musoffice">Museum: Office</option>
+            <option id="musoutside">Museum: Outside grounds</option>
+            <option id="musscs">Museum: Secure cold storage</option>
+            <option id="musss">Museum: Secure storage</option>
+            <option id="mussts">Museum: Secure temporary storage</option>
+            <option id="mussrr">Museum: Storage/research room</option>
+            <option id="offsite">Offsite</option>
+            <option id="void">Void location</option>
+            <option id="missing">Missing</option>
+            <option id="unlocated">Unlocated</option>
+            <option id="whss">Warehouse: Secure storage</option>
+        </options>
+    </instance>
+    <instance id="vocab-fundsource">
+        <web-url>fundsource</web-url>
+        <title-ref>fundsource</title-ref>
+        <title>Funding Source</title>
+        <options>
+            <option id="mrsnovyfund">Acquired through funds provided by Mrs. Frederick G. Novy Jr.</option>
+            <option id="drmrsnovyfund">Acquired through funds provided by Dr. and Mrs. Frederick G. Novy Jr.</option>
+            <option id="aaf">Art Acquisition Fund</option>
+            <option id="acf">Art Curators Fund</option>
+            <option id="adf">Art Deaccession Fund P215520</option>
+            <option id="ag">Art Guild</option>
+            <option id="aacf">Arts and Crafts Fund</option>
+            <option id="befd">Bequest of the Estate of Fidel Danieli</option>
+            <option id="bf">Blaisdell Fund #1840-01-5112-30</option>
+            <option id="coo">City of Oakland, Petty cash</option>
+            <option id="df">Directors fund</option>
+            <option id="ff">Founders Fund</option>
+            <option id="fotm">Friends of the Museum</option>
+            <option id="fsnr">Fund Source Not Recorded</option>
+            <option id="geme">Gift of the Estate of Marjorie Eaton</option>
+            <option id="hpf">Helen Pritchard Fund</option>
+            <option id="hghf">Herbert Gray Hills Fund</option>
+            <option id="h756f">History 756 Fund</option>
+            <option id="hcf">History Curators Fund</option>
+            <option id="hg">History Guild</option>
+            <option id="hpf">History Photo Fund</option>
+            <option id="ims">Institute of Museum Services</option>
+            <option id="jeft">John Ehn Family Trust</option>
+            <option id="mmrhf">Mr. and Mrs. Robert Hotle Fund</option>
+            <option id="mdaf">Museum Donors Acquisition Fund</option>
+            <option id="mipf">Museum Income Purchase Fund</option>
+            <option id="nea">National Endowment for the Arts</option>
+            <option id="neh">National Endowment for the Humanities</option>
+            <option id="nehcgf">NEH Challenge Grant Funds for the History Dept.</option>
+            <option id="oiaf">Oakland International Airport Fund</option>
+            <option id="oma">Oakland Museum Association</option>
+            <option id="omwb">Oakland Museum Womens Board</option>
+            <option id="papf">Prints and Photographs Fund</option>
+            <option id="pwffdo">Purchased with funds from deaccessioned objects</option>
+            <option id="pwffcg">Purchased with funds from the Collectors Gallery</option>
+            <option id="rf">Reichel Fund</option>
+            <option id="tam">Tamarack</option>
+            <option id="tarnf">Ted and Ruth Nash Fund</option>
+            <option id="tbf">The Bell Fund</option>
+            <option id="tshcf">The S. H. Cowell Foundation</option>
+            <option id="twagf">The Wallace Alexander Gerbode Foundation</option>
+            <option id="tf">Timken Fund</option>
+            <option id="vf">Valley Foundation</option>
+        </options>
+    </instance>
+    <instance id="vocab-acquisitionmethod">
+        <web-url>acquisitionmethod</web-url>
+        <title-ref>acquisitionmethod</title-ref>
+        <title>Acquisition Method</title>
+        <options>
+            <option id="bequest">Bequest</option>
+            <option id="exchange">Exchange</option>
+            <option id="gift">Gift</option>
+            <option id="purchase">Purchase</option>
+            <option id="gift_purchase">Gift/Purchase</option>
+            <option id="transfer">Transfer</option>
+            <option id="field_collected">Field Collected</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcaentrymethod">
+        <web-url>omcaentrymethod</web-url>
+        <title-ref>omcaentrymethod</title-ref>
+        <title>OMCA Entry Method</title>
+        <options>
+            <option id="doorbooked">Doorbooked</option>
+            <option id="field_collected">Field Collected</option>
+            <option id="gift">Gift</option>
+            <option id="unknown">Unknown</option>
+        </options>
+    </instance>
+    <instance id="vocab-entryReason">
+        <web-url>entryReason</web-url>
+        <title-ref>entryReason</title-ref>
+        <title>Entry Reason</title>
+        <options>
+            <option id="consideration">Consideration</option>
+            <option id="commission">Commission</option>
+            <option id="exhibit">Exhibit</option>
+            <option id="research">Research</option>
+        </options>
+    </instance>
+    <instance id="vocab-category">
+        <web-url>category</web-url>
+        <title-ref>category</title-ref>
+        <title>Category</title>
+        <options>
+            <option id="advertising">Advertising</option>
+            <option id="agriculture">Agriculture</option>
+            <option id="architectural_fragment">Architectural Fragment</option>
+            <option id="costume">Costume</option>
+            <option id="entomology">Entomology</option>
+            <option id="furniture">Furniture</option>
+            <option id="gallery_specimens">Gallery Specimens</option>
+            <option id="geology">Geology</option>
+            <option id="herbarium">Herbarium</option>
+            <option id="herpetology">Herpetology</option>
+            <option id="icthyology">Icthyology</option>
+            <option id="invertebrates">Invertebrates</option>
+            <option id="lapidary">Lapidary</option>
+            <option id="malacology">Malacology</option>
+            <option id="mammalogy">Mammalogy</option>
+            <option id="miscellaneous">Miscellaneous</option>
+            <option id="moving_image">Moving Image</option>
+            <option id="north_american_indian">North American Indian</option>
+            <option id="ornithology">Ornithology</option>
+            <option id="painting">Painting</option>
+            <option id="paleontology">Paleontology</option>
+            <option id="photograph">Photograph</option>
+            <option id="sculpture">Sculpture</option>
+            <option id="snuff_bottles">Snuff Bottles</option>
+            <option id="textile">Textile</option>
+            <option id="toys">Toys</option>
+            <option id="transportation">Transportation</option>
+            <option id="works_on_paper">Works on Paper</option>
+        </options>
+    </instance>
+    <instance id="vocab-titletype">
+        <web-url>titletype</web-url>
+        <title-ref>titletype</title-ref>
+        <title>Title Type</title>
+        <options>
+            <option id="assigned_by_artist">Assigned by Artist</option>
+            <option id="collection">Collection</option>
+            <option id="generic">Generic</option>
+            <option id="popular">Popular</option>
+            <option id="series">Series</option>
+            <option id="trade">Trade</option>
+            <option id="sic">Sic</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectnamesystem">
+        <web-url>objectnamesystem</web-url>
+        <title-ref>objectnamesystem</title-ref>
+        <title>Object Name System</title>
+        <options>
+            <option id="art_and_architecture_thesaurus">Art &amp; Architecture Thesaurus</option>
+            <option id="nomenclature">Nomenclature</option>
+        </options>
+    </instance>
+    <instance id="vocab-phase">
+        <web-url>phase</web-url>
+        <title-ref>phase</title-ref>
+        <title>Phase</title>
+        <options>
+            <option id="adult">adult</option>
+            <option id="larva">larva</option>
+            <option id="immature">immature</option>
+            <option id="young">young</option>
+            <option id="duckling">duckling</option>
+            <option id="chick">chick</option>
+            <option id="juvenile">juvenile</option>
+        </options>
+    </instance>
+    <instance id="vocab-form">
+        <web-url>form</web-url>
+        <title-ref>form</title-ref>
+        <title>Form</title>
+        <options>
+            <option id="pinned">pinned</option>
+            <option id="Riker_mount">Riker mount</option>
+            <option id="air_dried">air dried</option>
+            <option id="freeze_dried">freeze dried</option>
+            <option id="whole_mount">whole mount</option>
+            <option id="ROH">ROH</option>
+            <option id="mounted_in_microscope_slide">mounted in microscope slide</option>
+            <option id="conventional_taxidermy">conventional taxidermy</option>
+            <option id="conventional_mount">conventional mount</option>
+            <option id="frozen_specimen">frozen specimen</option>
+            <option id="pressed">pressed</option>
+            <option id="study_skin">study skin</option>
+            <option id="egg">egg</option>
+        </options>
+    </instance>
+    <instance id="vocab-technicalattribute">
+        <web-url>technicalattribute</web-url>
+        <title-ref>technicalattribute</title-ref>
+        <title>Technical Attribute</title>
+        <options>
+            <option id="magnetic_tape_type">magnetic tape type</option>
+            <option id="record_speed">record speed</option>
+        </options>
+    </instance>
+    <instance id="vocab-technicalattributemeasurement">
+        <web-url>technicalattributemeasurement</web-url>
+        <title-ref>technicalattributemeasurement</title-ref>
+        <title>Technical Attribute Measurement</title>
+        <options>
+            <option id="metal">metal</option>
+            <option id="78">78</option>
+        </options>
+    </instance>
+    <instance id="vocab-technicalattributemeasurementunit">
+        <web-url>technicalattributemeasurementunit</web-url>
+        <title-ref>technicalattributemeasurementunit</title-ref>
+        <title>Technical Attribute Measurement Unit</title>
+        <options>
+            <option id="rpm">rpm</option>
+        </options>
+    </instance>
+    <instance id="vocab-inscriptioncontentscript">
+        <web-url>inscriptioncontentscript</web-url>
+        <title-ref>inscriptioncontentscript</title-ref>
+        <title>Inscription Content Script</title>
+        <options>
+            <option id="handwritten_print">handwritten-print</option>
+            <option id="handwritten_cursive">handwritten-cursive</option>
+            <option id="printed">printed</option>
+            <option id="stamped">stamped</option>
+            <option id="embossed">embossed</option>
+        </options>
+    </instance>
+    <instance id="vocab-inscriptioncontenttype">
+        <web-url>inscriptioncontenttype</web-url>
+        <title-ref>inscriptioncontenttype</title-ref>
+        <title>Inscription Content Type</title>
+        <options>
+            <option id="brand">brand</option>
+            <option id="decoration">decoration</option>
+            <option id="estate_stamp">estate stamp</option>
+            <option id="graffiti">graffiti</option>
+            <option id="label">label</option>
+            <option id="makers_mark">maker's mark</option>
+            <option id="chop">chop</option>
+        </options>
+    </instance>
+    <instance id="vocab-culturalaffinity">
+        <web-url>culturalaffinity</web-url>
+        <title-ref>culturalaffinity</title-ref>
+        <title>Cultural Affinity</title>
+        <options>
+            <option id="arctic">Arctic Culture Area</option>
+            <option id="central_california">Central California Culture Area</option>
+            <option id="great_basin">Great Basin Culture Area</option>
+            <option id="great_plains">Great Plains Culture Area</option>
+            <option id="northeast">Northeast Culture Area</option>
+            <option id="northeast_california">Northeast California Culture Area</option>
+            <option id="northwest_california">Northwest California Culture Area</option>
+            <option id="northwest_coast">Northwest Coast Culture Area</option>
+            <option id="pacific_region">Pacific Region Culture Area</option>
+            <option id="plateau">Plateau Culture Area</option>
+            <option id="southeast">Southeast Culture Area</option>
+            <option id="southern_california">Southern California Culture Area</option>
+            <option id="southwest">Southwest Culture Area</option>
+            <option id="subarctic">Subarctic Culture Area</option>
+        </options>
+    </instance>
+    <instance id="vocab-viewersrole">
+        <web-url>viewersrole</web-url>
+        <title-ref>viewersrole</title-ref>
+        <title>Viewers Role</title>
+        <options>
+            <option id="scholar">scholar</option>
+            <option id="researcher">researcher</option>
+            <option id="curator">curator</option>
+            <option id="online_user">online user</option>
+            <option id="museum_visitor">museum visitor</option>
+            <option id="advisory_councilmember">advisory councilmember</option>
+            <option id="donor">donor</option>
+        </options>
+    </instance>
+    <instance id="vocab-fieldcollectionmethod">
+        <web-url>fieldcollectionmethod</web-url>
+        <title-ref>fieldcollectionmethod</title-ref>
+        <title>Field Collection Method</title>
+        <options>
+            <option id="borehole">borehole</option>
+            <option id="commissioned">commissioned</option>
+            <option id="donation">donation</option>
+            <option id="excavation">excavation</option>
+            <option id="exchanged">exchanged</option>
+            <option id="found_dead">found dead</option>
+            <option id="metal_detector">metal detector</option>
+            <option id="netted">netted</option>
+            <option id="photographed">photographed</option>
+            <option id="purchased">purchased</option>
+            <option id="salvaged">salvaged</option>
+            <option id="shot">shot</option>
+            <option id="trapped">trapped</option>
+        </options>
+    </instance>
+    <instance id="vocab-ipaudit">
+        <web-url>ipaudit</web-url>
+        <title-ref>ipaudit</title-ref>
+        <title>IP Audit</title>
+        <options>
+            <option id="protected_by_copyright">Protected by Copyright</option>
+            <option id="assumed_protected_by_copyright">Assumed Protected by Copyright</option>
+            <option id="copyright_omca">Copyright OMCA</option>
+            <option id="no_known_restrictions">No Known Restrictions</option>
+            <option id="public_domain">Public Domain</option>
+        </options>
+    </instance>
+    <instance id="vocab-sex">
+        <web-url>sex</web-url>
+        <title-ref>sex</title-ref>
+        <title>Sex</title>
+        <options>
+            <option id="male">male</option>
+            <option id="female">female</option>
+        </options>
+    </instance>
+    <instance id="vocab-objectcomponentname">
+        <web-url>objectcomponentname</web-url>
+        <title-ref>objectcomponentname</title-ref>
+        <title>Object Component Name</title>
+        <options>
+            <option id="a">a.</option>
+            <option id="b">b.</option>
+            <option id="c">c.</option>
+            <option id="d">d.</option>
+            <option id="e">e.</option>
+            <option id="f">f.</option>
+            <option id="g">g.</option>
+            <option id="h">h.</option>
+            <option id="i">i.</option>
+            <option id="j">j.</option>
+            <option id="k">k.</option>
+            <option id="l">l.</option>
+            <option id="m">m.</option>
+            <option id="n">n.</option>
+            <option id="o">o.</option>
+            <option id="p">p.</option>
+            <option id="q">q.</option>
+            <option id="r">r.</option>
+            <option id="s">s.</option>
+            <option id="t">t.</option>
+            <option id="u">u.</option>
+            <option id="v">v.</option>
+            <option id="w">w.</option>
+            <option id="x">x.</option>
+            <option id="y">y.</option>
+            <option id="z">z.</option>
+        </options>
+    </instance>
+    <instance id="vocab-accessrestrictiontype">
+        <web-url>accessrestrictiontype</web-url>
+        <title-ref>accessrestrictiontype</title-ref>
+        <title>Access Restriction Type</title>
+        <options>
+            <option id="displayVisualRestriction">display/visual</option>
+            <option id="handlingGenderRestriction">handling: gender</option>
+            <option id="handlingOtherRestriction">handling: other</option>
+            <option id="lendingRestriction">lending</option>
+            <option id="publicationRestriction">publication</option>
+            <option id="researchAccessRestriction">research/access</option>
+            <option id="storageRestriction">storage</option>
+            <option id="treatmentRestriction">treatment</option>
+            <option id="unknown">unknown</option>
+        </options>
+    </instance>
+    <instance id="vocab-measureddimension">
+        <web-url>measureddimension</web-url>
+        <title-ref>measureddimension</title-ref>
+        <title>Dimension - Dimension Measured</title>
+        <options>
+            <option id="area">area</option>
+            <option id="circumference">circumference</option>
+            <option id="count">count</option>
+            <option id="depth">depth</option>
+            <option id="diameter">diameter</option>
+            <option id="film_size">film size</option>
+            <option id="height">height</option>
+            <option id="length">length</option>
+            <option id="running_time">running time</option>
+            <option id="target">target</option>
+            <option id="volume">volume</option>
+            <option id="weight">weight</option>
+            <option id="width">width</option>
+        </options>
+    </instance>
+    <instance id="vocab-measuredpart">
+        <web-url>measuredpart</web-url>
+        <title-ref>measuredpart</title-ref>
+        <title>Dimension - Measured Part</title>
+        <options>
+            <option id="base">base</option>
+            <option id="frame">frame</option>
+            <option id="framed">framed</option>
+            <option id="image_size">image size</option>
+            <option id="mount">mount</option>
+            <option id="paper_size">paper size</option>
+            <option id="plate_size">plate size</option>
+            <option id="unframed">unframed</option>
+            <option id="whole">whole</option>
+        </options>
+    </instance>
+    <instance id="vocab-measurementmethod">
+        <web-url>measurementmethod</web-url>
+        <title-ref>measurementmethod</title-ref>
+        <title>Dimension - Measurement Method</title>
+        <options>
+            <option id="calipers">calipers</option>
+            <option id="measuring_tape_cloth">measuring tape (cloth)</option>
+            <option id="measuring_tape_metal">measuring tape (metal)</option>
+            <option id="ruler">ruler</option>
+            <option id="scale">scale</option>
+        </options>
+    </instance>
+    <instance id="vocab-measurementUnit">
+        <web-url>measurementUnit</web-url>
+        <title-ref>measurementUnit</title-ref>
+        <title>Dimension - Measurement unit</title>
+        <options>
+            <option id="carats">carats</option>
+            <option id="centimeters">centimeters</option>
+            <option id="cubic_centimeters">cubic centimeters</option>
+            <option id="feet">feet</option>
+            <option id="inches">inches</option>
+            <option id="kilograms">kilograms</option>
+            <option id="liters">liters</option>
+            <option id="meters">meters</option>
+            <option id="millimeters">millimeters</option>
+            <option id="minutes">minutes</option>
+            <option id="ounces">ounces</option>
+            <option id="stories">stories</option>
+            <option id="pixels">pixels</option>
+            <option id="pixels_per_inch">pixels per inch</option>
+            <option id="pounds">pounds</option>
+            <option id="square_feet">square feet</option>
+            <option id="stories">stories</option>
+            <option id="troy_ounces">troy ounces</option>
+            <option id="yards">yards</option>
+        </options>
+    </instance>
+    <instance id="vocab-loaninstatus">
+        <web-url>loaninstatus</web-url>
+        <title-ref>loaninstatus</title-ref>
+        <title>Loan In Status</title>
+        <options>
+            <option id="authorized">authorized</option>
+            <option id="refused">refused</option>
+            <option id="renewed">renewed</option>
+            <option id="requested">requested</option>
+            <option id="returned">returned</option>
+            <option id="sent">sent</option>
+            <option id="permanent">permanent</option>
+            <option id="temporary">temporary</option>
+            <option id="extended">extended</option>
+            <option id="coi_requested">COI requested</option>
+            <option id="coi_sent">COI sent</option>
+            <option id="facility_report_requested">facility report requested</option>
+            <option id="facility_report_sent">facility report sent</option>
+            <option id="loan_form_returned">loan form returned</option>
+            <option id="loan_form_sent">loan form sent</option>
+            <option id="final_loan_form_sent">final loan form sent</option>
+            <option id="final_loan_form_received">final loan form received</option>
+            COI requested
+        </options>
+    </instance>
+    <instance id="vocab-loanpurpose">
+        <web-url>loanpurpose</web-url>
+        <title-ref>loanpurpose</title-ref>
+        <title>Loan Purpose</title>
+        <options>
+            <option id="exhibition">exhibition</option>
+            <option id="research">research</option>
+            <option id="scientific_or_exhibition_preparation">scientific or exhibition preparation</option>
+            <option id="analysis">analysis</option>
+            <option id="photography">photography</option>
+            <option id="conservation_or_other_requested_services">conservation or other requested services</option>
+            <option id="long_term_collections_management_and_storage">long term collections management and storage</option>
+        </options>
+    </instance>
+    <instance id="vocab-placeType">
+        <web-url>placeType</web-url>
+        <title-ref>placeType</title-ref>
+        <title>Place Type</title>
+        <options>
+            <option id="autonomous_region">Autonomous region</option>
+            <option id="borough">Borough</option>
+            <option id="building">Building</option>
+            <option id="city">City</option>
+            <option id="collection_site">Collection site</option>
+            <option id="continent">Continent</option>
+            <option id="country">Country</option>
+            <option id="country_code">Country code</option>
+            <option id="county">County</option>
+            <option id="dependent_state">Dependent state</option>
+            <option id="deserted_settlement">Deserted settlement</option>
+            <option id="district_national">District (national)</option>
+            <option id="general_region">General region</option>
+            <option id="governorate">Governorate</option>
+            <option id="inhabited_place">Inhabited place</option>
+            <option id="island">Island</option>
+            <option id="island_group">Island group</option>
+            <option id="locality">Locality</option>
+            <option id="metropolitan_area">Metropolitan area</option>
+            <option id="municipality">Municipality</option>
+            <option id="nation">Nation</option>
+            <option id="national_division">National division</option>
+            <option id="neighborhood">Neighborhood</option>
+            <option id="occupied_territory">Occupied territory</option>
+            <option id="prefecture">Prefecture</option>
+            <option id="province">Province</option>
+            <option id="region">Region</option>
+            <option id="state">State</option>
+            <option id="state_province">State province</option>
+            <option id="territory">Territory</option>
+            <option id="union_territory">Union territory</option>
+            <option id="unitary_authority">Unitary authority</option>
+            <option id="urban_prefecture">Urban prefecture</option>
+            <option id="water_body">Water body</option>
+        </options>
+    </instance>
+    <instance id="vocab-placehistoricalstatus">
+        <web-url>placehistoricalStatus</web-url>
+        <title-ref>placehistoricalStatus</title-ref>
+        <title>Place Historical Status</title>
+        <options>
+            <option id="current">Current</option>
+            <option id="historical">Historical</option>
+            <option id="both">Both</option>
+        </options>
+    </instance>
+    <instance id="vocab-vcoordsys">
+        <web-url>vcoordsys</web-url>
+        <title-ref>vcoordsys</title-ref>
+        <title>Coordinate System</title>
+        <options>
+            <option id="altitude_depth">Altitude depth</option>
+            <option id="latitude_longitude">Latitude and longitude</option>
+            <option id="national_grid_reference">National Grid reference</option>
+            <option id="utm">Universal Transverse Mercator (UTM)</option>
+        </options>
+    </instance>
+    <instance id="vocab-vspatialreferencesystem">
+        <web-url>vspatialreferencesystem</web-url>
+        <title-ref>vspatialreferencesystem</title-ref>
+        <title>Spatial Reference System</title>
+        <options>
+            <option id="epsg4326_wgs84">EPSG:4326-WGS84</option>
+            <option id="epsg4269_nad83">EPSG:4269-NAD83</option>
+            <option id="epsg4267_nad27">EPSG:4267-NAD27</option>
+            <option id="unknown">Unknown</option>
+        </options>
+    </instance>
+    <instance id="vocab-vunitofmeasure">
+        <web-url>vunitofmeasure</web-url>
+        <title-ref>vunitofmeasure</title-ref>
+        <title>Unit of Measure</title>
+        <options>
+            <option id="acres">acres</option>
+            <option id="centimeters">centimeters</option>
+            <option id="feet">feet</option>
+            <option id="hectares">hectares</option>
+            <option id="inches">inches</option>
+            <option id="kilometers">kilometers</option>
+            <option id="meters">meters</option>
+            <option id="miles">miles</option>
+            <option id="millimeters">millimeters</option>
+            <option id="square_feet">square feet</option>
+            <option id="square_meters">square meters</option>
+            <option id="square_yards">square yards</option>
+            <option id="stories">stories</option>
+        </options>
+    </instance>
+    <instance id="vocab-geodeticdatum">
+        <web-url>geodeticdatum</web-url>
+        <title-ref>geodeticdatum</title-ref>
+        <title>Geodetic Datum</title>
+        <options>
+            <option id="epsg4326_wgs84">EPSG:4326-WGS84</option>
+            <option id="epsg4269_nad83">EPSG:4269-NAD83</option>
+            <option id="epsg4267_nad27">EPSG:4267-NAD27</option>
+            <option id="unknown">Unknown</option>
+        </options>
+    </instance>
+    <instance id="vocab-georefprotocol">
+        <web-url>georefprotocol</web-url>
+        <title-ref>georefprotocol</title-ref>
+        <title>Georef Protocol</title>
+        <options>
+            <option id="chapman_wieczorek_2006_guide_best_practices_georeferencing">Chapman, Wieczorek 2006, Guide to Best Practices for Georeferencing</option>
+            <option id="manis_herpnet_ornis_georeferencing_guidelines">MaNIS/HerpNet/ORNIS Georeferencing Guidelines</option>
+            <option id="georeferencing_dummies">Georeferencing For Dummies</option>
+            <option id="biogeomancer">BioGeomancer</option>
+        </options>
+    </instance>
+    <instance id="vocab-georefverificationstatus">
+        <web-url>georefverificationstatus</web-url>
+        <title-ref>georefverificationstatus</title-ref>
+        <title>Georef Verification Status</title>
+        <options>
+            <option id="unverified">Unverified</option>
+            <option id="verified_data_custodian">Verified by data custodian</option>
+            <option id="verified_contributor">Verified by contributor</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcaloanoutstatus">
+        <web-url>omcaloanoutstatus</web-url>
+        <title-ref>omcaloanoutstatus</title-ref>
+        <title>OMCA Loan Out Status</title>
+        <options>
+            <!--option id="agreed">agreed</option-->
+            <option id="authorized">authorized</option>
+            <!--option id="conservation">conservation</option-->
+            <!--option id="photography_requested">photography requested</option-->
+            <option id="refused">refused</option>
+            <option id="renewed">renewed</option>
+            <option id="requested">requested</option>
+            <option id="returned">returned</option>
+            <option id="sent">sent</option>
+            <option id="coi_requested">COI requested</option>
+            <option id="coi_sent">COI sent</option>
+            <option id="facility_report_requested">facility report requested</option>
+            <option id="facility_report_sent">facility report sent</option>
+            <option id="loan_form_returned">loan form returned</option>
+            <option id="loan_form_sent">loan form sent</option>
+            <option id="final_loan_form_sent">final loan form sent</option>
+            <option id="final_loan_form_received">final loan form received</option>
+        </options>
+    </instance>
+    <instance id="vocab-currentLocationFitness">
+        <web-url>currentLocationFitness</web-url>
+        <title-ref>currentLocationFitness</title-ref>
+        <title>Current Location Fitness</title>
+        <options>
+            <option id="permanent">permanent</option>
+            <option id="temporary">temporary</option>
+        </options>
+    </instance>
+    <instance id="vocab-reasonformove">
+        <web-url>reasonformove</web-url>
+        <title-ref>reasonformove</title-ref>
+        <title>Reason For Move</title>
+        <options>
+            <option id="conservation">Conservation</option>
+            <option id="exhibition">Exhibition</option>
+            <option id="inventory">Inventory</option>
+            <option id="loan">Loan</option>
+            <option id="new_storage_location">New Storage Location</option>
+            <option id="photography">Photography</option>
+            <option id="research">Research</option>
+        </options>
+    </instance>
+    <instance id="vocab-inventoryActionRequired">
+        <web-url>inventoryActionRequired</web-url>
+        <title-ref>inventoryActionRequired</title-ref>
+        <title>Inventory Action Required</title>
+        <options>
+            <option id="conservation">Conservation</option>
+            <option id="re_housing">Re-housing</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcaConditionCheckMethod">
+        <web-url>omcaConditionCheckMethod</web-url>
+        <title-ref>omcaConditionCheckMethod</title-ref>
+        <title>OMCA Condition Check Method</title>
+        <options>
+            <option id="visual">Visual</option>
+            <option id="handheld_led_illumination">Handheld LED illumination</option>
+            <option id="low_power_magnification">Low-power magnification</option>
+            <option id="binocular_microscope">Binocular microscope</option>
+            <option id="ultraviolet_radiation">Ultraviolet radiation</option>
+        </options>
+    </instance>
+    <instance id="vocab-conditionCheckReason">
+        <web-url>conditionCheckReason</web-url>
+        <title-ref>conditionCheckReason</title-ref>
+        <title>Condition Check Reason</title>
+        <options>
+            <option id="Acquisition">Acquisition</option>
+            <option id="Appraisal">Appraisal</option>
+            <option id="Damage">Damage</option>
+            <option id="Exhibition">Exhibition</option>
+            <option id="Insurance">Insurance</option>
+            <option id="Loan_out">Loan out</option>
+            <option id="Loan_return">Loan return</option>
+            <option id="Treated">Treated</option>
+        </options>
+    </instance>
+    <instance id="vocab-condition">
+        <web-url>condition</web-url>
+        <title-ref>condition</title-ref>
+        <title>Condition</title>
+        <options>
+            <option id="Excellent">Excellent</option>
+            <option id="Good">Good</option>
+            <option id="Fair">Fair</option>
+            <option id="Poor">Poor</option>
+            <option id="Needs_attention">Needs attention</option>
+            <option id="Toxic">Toxic</option>
+        </options>
+    </instance>
+    <instance id="vocab-hazard">
+        <web-url>hazard</web-url>
+        <title-ref>hazard</title-ref>
+        <title>hazard</title>
+        <options>
+            <option id="poisonous">Poisonous</option>
+            <option id="radioactive">Radioactive</option>
+        </options>
+    </instance>
+    <instance id="vocab-assessmentrequestrole">
+        <web-url>assessmentrequestrole</web-url>
+        <title-ref>assessmentrequestrole</title-ref>
+        <title>Assessment Request Role</title>
+        <options>
+            <option id="curator">Curator</option>
+            <option id="registrar">Registrar</option>
+            <option id="conservator">Conservator</option>
+            <option id="other_staff">Other Staff</option>
+        </options>
+    </instance>
+    <instance id="vocab-needstreatment">
+        <web-url>needstreatment</web-url>
+        <title-ref>needstreatment</title-ref>
+        <title>Needs Treatment</title>
+        <options>
+            <option id="yes">yes</option>
+            <option id="no">no</option>
+        </options>
+    </instance>
+    <instance id="vocab-temperaturelevel">
+        <web-url>temperaturelevel</web-url>
+        <title-ref>temperaturelevel</title-ref>
+        <title>Temperature Level</title>
+        <options>
+            <option id="normal">Normal 65-68F</option>
+            <option id="cool">Cool 55-65F</option>
+            <option id="cold">Cold 33-54F</option>
+            <option id="freezer">Freezer 0-32F</option>
+        </options>
+    </instance>
+    <instance id="vocab-humiditylevel">
+        <web-url>humiditylevel</web-url>
+        <title-ref>humiditylevel</title-ref>
+        <title>Humidity Level</title>
+        <options>
+            <option id="50">50% RH +/- 5%</option>
+            <option id="45">45% RH +/- 5%</option>
+            <option id="35">35% RH +/- 5%</option>
+        </options>
+    </instance>
+    <instance id="vocab-lightlevel">
+        <web-url>lightlevel</web-url>
+        <title-ref>lightlevel</title-ref>
+        <title>Light Level</title>
+        <options>
+            <option id="50">50 lux max. with &lt;/= 75 uW/lumen UV content</option>
+            <option id="100">100 lux max. with &lt;/= 75 uW/lumen UV content</option>
+            <option id="150">150 lux max. with &lt;/= 75 uW/lumen UV content</option>
+            <option id="200">200 lux max. with &lt;/= 75 uW/lumen UV content</option>
+            <option id="300">300 lux max. with &lt;/= 75 uW/lumen UV content</option>
+        </options>
+    </instance>
+    <instance id="vocab-valueType">
+        <web-url>valueType</web-url>
+        <title-ref>valueType</title-ref>
+        <title>Valuation Type</title>
+        <options>
+            <option id="Appraisal">Appraisal</option>
+            <option id="Damage">Damage</option>
+            <option id="Exhibit">Exhibit</option>
+            <option id="Insurance">Insurance</option>
+            <option id="Loan_out">Loan out</option>
+            <option id="Loan_return">Loan return</option>
+            <option id="Purchase">Purchase</option>
+        </options>
+    </instance>
+    <instance id="vocab-mediaType">
+        <web-url>mediaType</web-url>
+        <title-ref>mediaType</title-ref>
+        <title>Media Type</title>
+        <options>
+            <option id="dataset">Dataset</option>
+            <option id="document">Document</option>
+            <option id="moving_image">Moving image</option>
+            <option id="still_image">Still image</option>
+            <option id="sound">Sound</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcaexhibitiontype">
+        <web-url>omcaexhibitiontype</web-url>
+        <title-ref>omcaexhibitiontype</title-ref>
+        <title>OMCA exhibition type</title>
+        <options>
+            <option id="permanent">Permanent</option>
+            <option id="temporary">Temporary</option>
+            <option id="traveling">Traveling</option>
+            <option id="rotation">Rotation</option>
+        </options>
+    </instance>
+    <instance id="vocab-exhibitionobjectconstreatment">
+        <web-url>exhibitionobjectconstreatment</web-url>
+        <title-ref>exhibitionobjectconstreatment</title-ref>
+        <title>Exhibition Object Conservation Treatment</title>
+        <options>
+            <option id="needed">Needed</option>
+            <option id="not_needed">Not needed</option>
+            <option id="done">Done</option>
+        </options>
+    </instance>
+    <instance id="vocab-exhibitiondisplayasgraphic">
+        <web-url>exhibitiondisplayasgraphic</web-url>
+        <title-ref>exhibitiondisplayasgraphic</title-ref>
+        <title>Exhibition Display As Graphic</title>
+        <options>
+            <option id="graphic_only">graphic only</option>
+            <option id="both">Both</option>
+        </options>
+    </instance>
+    <instance id="vocab-exhibitionobjectmount">
+        <web-url>exhibitionobjectmount</web-url>
+        <title-ref>exhibitionobjectmount</title-ref>
+        <title>Exhibition Object Mount</title>
+        <options>
+            <option id="needed">Needed</option>
+            <option id="not_needed">Not needed</option>
+            <option id="done">Done</option>
+        </options>
+    </instance>
+    <instance id="vocab-emailtype">
+        <web-url>emailtype</web-url>
+        <title-ref>emailtype</title-ref>
+        <title>Email Type</title>
+        <options>
+            <option id="business">business</option>
+            <option id="personal">personal</option>
+            <option id="other">other</option>
+        </options>
+    </instance>
+    <instance id="vocab-webaddresstype">
+        <web-url>webaddresstype</web-url>
+        <title-ref>webaddresstype</title-ref>
+        <title>Web Address Type</title>
+        <options>
+            <option id="business">business</option>
+            <option id="personal">personal</option>
+            <option id="other">other</option>
+        </options>
+    </instance>
+    <instance id="vocab-telephonenumbertype">
+        <web-url>telephonenumbertype</web-url>
+        <title-ref>telephonenumbertype</title-ref>
+        <title>Telephone Number Type</title>
+        <options>
+            <option id="business">business</option>
+            <option id="home">home</option>
+            <option id="mobile">mobile</option>
+            <option id="other">other</option>
+        </options>
+    </instance>
+    <instance id="vocab-faxnumbertype">
+        <web-url>faxnumbertype</web-url>
+        <title-ref>faxnumbertype</title-ref>
+        <title>Fax Number Type</title>
+        <options>
+            <option id="business">business</option>
+            <option id="home">home</option>
+            <option id="other">other</option>
+        </options>
+    </instance>
+    <instance id="vocab-addresscountry">
+        <web-url>addresscountry</web-url>
+        <title-ref>addresscountry</title-ref>
+        <title>Address Country</title>
+        <options>
+            <option id="AF">AFGHANISTAN</option>
+            <option id="AX">ÅLAND ISLANDS</option>
+            <option id="AL">ALBANIA</option>
+            <option id="DZ">ALGERIA</option>
+            <option id="AS">AMERICAN SAMOA</option>
+            <option id="AD">ANDORRA</option>
+            <option id="AO">ANGOLA</option>
+            <option id="AI">ANGUILLA</option>
+            <option id="AQ">ANTARCTICA</option>
+            <option id="AG">ANTIGUA AND BARBUDA</option>
+            <option id="AR">ARGENTINA</option>
+            <option id="AM">ARMENIA</option>
+            <option id="AW">ARUBA</option>
+            <option id="AU">AUSTRALIA</option>
+            <option id="AT">AUSTRIA</option>
+            <option id="AZ">AZERBAIJAN</option>
+            <option id="BS">BAHAMAS</option>
+            <option id="BH">BAHRAIN</option>
+            <option id="BD">BANGLADESH</option>
+            <option id="BB">BARBADOS</option>
+            <option id="BY">BELARUS</option>
+            <option id="BE">BELGIUM</option>
+            <option id="BZ">BELIZE</option>
+            <option id="BJ">BENIN</option>
+            <option id="BM">BERMUDA</option>
+            <option id="BT">BHUTAN</option>
+            <option id="BO">BOLIVIA, PLURINATIONAL STATE OF</option>
+            <option id="BQ">BONAIRE, SINT EUSTATIUS AND SABA</option>
+            <option id="BA">BOSNIA AND HERZEGOVINA</option>
+            <option id="BW">BOTSWANA</option>
+            <option id="BV">BOUVET ISLAND</option>
+            <option id="BR">BRAZIL</option>
+            <option id="IO">BRITISH INDIAN OCEAN TERRITORY</option>
+            <option id="BN">BRUNEI DARUSSALAM</option>
+            <option id="BG">BULGARIA</option>
+            <option id="BF">BURKINA FASO</option>
+            <option id="BI">BURUNDI</option>
+            <option id="KH">CAMBODIA</option>
+            <option id="CM">CAMEROON</option>
+            <option id="CA">CANADA</option>
+            <option id="CV">CAPE VERDE</option>
+            <option id="KY">CAYMAN ISLANDS</option>
+            <option id="CF">CENTRAL AFRICAN REPUBLIC</option>
+            <option id="TD">CHAD</option>
+            <option id="CL">CHILE</option>
+            <option id="CN">CHINA</option>
+            <option id="CX">CHRISTMAS ISLAND</option>
+            <option id="CC">COCOS (KEELING) ISLANDS</option>
+            <option id="CO">COLOMBIA</option>
+            <option id="KM">COMOROS</option>
+            <option id="CG">CONGO</option>
+            <option id="CD">CONGO, THE DEMOCRATIC REPUBLIC OF THE</option>
+            <option id="CK">COOK ISLANDS</option>
+            <option id="CR">COSTA RICA</option>
+            <option id="CI">CÔTE D’IVOIRE</option>
+            <option id="HR">CROATIA</option>
+            <option id="CU">CUBA</option>
+            <option id="CW">CURAÇAO</option>
+            <option id="CY">CYPRUS</option>
+            <option id="CZ">CZECH REPUBLIC</option>
+            <option id="DK">DENMARK</option>
+            <option id="DJ">DJIBOUTI</option>
+            <option id="DM">DOMINICA</option>
+            <option id="DO">DOMINICAN REPUBLIC</option>
+            <option id="EC">ECUADOR</option>
+            <option id="EG">EGYPT</option>
+            <option id="SV">EL SALVADOR</option>
+            <option id="GQ">EQUATORIAL GUINEA</option>
+            <option id="ER">ERITREA</option>
+            <option id="EE">ESTONIA</option>
+            <option id="ET">ETHIOPIA</option>
+            <option id="FK">FALKLAND ISLANDS (MALVINAS)</option>
+            <option id="FO">FAROE ISLANDS</option>
+            <option id="FJ">FIJI</option>
+            <option id="FI">FINLAND</option>
+            <option id="FR">FRANCE</option>
+            <option id="GF">FRENCH GUIANA</option>
+            <option id="PF">FRENCH POLYNESIA</option>
+            <option id="TF">FRENCH SOUTHERN TERRITORIES</option>
+            <option id="GA">GABON</option>
+            <option id="GM">GAMBIA</option>
+            <option id="GE">GEORGIA</option>
+            <option id="DE">GERMANY</option>
+            <option id="GH">GHANA</option>
+            <option id="GI">GIBRALTAR</option>
+            <option id="GR">GREECE</option>
+            <option id="GL">GREENLAND</option>
+            <option id="GD">GRENADA</option>
+            <option id="GP">GUADELOUPE</option>
+            <option id="GU">GUAM</option>
+            <option id="GT">GUATEMALA</option>
+            <option id="GG">GUERNSEY</option>
+            <option id="GN">GUINEA</option>
+            <option id="GW">GUINEA-BISSAU</option>
+            <option id="GY">GUYANA</option>
+            <option id="HT">HAITI</option>
+            <option id="HM">HEARD ISLAND AND MCDONALD ISLANDS</option>
+            <option id="VA">HOLY SEE (VATICAN CITY STATE)</option>
+            <option id="HN">HONDURAS</option>
+            <option id="HK">HONG KONG</option>
+            <option id="HN">HUNGARY</option>
+            <option id="IS">ICELAND</option>
+            <option id="IN">INDIA</option>
+            <option id="ID">INDONESIA</option>
+            <option id="IR">IRAN, ISLAMIC REPUBLIC OF</option>
+            <option id="IQ">IRAQ</option>
+            <option id="IE">IRELAND</option>
+            <option id="IM">ISLE OF MAN</option>
+            <option id="IL">ISRAEL</option>
+            <option id="IT">ITALY</option>
+            <option id="JM">JAMAICA</option>
+            <option id="JP">JAPAN</option>
+            <option id="JE">JERSEY</option>
+            <option id="JO">JORDAN</option>
+            <option id="KZ">KAZAKHSTAN</option>
+            <option id="KE">KENYA</option>
+            <option id="KI">KIRIBATI</option>
+            <option id="KP">KOREA, DEMOCRATIC PEOPLE’S REPUBLIC OF</option>
+            <option id="KR">KOREA, REPUBLIC OF</option>
+            <option id="KW">KUWAIT</option>
+            <option id="KG">KYRGYZSTAN</option>
+            <option id="LA">LAO PEOPLE’S DEMOCRATIC REPUBLIC</option>
+            <option id="LV">LATVIA</option>
+            <option id="LB">LEBANON</option>
+            <option id="LS">LESOTHO</option>
+            <option id="LR">LIBERIA</option>
+            <option id="LY">LIBYA</option>
+            <option id="LI">LIECHTENSTEIN</option>
+            <option id="LT">LITHUANIA</option>
+            <option id="LU">LUXEMBOURG</option>
+            <option id="MO">MACAO</option>
+            <option id="MK">MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF</option>
+            <option id="MG">MADAGASCAR</option>
+            <option id="MW">MALAWI</option>
+            <option id="MY">MALAYSIA</option>
+            <option id="MV">MALDIVES</option>
+            <option id="ML">MALI</option>
+            <option id="MT">MALTA</option>
+            <option id="MH">MARSHALL ISLANDS</option>
+            <option id="MQ">MARTINIQUE</option>
+            <option id="MR">MAURITANIA</option>
+            <option id="MU">MAURITIUS</option>
+            <option id="YT">MAYOTTE</option>
+            <option id="MX">MEXICO</option>
+            <option id="FM">MICRONESIA, FEDERATED STATES OF</option>
+            <option id="MD">MOLDOVA, REPUBLIC OF</option>
+            <option id="MC">MONACO</option>
+            <option id="MN">MONGOLIA</option>
+            <option id="ME">MONTENEGRO</option>
+            <option id="MS">MONTSERRAT</option>
+            <option id="MA">MOROCCO</option>
+            <option id="MZ">MOZAMBIQUE</option>
+            <option id="MM">MYANMAR</option>
+            <option id="NA">NAMIBIA</option>
+            <option id="NR">NAURU</option>
+            <option id="NP">NEPAL</option>
+            <option id="NL">NETHERLANDS</option>
+            <option id="NC">NEW CALEDONIA</option>
+            <option id="NZ">NEW ZEALAND</option>
+            <option id="NI">NICARAGUA</option>
+            <option id="NE">NIGER</option>
+            <option id="NG">NIGERIA</option>
+            <option id="NU">NIUE</option>
+            <option id="NF">NORFOLK ISLAND</option>
+            <option id="MP">NORTHERN MARIANA ISLANDS</option>
+            <option id="NO">NORWAY</option>
+            <option id="OM">OMAN</option>
+            <option id="PK">PAKISTAN</option>
+            <option id="PW">PALAU</option>
+            <option id="PS">PALESTINIAN TERRITORY, OCCUPIED</option>
+            <option id="PA">PANAMA</option>
+            <option id="PG">PAPUA NEW GUINEA</option>
+            <option id="PY">PARAGUAY</option>
+            <option id="PE">PERU</option>
+            <option id="PH">PHILIPPINES</option>
+            <option id="PN">PITCAIRN</option>
+            <option id="PL">POLAND</option>
+            <option id="PT">PORTUGAL</option>
+            <option id="PR">PUERTO RICO</option>
+            <option id="QA">QATAR</option>
+            <option id="RE">RÉUNION</option>
+            <option id="RO">ROMANIA</option>
+            <option id="RU">RUSSIAN FEDERATION</option>
+            <option id="RW">RWANDA</option>
+            <option id="BL">SAINT BARTHÉLEMY</option>
+            <option id="SH">SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA</option>
+            <option id="KN">SAINT KITTS AND NEVIS</option>
+            <option id="LC">SAINT LUCIA</option>
+            <option id="MF">SAINT MARTIN (FRENCH PART)</option>
+            <option id="PM">SAINT PIERRE AND MIQUELON</option>
+            <option id="VC">SAINT VINCENT AND THE GRENADINES</option>
+            <option id="WS">SAMOA</option>
+            <option id="SM">SAN MARINO</option>
+            <option id="ST">SAO TOME AND PRINCIPE</option>
+            <option id="SA">SAUDI ARABIA</option>
+            <option id="SN">SENEGAL</option>
+            <option id="RS">SERBIA</option>
+            <option id="SC">SEYCHELLES</option>
+            <option id="SL">SIERRA LEONE</option>
+            <option id="SG">SINGAPORE</option>
+            <option id="SX">SINT MAARTEN (DUTCH PART)</option>
+            <option id="SK">SLOVAKIA</option>
+            <option id="SI">SLOVENIA</option>
+            <option id="SB">SOLOMON ISLANDS</option>
+            <option id="SO">SOMALIA</option>
+            <option id="ZA">SOUTH AFRICA</option>
+            <option id="GS">SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS</option>
+            <option id="SS">SOUTH SUDAN</option>
+            <option id="ES">SPAIN</option>
+            <option id="LK">SRI LANKA</option>
+            <option id="SD">SUDAN</option>
+            <option id="SR">SURINAME</option>
+            <option id="SJ">SVALBARD AND JAN MAYEN</option>
+            <option id="SZ">SWAZILAND</option>
+            <option id="SE">SWEDEN</option>
+            <option id="CH">SWITZERLAND</option>
+            <option id="SY">SYRIAN ARAB REPUBLIC</option>
+            <option id="TW">TAIWAN, PROVINCE OF CHINA</option>
+            <option id="TJ">TAJIKISTAN</option>
+            <option id="TZ">TANZANIA, UNITED REPUBLIC OF</option>
+            <option id="TH">THAILAND</option>
+            <option id="TL">TIMOR-LESTE</option>
+            <option id="TG">TOGO</option>
+            <option id="TK">TOKELAU</option>
+            <option id="TO">TONGA</option>
+            <option id="TT">TRINIDAD AND TOBAGO</option>
+            <option id="TN">TUNISIA</option>
+            <option id="TR">TURKEY</option>
+            <option id="TM">TURKMENISTAN</option>
+            <option id="TC">TURKS AND CAICOS ISLANDS</option>
+            <option id="TV">TUVALU</option>
+            <option id="UG">UGANDA</option>
+            <option id="UA">UKRAINE</option>
+            <option id="AE">UNITED ARAB EMIRATES</option>
+            <option id="GB">UNITED KINGDOM</option>
+            <option id="US">UNITED STATES</option>
+            <option id="UM">UNITED STATES MINOR OUTLYING ISLANDS</option>
+            <option id="UY">URUGUAY</option>
+            <option id="UZ">UZBEKISTAN</option>
+            <option id="VU">VANUATU</option>
+            <option id="VE">VENEZUELA, BOLIVARIAN REPUBLIC OF</option>
+            <option id="VN">VIET NAM</option>
+            <option id="VG">VIRGIN ISLANDS, BRITISH</option>
+            <option id="VI">VIRGIN ISLANDS, U.S.</option>
+            <option id="WF">WALLIS AND FUTUNA</option>
+            <option id="EH">WESTERN SAHARA</option>
+            <option id="YE">YEMEN</option>
+            <option id="ZM">ZAMBIA</option>
+            <option id="ZW">ZIMBABWE</option>
+        </options>
+    </instance>
+    <instance id="vocab-addresstype">
+        <web-url>addresstype</web-url>
+        <title-ref>addresstype</title-ref>
+        <title>Address Type</title>
+        <options>
+            <option id="business">business</option>
+            <option id="home">home</option>
+            <option id="mailing">mailing</option>
+            <option id="other">other</option>
+        </options>
+    </instance>
+    <instance id="vocab-historicalstatus">
+        <web-url>historicalStatus</web-url>
+        <title-ref>historicalStatus</title-ref>
+        <title>Historical Status</title>
+        <options>
+            <option id="current">Current</option>
+            <option id="historical">Historical</option>
+            <option id="both">Both</option>
+            <option id="unknown">Unknown</option>
+        </options>
+    </instance>
+    <instance id="vocab-taxontermtype">
+        <web-url>taxontermtype</web-url>
+        <title-ref>taxontermtype</title-ref>
+        <title>Taxon Term Type</title>
+        <options>
+            <option id="descriptor">Descriptor</option>
+            <option id="alternate_descriptor">Alternate descriptor</option>
+            <option id="used_for_term">Used for term</option>
+            <option id="common_name">Common name</option>
+        </options>
+    </instance>
+    <instance id="vocab-taxonomicstatus">
+        <web-url>taxonomicstatus</web-url>
+        <title-ref>taxonomicstatus</title-ref>
+        <title>Taxonomic Status</title>
+        <options>
+            <option id="valid">Valid</option>
+            <option id="invalid">Invalid</option>
+            <option id="accepted">Accepted</option>
+            <option id="misapplied_name">Misapplied Name</option>
+        </options>
+    </instance>
+    <instance id="vocab-taxonrank">
+        <web-url>taxonrank</web-url>
+        <title-ref>taxonrank</title-ref>
+        <title>Taxon Rank</title>
+        <options>
+            <option id="class">Class</option>
+            <option id="division">Division</option>
+            <option id="domain">Domain</option>
+            <option id="family">Family</option>
+            <option id="genus">Genus</option>
+            <option id="genusSpecies">Genus Species</option>
+            <option id="grade">Grade</option>
+            <option id="infraClass">Infraclass</option>
+            <option id="infraOrder">Infraorder</option>
+            <option id="kingdom">Kingdom</option>
+            <option id="order">Order</option>
+            <option id="phylum">Phylum</option>
+            <option id="section">Section</option>
+            <option id="species">Species</option>
+            <option id="subclass">Subclass</option>
+            <option id="subfamily">Subfamily</option>
+            <option id="subkingdom">Subkingdom</option>
+            <option id="suborder">Suborder</option>
+            <option id="subphylum">Subphylum</option>
+            <option id="variety">Variety</option>
+        </options>
+    </instance>
+    <instance id="vocab-taxoncurrency">
+        <web-url>taxoncurrency</web-url>
+        <title-ref>taxoncurrency</title-ref>
+        <title>Taxon Currency</title>
+        <options>
+            <option id="current">Current</option>
+            <option id="obsolete">Obsolete</option>
+            <option id="archaic">Archaic</option>
+        </options>
+    </instance>
+    <instance id="vocab-taxonauthortype">
+        <web-url>taxonauthortype</web-url>
+        <title-ref>taxonauthortype</title-ref>
+        <title>Taxon Author Type</title>
+        <options>
+            <option id="ascribed">Ascribed</option>
+            <option id="parenthetical">Parenthetical</option>
+        </options>
+    </instance>
+    <instance id="vocab-exitmethod">
+        <web-url>exitmethod</web-url>
+        <title-ref>exitmethod</title-ref>
+        <title>Exit Method</title>
+        <options>
+            <option id="auction_house">Auction house</option>
+            <option id="sold">Sold</option>
+            <option id="destroyed">Destroyed</option>
+            <option id="repatriated">Repatriated</option>
+            <option id="stolen">Stolen</option>
+            <option id="transferred">Transferred</option>
+            <option id="white_elephant_sale">White Elephant sale</option>
+            <option id="see_notes">See notes</option>
+        </options>
+    </instance>
+    <instance id="vocab-exitreason">
+        <web-url>exitreason</web-url>
+        <title-ref>exitreason</title-ref>
+        <title>Exit Reason</title>
+        <options>
+            <option id="condition">Condition</option>
+            <option id="deaccession">Deaccession</option>
+            <option id="disposal">Disposal</option>
+            <option id="exchange">Exchange</option>
+            <option id="repatriation">Repatriation</option>
+            <option id="returned">Returned</option>
+            <option id="theft">Theft</option>
+        </options>
+    </instance>
+    <instance id="vocab-exitstatus">
+        <web-url>exitstatus</web-url>
+        <title-ref>exitstatus</title-ref>
+        <title>Exit Status</title>
+        <options>
+            <option id="collections_team_approval">Collections team approval</option>
+            <option id="museum_director_approval">Museum director approval</option>
+            <option id="board_approval">Board approval</option>
+            <option id="pending_disposal_options">Pending disposal options</option>
+            <option id="complete">Complete</option>
+        </options>
+    </instance>
+    <instance id="vocab-omcatreatmentpurpose">
+        <web-url>omcatreatmentpurpose</web-url>
+        <title-ref>omcatreatmentpurpose</title-ref>
+        <title>OMCA Treatment Purpose</title>
+        <options>
+            <option id="acquisition">Acquisition</option>
+            <option id="appraisal">Appraisal</option>
+            <option id="damage">Damage</option>
+            <option id="exhibition">Exhibition</option>
+            <option id="insurance">Insurance</option>
+            <option id="loanout">Loan Out</option>
+            <option id="loanreturn">Loan Return</option>
+        </options>
+    </instance>
+    <instance id="vocab-federallyrecognized">
+        <web-url>federallyrecognized</web-url>
+        <title-ref>federallyrecognized</title-ref>
+        <title>Federally Recognized</title>
+        <options>
+            <option id="yes">yes</option>
+            <option id="no">no</option>
+        </options>
+    </instance>
+    <instance id="vocab-transactiontype">
+        <web-url>transactiontype</web-url>
+        <title-ref>transactiontype</title-ref>
+        <title>Transaction Type</title>
+        <options>
+            <option id="summary_request">Summary Request</option>
+            <option id="inventory_request">Inventory Request</option>
+            <option id="visit_request">Visit Request</option>
+            <option id="claim">Claim</option>
+        </options>
+    </instance>
+    <instance id="vocab-claimtype">
+        <web-url>claimtype</web-url>
+        <title-ref>claimtype</title-ref>
+        <title>Claim Type</title>
+        <options>
+            <option id="affiliatedhumanskeletalremains">affiliated human skeletal remains</option>
+            <option id="unaffiliatedhumanskeletalremains">unaffiliated human skeletal remains</option>
+            <option id="associatedfuneraryobject">associated funerary object</option>
+            <option id="unassociatedfuneraryobject">unassociated funerary object</option>
+            <option id="sacredobject">sacred object</option>
+            <option id="objectofculturalpatrimony">object of cultural patrimony</option>
+            <option id="notsubjecttoNAGPRA">not subject to NAGPRA</option>
+            <option id="needsfurtherresearch">needs further research</option>
+            <option id="unknown">unknown</option>
+        </options>
+    </instance>
+</instances>

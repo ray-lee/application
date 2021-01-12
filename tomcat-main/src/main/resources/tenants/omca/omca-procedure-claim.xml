@@ -1,0 +1,85 @@
+<record id="claim" is-extension="true">
+    <services-record-path id="omca">claims_omca:http://collectionspace.org/services/claim/local/omca,claims_omca</services-record-path>
+    
+    <section id="claimInformation">
+        <field id="claimNumber" sortKey="sortableClaimNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_claim" sample="NGP2015.1">Claim/Request</option>
+            </options>
+        </field>
+        <repeat id="claimClaimantGroupList/claimClaimantGroup">
+            <field id="filedOnBehalfOf" ui-search="repeatable" mini="" autocomplete="person-person,organization-organization">
+                <!-- removing mini attribute -->
+            </field>
+        </repeat>
+        <repeat id="claimClaimantOMCAGroupList/claimClaimantOMCAGroup" section="omca">
+            <field id="filedByOMCA" mini="summary,search,list,relate" ui-search="repeatable" autocomplete="person-person,organization-organization" section="omca"></field>
+            <field id="filedOnBehalfOfOMCA" ui-search="repeatable" autocomplete="person-person,organization-organization" section="omca"></field>
+            <field id="claimantNoteOMCA" section="omca"></field>
+            <field id="federallyRecognizedOMCA" autocomplete="vocab-federallyrecognized" ui-type="enum" section="omca"></field>
+        </repeat>
+        <field id="transactionType" ui-search="repeatable" autocomplete="vocab-transactiontype" ui-type="enum" section="omca"></field>
+        <repeat id="requestsGroupList/requestsGroup" section="omca">
+            <field id="detailsOfRequest" section="omca"></field>
+            <field id="dateOfRequest" ui-search="range" ui-type="date" section="omca"></field>
+            <field id="dateFulfilled" ui-search="range" ui-type="date" section="omca"></field>
+        </repeat>
+        <repeat id="notesOnRequest" section="omca">
+            <field id="noteOnRequest" section="omca"/>
+        </repeat>
+        <field id="claimNumberOMCA" ui-search="repeatable" section="omca"/>
+        <field id="sortableClaimNumber" section="omca" mini="list" ui-type="computed" ui-args="claimNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+    </section>
+    <section id="claimContextInformation">
+        <repeat id="sitesInvolvedGroupList/sitesInvolvedGroup">
+            <field id="siteOrPlaceName" action='replace'>
+                <!-- convert vocab field into text -->
+            </field>
+        </repeat>
+        <repeat id="culturalGroupsInvolvedGroupList/culturalGroupsInvolvedGroup">
+            <field id="culturalGroupName" autocomplete="organization-organization">
+                <!-- adding organization authority -->
+            </field>
+        </repeat>
+    </section>
+    <section id="claimsProcessingInformation">
+        <repeat id="deaccessionResearchCompleteGroupList/deaccessionResearchCompleteGroup" section="omca">
+            <field id="deaccessionResearchCompleteDate" ui-type="date" section="omca"></field>
+            <field id="deaccessionResearchCompleteNote" section="omca"></field>
+        </repeat>
+        <repeat id="sentCollectionsCommitteeGroupList/sentCollectionsCommitteeGroup" section="omca">
+            <field id="sentCollectionsCommitteeDate" ui-type="date" section="omca"></field>
+            <field id="sentCollectionsCommitteeNote" section="omca"></field>
+        </repeat>
+        <repeat id="recommendationCollectionsCommitteeGroupList/recommendationCollectionsCommitteeGroup" section="omca">
+            <field id="recommendationCollectionsCommitteeDate" ui-type="date" section="omca"></field>
+            <field id="recommendationCollectionsCommitteeRecommendation" section="omca"></field>
+        </repeat>
+        <repeat id="sentExecutiveTeamGroupList/sentExecutiveTeamGroup" section="omca">
+            <field id="sentExecutiveTeamDate" ui-type="date" section="omca"></field>
+            <field id="sentExecutiveTeamNote" section="omca"></field>
+        </repeat>
+        <repeat id="recommendationExecutiveTeamGroupList/recommendationExecutiveTeamGroup" section="omca">
+            <field id="recommendationExecutiveTeamDate" ui-type="date" section="omca"></field>
+            <field id="recommendationExecutiveTeamRecommendation" section="omca"></field>
+        </repeat>
+        <repeat id="sentOMCABoardGroupList/sentOMCABoardGroup" section="omca">
+            <field id="sentOMCABoardDate" ui-type="date" section="omca"></field>
+            <field id="sentOMCABoardNote" section="omca"></field>
+        </repeat>
+        <repeat id="recommendationOMCABoardGroupList/recommendationOMCABoardGroup" section="omca">
+            <field id="recommendationOMCABoardDate" ui-type="date" section="omca"></field>
+            <field id="recommendationOMCABoardRecommendation" section="omca"></field>
+        </repeat>
+        <repeat id="claimantNotifiedClaimStatusGroupList/claimantNotifiedClaimStatusGroup" section="omca">
+            <field id="claimantNotifiedClaimStatusDate" ui-type="date" section="omca"></field>
+            <field id="claimantNotifiedClaimStatusNote" section="omca"></field>
+        </repeat>
+        <repeat id="claimProcessNotes" section="omca">
+            <field id="claimProcessNote" section="omca"/>
+        </repeat>
+    </section>
+</record>

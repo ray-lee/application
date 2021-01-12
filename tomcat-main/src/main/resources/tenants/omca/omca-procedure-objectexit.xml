@@ -1,0 +1,31 @@
+<record id="objectexit" is-extension="true">
+    <services-record-path id="omca">objectexit_omca:http://collectionspace.org/services/objectexit/local/omca,objectexit_omca</services-record-path>
+    <section id="objectexitInformation">
+        <field id="exitNumber" sortKey="sortableExitNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_objectexit" sample="OE2015.1">Object Exit</option>
+            </options>
+        </field>
+        <field id="currentOwner" mini="" in-title="no">
+            <!-- removing mini attribute values -->
+        </field>
+        <repeat id="exitMethods">
+            <field id="exitMethod" ui-search="repeatable" autocomplete="vocab-exitmethod" ui-type="enum">
+                <!-- removing options block; adding vocab-exitmethod vocab -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <field id="exitReason" ui-search="repeatable" autocomplete="vocab-exitreason" ui-type="enum" mini="summary,list,relate">
+            <!-- removing options block; adding vocab-exitreason vocab; adding mini attribute values -->
+            <options action='delete'/>
+        </field>
+        <repeat id="exitStatusGroupList/exitStatusGroup" section="omca">
+            <field id="exitStatus" autocomplete="vocab-exitstatus" ui-type="enum" section="omca"></field>
+            <field id="exitStatusDate" ui-type="date" datatype="date" section="omca"></field>
+        </repeat>
+        <field id="sortableExitNumber" section="omca" mini="list" ui-type="computed" ui-args="exitNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+    </section>
+</record>

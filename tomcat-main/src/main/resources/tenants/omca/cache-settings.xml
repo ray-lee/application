@@ -1,0 +1,20 @@
+<settings>
+    <admin>
+        <!-- termLists, autocomplete instance lists, specs, and schemas,
+                static UI elements, etc.
+                will cache for a month (60*60*24*30) by default 2592000 -->
+        <termlist-cache-timeout>3600</termlist-cache-timeout>
+        <autocompletelist-cache-timeout>3600</autocompletelist-cache-timeout>
+        <reportlist-cache-timeout>3600</reportlist-cache-timeout>
+        <!-- This is for user-uploaded media, not static UI images -->
+        <uploaded-media-cache-timeout>3600</uploaded-media-cache-timeout>
+        <uispecschema-cache-timeout>3600</uispecschema-cache-timeout>
+        <ui-html-cache-timeout>3600</ui-html-cache-timeout>
+        <ui-css-cache-timeout>3600</ui-css-cache-timeout>
+        <ui-js-cache-timeout>3600</ui-js-cache-timeout>
+        <!-- This is for static UI images like icons, not uploaded images -->
+        <ui-media-cache-timeout>3600</ui-media-cache-timeout>
+        <!-- This is for the message bundles properties -->
+        <ui-props-cache-timeout>3600</ui-props-cache-timeout>
+    </admin>
+</settings>

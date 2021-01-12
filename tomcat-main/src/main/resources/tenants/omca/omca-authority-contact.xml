@@ -1,0 +1,45 @@
+<record id="contact" is-extension="true">
+    <services-record-path id="omca">contacts_omca:http://collectionspace.org/services/contact/local/omca,contacts_omca</services-record-path>
+    <section id="contactInformation">
+        <repeat id="emailGroupList/emailGroup">
+            <field id="emailType" autocomplete="vocab-emailtype" ui-type="enum">
+                <!-- adding emailtype vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="webAddressGroupList/webAddressGroup">
+            <field id="webAddressType" autocomplete="vocab-webaddresstype" ui-type="enum">
+                 <!-- adding webaddresstype vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="telephoneNumberGroupList/telephoneNumberGroup">
+            <field id="telephoneNumberType" autocomplete="vocab-telephonenumbertype" ui-type="enum">
+                <!-- adding telephonenumbertype vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="faxNumberGroupList/faxNumberGroup">
+            <field id="faxNumberType" autocomplete="vocab-faxnumbertype" ui-type="enum">
+                <!-- adding faxnumbertype vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <repeat id="addressGroupOMCAList/addressGroupOMCA" section="omca">
+            <field id="addressPlace1OMCA" section="omca"></field>
+            <field id="addressPlace2OMCA" section="omca"></field>
+            <field id="addressMunicipalityOMCA" section="omca"></field>
+            <field id="addressStateOrProvinceOMCA" section="omca"></field>
+            <field id="addressPostCodeOMCA" section="omca"></field>
+            <field id="addressCountryOMCA" autocomplete="vocab-addresscountry" ui-type="enum" section="omca">
+                <!-- adding addresscountry vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+            <field id="addressTypeOMCA" autocomplete="vocab-addresstype" ui-type="enum" section="omca">
+                <!-- adding addresstype vocab; removing options block -->
+                <options action='delete'/>
+            </field>
+            <field id="addressNoteOMCA" section="omca"></field>
+        </repeat>
+    </section>
+</record>

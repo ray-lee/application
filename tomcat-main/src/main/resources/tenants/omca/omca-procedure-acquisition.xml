@@ -1,0 +1,37 @@
+<record id="acquisition" is-extension="true">
+    <services-record-path id="omca">acquisitions_omca:http://collectionspace.org/services/acquisition/local/omca,acquisitions_omca</services-record-path>
+    <section id="acquisitionInformation">
+        <field id="acquisitionReferenceNumber" sortKey="sortableAcquisitionReferenceNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_accession" sample="2015.1">Accession</option>
+            </options>
+        </field>
+        <field id="acquisitionMethod" ui-search="repeatable" seperate_ui_container="true" autocomplete="vocab-acquisitionmethod" ui-type="enum">
+           <!-- removing options block; adding vocab-acquisitionmethod vocab -->
+            <options action='delete'/>
+        </field>
+        <repeat id="acquisitionFundingList/acquisitionFunding">
+            <field id="acquisitionFundingCurrency" autocomplete="vocab-currency" ui-type="enum">
+                <enum>
+                    <default>urn:cspace:museumca.org:vocabularies:name(currency):item:name(USD)'US Dollar'</default>
+                </enum>
+            </field>
+            <field id="acquisitionFundingValue" ui-type="validated" datatype="float"></field>
+            <field id="acquisitionFundingSource" ui-search="repeatable" autocomplete="vocab-fundsource" ui-type="enum">
+                <!-- adding vocab-fundsource vocab -->
+            </field>
+            <field id="acquisitionFundingSourceProvisos"></field>
+        </repeat>
+        <field id="sortableAcquisitionReferenceNumber" section="omca" mini="list" ui-type="computed" ui-args="acquisitionReferenceNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+        <repeat id="acquisitionContactGroupList/acquisitionContactGroup" section="omca">
+            <field id="contact" autocomplete="person-person" section="omca"></field>
+            <field id="contactRole" autocomplete="vocab-contactrole" ui-type="enum" section="omca"></field>
+        </repeat>
+        <field id="sourceContactNote" section="omca"></field>
+        <field id="accessionDescription" section="omca"></field>
+        <field id="anonymous" datatype="boolean" section="omca"></field>
+    </section>
+</record>

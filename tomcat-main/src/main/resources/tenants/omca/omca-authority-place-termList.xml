@@ -1,0 +1,14 @@
+<record id="preferredPlace" in-recordlist="no" separate-record="false">
+    <section id="termInformation">
+        <repeat id="placeTermGroupList/placeTermGroup">
+            <field id="termType" autocomplete="vocab-termtype" ui-type="enum">
+                <!-- adding termtype authority; deleting options list -->
+                <options action="delete" />
+            </field>
+            <field id="historicalStatus" autocomplete="vocab-placehistoricalstatus" ui-type="enum">
+                <!-- adding placehistoricalstatus authority; deleting options list -->
+                <options action="delete" />
+            </field>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,12 @@
+<record id="concept" is-extension="true">
+    <services-record-path id="omca">concepts_omca:http://collectionspace.org/services/concept/local/omca,concepts_omca</services-record-path>
+    <section id="conceptAuthorityInformation">
+        <repeat id="citationGroupList/citationGroup">
+            <!-- converting citationSource to use citation authority -->
+            <field id="citationSource" autocomplete="citation-citation"></field>
+        </repeat>
+        <field id="legacyArgusNotes" section="omca"></field>
+        <field id="legacyParents" section="omca"></field>
+        <field id="legacySeeAlso" section="omca"></field>
+    </section>
+</record>

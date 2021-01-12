@@ -1,0 +1,38 @@
+<record id="person" is-extension="true">
+    <services-record-path id="omca">persons_omca:http://collectionspace.org/services/person/local/omca,persons_omca</services-record-path>
+    <section id="personNameAuthorityInformation">
+        <repeat id="groups">
+            <field id="group" ui-search="repeatable" autocomplete="concept-concept">
+                <!-- adding concept authority vocab -->
+                <selector>personAuthority-group</selector>
+            </field>
+        </repeat>
+        <repeat id="nationalities">
+            <field id="nationality" ui-search="repeatable" autocomplete="concept-concept">
+                <!-- adding concept authority vocab -->
+                <selector>personAuthority-nationality</selector>
+            </field>
+        </repeat>
+        <field id="gender" ui-search="repeatable" autocomplete="vocab-gender" ui-type="enum">
+            <!-- removing options block; adding vocab-gender vocab -->
+            <options action="delete"/>
+        </field>
+        <repeat id="schoolsOrStyles">
+            <field id="schoolOrStyle" ui-search="repeatable" autocomplete="concept-concept">
+                <!-- adding concept authority vocab -->
+                <selector>personAuthority-schoolOrStyle</selector>
+            </field>
+        </repeat>
+        <field id="activeDatesGroup" ui-type="groupfield/structureddate" section="omca"
+            ui-search="range" ui-func="cspace.structuredDate"
+            primarykey="activeDatesGroup.dateDisplayDate">
+            <selector>personAuthority-activeDatesGroup</selector>
+        </field>
+        <field id="workLocation" section="omca" />
+        <repeat id="personsSpecialties" section="omca">
+            <field id="personsSpecialty" section="omca"/>
+        </repeat>
+        <field id="legacyParents" section="omca"></field>
+        <field id="legacySeeAlso" section="omca"></field>
+    </section>
+</record>

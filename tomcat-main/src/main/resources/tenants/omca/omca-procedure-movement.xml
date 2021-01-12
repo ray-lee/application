@@ -1,0 +1,37 @@
+<record id="movement" is-extension="true">
+    <services-record-path id="omca">movements_omca:http://collectionspace.org/services/movement/local/omca,movements_omca</services-record-path>
+    <section id="locationMovementInformation">
+        <field id="currentLocation" in-title="no" mini="search,list,relate">
+            <!-- removing summary value from mini attribute -->
+        </field>
+        <field id="currentLocationFitness" autocomplete="vocab-currentLocationFitness" ui-type="enum">
+            <!-- removing options block; adding vocab-currentLocationFitness vocab -->
+            <options action='delete'/>
+        </field>
+        <field id="computedMovementSummary" mini="summary,list" ui-type="computed" ui-args="currentLocation,reasonForMove" ui-func="omca.mergeFields" ui-readonly="true" section="omca">
+            <!-- combine currentLocation and reasonForMove to a single summary field -->
+        </field>
+        <field id="sortableMovementReferenceNumber" section="omca" mini="list" ui-type="computed" ui-args="movementReferenceNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- adding computed sortable ID number -->
+        </field>
+    </section>
+    <section id="movementControlInformation">
+        <field id="movementReferenceNumber" sortKey="sortableMovementReferenceNumber">
+            <!-- adding sortKey attribute -->
+            <options>
+                <option id="omca_location" sample="LOC2015.1">Location</option>
+                <option id="omca_inventory" sample="INV2015.1">Inventory</option>
+            </options>
+        </field>
+        <field id="reasonForMove" ui-search="repeatable" autocomplete="vocab-reasonformove" ui-type="enum">
+             <!-- removing options block; adding vocab-reasonformove vocab -->
+            <options action='delete'/>
+        </field>
+    </section>
+    <section id="inventory">
+        <field id="inventoryActionRequired" autocomplete="vocab-inventoryActionRequired" ui-type="enum" ui-search="repeatable">
+            <!-- removing options block; adding vocab-inventoryActionRequired vocab -->
+            <options action='delete'/>
+        </field>
+    </section>
+</record>

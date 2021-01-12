@@ -1,0 +1,44 @@
+<record id="dimension">
+    <section id="dimensionInformation">
+        <repeat id="measuredPartGroupList/measuredPartGroup">
+            <field id="dimensionSummary" ui-type="computed" ui-func="omca.computeDimensionSummary" ui-args="measuredPart,dimensionSubGroup,measuredPartNote" ui-readonly="true">
+                <!-- Make computed and read-only -->
+            </field>
+            <field id="measuredPart" autocomplete="vocab-measuredpart" ui-type="enum" seperate_ui_container="true">
+                <!-- removing options block; adding vocab-measuredpart vocab -->
+                <options action='delete'/>
+            </field>
+            <repeat id="dimensionSubGroupList/dimensionSubGroup">
+                <!-- reverting back into static list because of a bug that prevents a dynamic list from appearing -->
+                <field id="dimension" seperate_ui_container="true">
+                    <!-- autocomplete="vocab-measureddimension" ui-type="enum" -->
+                    <!-- updating default value -->
+                    <options>
+                        <option id="">no value selected</option>
+                        <option id="area">area</option>
+                        <option id="base">base</option>
+                        <option id="circumference">circumference</option>
+                        <option id="count">count</option>
+                        <option id="depth">depth</option>
+                        <option id="diameter">diameter</option>
+                        <option id="height">height</option>
+                        <option id="length">length</option>
+                        <option id="running-time">running time</option>
+                        <option id="target">target</option>
+                        <option id="volume">volume</option>
+                        <option id="weight">weight</option>
+                        <option id="width">width</option>
+                    </options>
+                </field>
+                <field id="measurementUnit" autocomplete="vocab-measurementUnit" ui-type="enum" seperate_ui_container="true">
+                    <!-- removing options block; adding vocab-measurementUnit vocab -->
+                    <options action='delete'/>
+                </field>
+                <field id="measurementMethod" autocomplete="vocab-measurementmethod" ui-type="enum">
+                    <!-- removing options block; adding vocab-measurementmethod vocab -->
+                    <options action='delete'/>
+                </field>
+            </repeat>
+        </repeat>
+    </section>
+</record>

@@ -1,0 +1,49 @@
+<record id="conditioncheck" is-extension="true">
+    <services-record-path id="omca">conditionchecks_omca:http://collectionspace.org/services/conditioncheck/local/omca,conditionchecks_omca</services-record-path>
+    <section id="objectConditionInformation">
+        <repeat id="conditionCheckGroupList/conditionCheckGroup">
+            <field id="condition" ui-search="" seperate_ui_container="true" mini="">
+                <!-- removing mini and ui-search attribute values -->
+            </field>
+        </repeat>
+        <repeat id="hazardGroupList/hazardGroup">
+            <field id="hazard" ui-search="repeatable" autocomplete="vocab-hazard" ui-type="enum">
+                <!-- removing options block; adding vocab-hazard vocab; making searchable -->
+                <options action='delete'/>
+            </field>
+        </repeat>
+        <field id="condition" ui-search="repeatable" in-title="yes" autocomplete="vocab-condition" ui-type="enum" seperate_ui_container="true" mini="summary,search,list,relate" section="omca"></field>
+        <field id="conditionDate" ui-type="date" datatype="date" section="omca"></field>
+        <field id="conditionNote" section="omca"></field>
+        <field id="sortableConditionCheckRefNumber" section="omca" mini="list" ui-type="computed" ui-args="conditionCheckRefNumber" ui-func="omca.computeSortableObjectNumber" ui-readonly="true">
+            <!-- A computed sortable ID number -->
+        </field>
+        <repeat id="assessmentRequestGroupList/assessmentRequestGroup" section="omca">
+            <field id="assessmentRequestedBy" autocomplete="person-person" ui-search="repeatable" section="omca"></field>
+            <field id="assessmentRequestRole" autocomplete="vocab-assessmentrequestrole" ui-type="enum" ui-search="repeatable" section="omca"></field>
+            <field id="assessmentRequestDateRequested" ui-type="date" ui-search="range" section="omca"></field>
+            <field id="assessmentRequestDateRequired" ui-type="date" ui-search="range" section="omca"></field>
+        </repeat>
+        <repeat id="omcaConditionCheckMethods" section="omca">
+            <field id="omcaConditionCheckMethod" autocomplete="vocab-omcaConditionCheckMethod" ui-type="enum" section="omca"></field>
+        </repeat>
+        <field id="okForExhibitLoanAccession" datatype="boolean" section="omca"></field>
+        <field id="needsTreatment" autocomplete="vocab-needstreatment" ui-type="enum" section="omca"></field>
+        <field id="tempRequirement" autocomplete="vocab-temperaturelevel" ui-type="enum" ui-search="repeatable" section="omca"></field>
+        <field id="humidityRequirement" autocomplete="vocab-humiditylevel" ui-type="enum" ui-search="repeatable" section="omca"></field>
+        <field id="lightRequirement" autocomplete="vocab-lightlevel" ui-type="enum" ui-search="repeatable" section="omca"></field>
+    </section>
+    <section id="conditionCheckInformation">
+        <field id="conditionCheckMethod" autocomplete="vocab-conditionCheckMethod" ui-type="enum">
+            <!-- removing options block; adding vocab-conditionCheckMethod vocab -->
+            <options action='delete'/>
+        </field>
+        <field id="conditionCheckReason" ui-search="repeatable" autocomplete="vocab-conditionCheckReason" ui-type="enum">
+            <!-- removing options block; adding vocab-conditionCheckReason vocab; making searchable -->
+            <options action='delete'/>
+        </field>
+        <field id="conditionCheckRefNumber" sortKey="sortableConditionCheckRefNumber">
+            <!-- adding sortKey attribute -->
+        </field>
+    </section>
+</record>
