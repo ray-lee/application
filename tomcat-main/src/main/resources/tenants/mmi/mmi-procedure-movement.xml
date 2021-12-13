@@ -1,0 +1,33 @@
+<record id="movement">
+    <!-- removing ability to lock records -->
+    <supportslocking>false</supportslocking>
+    <section id="locationMovementInformation">
+        <!-- change autocomplete to only use location-location -->
+        <field id="currentLocation" ui-search="repeatable" in-title="yes" mini="summary,search,list,relate" autocomplete="location-location">
+            <title-selector>titleBar-currentLocation</title-selector>
+        </field>
+    </section>
+    <section id="movementControlInformation">
+        <field id="movementReferenceNumber" ui-search="repeatable" chooser="yes" in-title="no" mini="number,search,list,relate" seperate_ui_container="true">
+            <options>
+                <!-- removed location number pattern from drop down list -->
+                <option id="inventory" sample="INV2019.001.0001">Inventory</option>
+                <option id="movement" sample="MV2019.001">Movement</option>
+            </options>
+        </field>
+        <!-- add new option -->
+        <field id="reasonForMove" ui-search="repeatable">
+            <options>
+                <option id="" default="yes">Please select a value</option>
+                <option id="conservation">Conservation</option>
+                <option id="exhibition">Exhibition</option>
+                <option id="inventory">Inventory</option>
+                <option id="loan">Loan</option>
+                <option id="newstoragelocation">New Storage Location</option>
+                <option id="photography">Photography</option>
+                <option id="research">Research</option>
+                <option id="returntohomelocation">Return to Home Location</option>
+            </options>
+        </field>
+    </section>
+</record>

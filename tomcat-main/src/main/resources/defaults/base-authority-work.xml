@@ -62,6 +62,16 @@
 			<field id="publisherType" autocomplete="true" ui-type="enum" />
 		</repeat>
 		<field id="address" ui-type="groupfield/address/selfrenderer" />
+
+		<!-- HACK!!! adding custom mmi works_commons fields back into the base-authority-work.xml file -->
+		<field id="genre" autocomplete="true" ui-type="enum" />
+		<field id="medium" autocomplete="true" ui-type="enum" />
+		<field id="scopeNote" />
+		<field id="sourceNote" />
+		<repeat id="migratedEntityGroupList/migratedEntityGroup">
+			<field id="migratedEntity" autocomplete="true" />
+			<field id="migratedEntityType" />
+		</repeat>
 	</section>
 
 	<!-- not used in UI except in autocompletes -->

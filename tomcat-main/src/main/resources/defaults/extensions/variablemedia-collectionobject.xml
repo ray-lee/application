@@ -4,7 +4,8 @@
 	</services-record-path>
 
 	<section id="descriptionInformation">
-		<repeat id="contentWorksList/contentWorksGroup" section="variablemedia">
+		<!-- renaming contentWorksList to vmContentWorksList -->
+		<repeat id="vmContentWorksList/vmContentWorksGroup" section="variablemedia">
 			<field id="contentWork" section="variablemedia" autocomplete="true" />
 			<field id="contentWorkType" section="variablemedia" autocomplete="true" ui-type="enum" />
 			<field id="contentWorkNote" section="variablemedia" />

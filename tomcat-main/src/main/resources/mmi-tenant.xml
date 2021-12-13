@@ -1,0 +1,77 @@
+<cspace-config tenantname="mmi">
+	<tenantid>42</tenantid>
+	<version>11</version>
+	<include src="settings.xml,local-mmi-settings.xml" required="false" merge="xmlmerge-settings.properties" 
+		strip-root="yes" />
+
+	<spec>
+		<include src="base-relations.xml"/>
+		<include src="base-schemas.xml"/>
+
+		<records>
+			<enum-blank>Please select a value</enum-blank>
+
+			<include src="base-collectionobject.xml,mmi-collectionobject.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority.xml"/>
+
+			<include src="base-procedure-acquisition.xml,mmi-procedure-acquisition.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-blobs.xml"/>
+			<include src="base-procedure-conditioncheck.xml,mmi-procedure-conditioncheck.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-exhibition.xml,mmi-procedure-exhibition.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-groups.xml"/>
+			<include src="base-procedure-intake.xml,mmi-procedure-intake.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-loanin.xml,mmi-procedure-loanin.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-loanout.xml,mmi-procedure-loanout.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-media.xml,mmi-procedure-media.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-valuationcontrol.xml,mmi-procedure-valuationcontrol.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-movement.xml,mmi-procedure-movement.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-objectexit.xml,mmi-procedure-objectexit.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-procedure-conservation.xml,mmi-procedure-conservation.xml" merge="xmlmerge-mmi.properties"/>
+
+			<include src="base-authority-contact.xml,mmi-authority-contact.xml" merge="xmlmerge-mmi.properties"/>
+			<!-- IMPORTANT: *-termList.xml files MUST precede their equivalent files. -->
+			<include src="base-authority-location-termList.xml,mmi-authority-location-termlist.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-location.xml,mmi-authority-location.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-organization-termList.xml,mmi-authority-organization-termList.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-organization.xml"/>
+			<include src="base-authority-person-termList.xml,mmi-authority-person-termlist.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-person.xml,mmi-authority-person.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-citation-termList.xml"/>
+			<include src="base-authority-citation.xml"/>
+			<include src="base-authority-place-termList.xml"/>
+			<include src="base-authority-place.xml,mmi-authority-place.xml" merge="xmlmerge-mmi.properties"/>
+			
+			<!--include src="base-authority-taxon-termList.xml"/>
+			<include src="base-authority-taxon.xml"/-->
+			
+			<include src="base-authority-concept-termList.xml"/>
+			<include src="base-authority-concept.xml,mmi-authority-concept.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-work-termList.xml,mmi-authority-work-termList.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-authority-work.xml,mmi-authority-work.xml" merge="xmlmerge-mmi.properties"/>
+
+			<include src="base-vocabularies.xml"/>
+
+			<include src="base-authz-accountrole.xml"/>
+			<include src="base-authz-permission.xml"/>
+			<include src="base-authz-permrole.xml"/>
+			<include src="base-authz-role.xml"/>
+			<include src="base-authz-userperm.xml"/>
+			<include src="base-authz-userrole.xml"/>
+			<include src="base-authz-users.xml"/>
+
+			<include src="base-other-dimension.xml,mmi-other-dimension.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-other-address.xml"/>
+			<include src="base-other-hierarchy.xml"/>
+			<include src="base-other-idgenerator.xml,mmi-other-idgenerator.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-other-structureddate.xml,mmi-other-structureddate.xml" merge="xmlmerge-mmi.properties"/>
+			<include src="base-other-termlist.xml"/>
+			<include src="base-other-termlistitem.xml"/>
+			<include src="base-other-reporting.xml"/>
+			<include src="base-other-reportingoutput.xml"/>
+			<include src="base-other-batch.xml"/>
+			<include src="base-other-batchoutput.xml"/>
+			<include src="base-other-invocationresults.xml"/>
+			<include src="base-other-searchall.xml"/>
+		</records>
+	</spec>
+</cspace-config>
