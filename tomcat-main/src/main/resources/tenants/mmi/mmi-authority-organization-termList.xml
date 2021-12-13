@@ -1,32 +1,8 @@
-<record id="preferredOA" in-recordlist="no" separate-record="false">
+<record id="preferredOA">
     <section id="termInformation">
         <repeat id="orgTermGroupList/orgTermGroup">
-            <!-- updated option values -->
-            <field id="termStatus" ui-search="repeatable" seperate_ui_container="true" mini="search,list,relate">
-                <selector>orgAuthority-termStatus</selector>
-                <options>
-                    <option id="">Please select a value</option>
-                    <option id="quickadded">Quick added</option>
-                    <option id="needsattention">Needs attention</option>
-                    <option id="inprogress">In progress</option>
-                    <option id="complete">Complete</option>
-                </options>
-            </field>
-            <!-- removing autocomplete auths; adding static options list -->
-            <field id="termSource">
-                <selector>orgAuthority-termSource</selector>
-                <options>
-                    <option id="" default="yes">Please select a value</option>
-                    <option id="aficatalog">AFI Catalog</option>
-                    <option id="encyclopediaofearlycinema">Encyclopedia of Early Cinema</option>
-                    <option id="halliwellswhoswhointhemovies">Halliwell's Who's Who in the Cinema</option>
-                    <option id="libraryofcongressnameauthority">Library of Congress Name Authority</option>
-                    <option id="other">Other</option>
-                    <option id="root">Root</option>
-                    <option id="silentfilmnecrology2ndedition">Silent Film Necrology, 2nd Edition</option>
-                    <option id="thefilmencyclopedia4thedition">The Film Encyclopedia, 4th Edition</option>
-                </options>
-            </field>
+            <!-- removing autocomplete -->
+            <field id="termSource" autocomplete="true" />
         </repeat>
     </section>
 </record>

@@ -1,16 +1,10 @@
-<record id="media" is-extension="true" type="record,procedure">
+<record id="media" is-extension="true">
 	<services-record-path id="mmi">media_mmi:http://collectionspace.org/services/media/local/mmi,media_mmi</services-record-path>
+
 	<section id="mediaInformation">
-		<field id="isPrimary" datatype="boolean" section="mmi"></field>
-		<field id="isOriginalMedia" datatype="boolean" section="mmi"></field>
-		<field id="mediaStatus" section="mmi">
-			<selector>media-mediaStatus</selector>
-			<options>
-				<option id="">Please select a value</option>
-				<option id="display">Display</option>
-				<option id="private">Private</option>
-			</options>
-		</field>
-		<field id="mediaView" autocomplete="vocab-mediaview" ui-search="single" ui-type="enum" section="mmi"></field>
+		<field id="isPrimary" datatype="boolean" section="mmi" />
+		<field id="isOriginalMedia" datatype="boolean" section="mmi" />
+		<field id="mediaStatus" section="mmi" />
+		<field id="mediaView" autocomplete="true" ui-type="enum" section="mmi" />
 	</section>
 </record>

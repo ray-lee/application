@@ -1,22 +1,19 @@
-<record id="concept" type="authority">
+<record id="concept">
     <instances id="concept">
         <instance id="concept-concept">
             <web-url>concept</web-url>
             <title-ref>concept</title-ref>
-            <!-- deactivating non-preferred terms in term completion -->
-            <nptAllowed>false</nptAllowed>
-            <title>Associated Concepts</title>
         </instance>
     </instances>
 
     <section id="conceptAuthorityInformation">
         <repeat id="citationGroupList/citationGroup">
             <!-- add autocomplete to use citation-citation -->
-            <field id="citationSource" autocomplete="citation-citation"></field>
+            <field id="citationSource" autocomplete="true" />
         </repeat>
         <repeat id="additionalSourceGroupList/additionalSourceGroup">
             <!-- add autocomplete to use citation-citation -->
-            <field id="additionalSource" autocomplete="citation-citation"></field>
+            <field id="additionalSource" autocomplete="true" />
         </repeat>
     </section>
 </record>

@@ -1,8 +1,6 @@
 <record id="valuationcontrol">
     <section id="objectValuationInformation">
-        <!-- change autocomplete to use vocab-valuetype -->
-    	<field id="valueType" autocomplete="vocab-valuetype" ui-type="enum" ui-search="repeatable" 
-            in-title="yes" mini="summary,search,list,relate">
-        </field>
+        <!-- Change to term list -->
+        <field id="valueType" autocomplete="true" ui-type="enum" mini="summary,list" />
     </section>
 </record>

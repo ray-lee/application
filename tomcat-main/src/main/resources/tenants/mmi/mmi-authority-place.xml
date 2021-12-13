@@ -1,17 +1,8 @@
-<record id="place" type="authority">
-    <instances id="place">
-        <!-- remove place-tgn_place instance -->
-        <instance id="place-tgn_place">
-            <web-url>tgn_place</web-url>
-            <title-ref>tgn_place</title-ref>
-            <title>Thesaurus of Geographic Names</title>
-        </instance>
-        <instance id="place-place">
-            <web-url>place</web-url>
-            <title-ref>place</title-ref>
-            <!-- deactivating non-preferred terms in term completion -->
-            <nptAllowed>false</nptAllowed>
-            <title>Local Places</title>
-        </instance>
-    </instances>
+<record id="place">
+	<instances id="place">
+		<instance id="place-place">
+			<web-url>place</web-url>
+			<title-ref>place</title-ref>
+		</instance>
+	</instances>
 </record>

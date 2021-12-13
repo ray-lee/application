@@ -1,36 +1,15 @@
-<record id="exhibition" is-extension="true" type="record,procedure">
-	<services-record-path id="mmi">exhibitions_mmi:http://collectionspace.org/services/exhibition/local/mmi,exhibitions_mmi</services-record-path>
-    <section id="exhibitionInformation">
-        <repeat id="venueGroupList/venueGroup">
-            <!-- removing location-location,location-offsite_sla vocabs -->
-            <field id="venue" ui-search="repeatable"
-                autocomplete="organization-organization,organization-organization_shared,organization-ulan_oa,place-place,place-place_shared,place-tgn_place"
-            />
-        </repeat>
-    </section>
+<record id="exhibition" is-extension="true">
+    <services-record-path id="mmi">exhibitions_mmi:http://collectionspace.org/services/exhibition/local/mmi,exhibitions_mmi</services-record-path>
+
     <section id="exhibitionObjectInformation">
         <!-- adding new 'type' field to exhibitionObjectGroup, so duplicating entire field group -->
         <repeat id="mmiExhibitionObjectGroupList/mmiExhibitionObjectGroup" section="mmi">
             <field id="mmiExhibitionObjectNumber" section="mmi"/>
             <field id="mmiExhibitionObjectName" section="mmi"/>
-            <field id="mmiExhibitionObjectType" autocomplete="vocab-exhibitionobjecttype" ui-type="enum" section="mmi"></field>
-            <field id="mmiExhibitionObjectConsCheckDate" ui-type="date" datatype="date" section="mmi"/>
-            <field id="mmiExhibitionObjectConsTreatment" section="mmi">
-                <options>
-                    <option id="" default="yes">Please select a value</option>
-                    <option id="Needed">Needed</option>
-                    <option id="Not needed">Not needed</option>
-                    <option id="Done">Done</option>
-                </options>
-            </field>
-            <field id="mmiExhibitionObjectMount" section="mmi">
-                <options>
-                    <option id="" default="yes">Please select a value</option>
-                    <option id="Needed">Needed</option>
-                    <option id="Not needed">Not needed</option>
-                    <option id="Done">Done</option>
-                </options>
-            </field>
+            <field id="mmiExhibitionObjectType" autocomplete="true" ui-type="enum" section="mmi" />
+            <field id="mmiExhibitionObjectConsCheckDate" datatype="date" section="mmi" />
+            <field id="mmiExhibitionObjectConsTreatment" section="mmi" />
+            <field id="mmiExhibitionObjectMount" section="mmi" />
             <field id="mmiExhibitionObjectSection" section="mmi"/>
             <field id="mmiExhibitionObjectCase" section="mmi"/>
             <field id="mmiExhibitionObjectSeqNum" section="mmi"/>

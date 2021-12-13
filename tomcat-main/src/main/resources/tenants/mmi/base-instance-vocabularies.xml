@@ -32,13 +32,59 @@
 			<option id="transferred">transferred</option>
 		</options>
 	</instance>
+	<instance id="vocab-uocmethods">
+		<web-url>uocmethods</web-url>
+		<title-ref>uocmethods</title-ref>
+		<title>Use of Collections Methods</title>
+		<options>
+			<option id="class">class</option>
+			<option id="exhibition">exhibition</option>
+			<option id="publication">publication</option>
+			<option id="research">research</option>
+		</options>
+	</instance>
+	<instance id="vocab-uocusertypes">
+		<web-url>uocusertypes</web-url>
+		<title-ref>uocusertypes</title-ref>
+		<title>Use of Collections User Types</title>
+		<options>
+			<option id="exhibitionorganizer">exhibition organizer</option>
+			<option id="faculty">faculty</option>
+			<option id="lecturer">lecturer</option>
+			<option id="presenter">presenter</option>
+			<option id="publisher">publisher</option>
+			<option id="researcher">researcher</option>
+		</options>
+	</instance>
+	<instance id="vocab-uocuserroles">
+		<web-url>uocuserroles</web-url>
+		<title-ref>uocuserroles</title-ref>
+		<title>Use of Collections User Roles</title>
+		<options>
+			<option id="undergraduate">undergraduate student</option>
+			<option id="graduate">graduate student</option>
+			<option id="faculty">faculty</option>
+			<option id="other">other</option>
+		</options>
+	</instance>
+	<instance vocab="vocab-uocauthorizationstatuses">
+		<web-url>uocauthorizationstatuses</web-url>
+		<title-ref>uocauthorizationstatuses</title-ref>
+		<title>Use of Collections Authorization Statuses</title>
+		<options>
+			<option id="approved">approved</option>
+			<option id="denied">denied</option>
+			<option id="pending">pending</option>
+		</options>
+	</instance>
 	<instance id="vocab-publishto">
 		<web-url>publishto</web-url>
 		<title-ref>publishto</title-ref>
-		<title>A publishing destination</title>
+		<title>Publishing Destination</title>
 		<options>
 			<option id="all">All</option>
 			<option id="none">None</option>
+			<option id="cspacepub">CollectionSpace Public Browser</option>
 			<option id="cultureobject">Culture Object</option>
 			<option id="dpla">DPLA</option>
 			<option id="omeka">Omeka</option>
@@ -275,7 +321,7 @@
 	<instance id="vocab-citationtermtype">
 		<web-url>citationtermtype</web-url>
 		<title-ref>citationtermtype</title-ref>
-		<title>citationTermType</title>
+		<title>Citation Term Type</title>
 		<options>
 			<option id="monograph">Monograph</option>
 			<option id="dictionary">Dictionary</option>
@@ -308,7 +354,7 @@
 	<instance id="vocab-agentinfo">
 		<web-url>agentinfotype</web-url>
 		<title-ref>agentinfotype</title-ref>
-		<title>agentinfoType</title>
+		<title>Agent Info Type</title>
 		<options>
 			<option id="writer">Writer</option>
 			<option id="editor">Editor</option>
@@ -317,7 +363,7 @@
 	<instance id="vocab-resourceid">
 		<web-url>resourceidtype</web-url>
 		<title-ref>resourceidtype</title-ref>
-		<title>resourceidType</title>
+		<title>Resource ID Type</title>
 		<options>
 			<option id="isbn">ISBN</option>
 			<option id="issn">ISSN</option>
@@ -327,7 +373,7 @@
 	<instance id="vocab-relationtype">
 		<web-url>relationtypetype</web-url>
 		<title-ref>relationtypetype</title-ref>
-		<title>relationtypeType</title>
+		<title>Relation Type</title>
 		<options>
 			<option id="monography">Monography (published in)</option>
 			<option id="magazine">Magazine (published in)</option>
@@ -338,7 +384,7 @@
 	<instance id="vocab-exhibitiontype">
 		<web-url>exhibitiontype</web-url>
 		<title-ref>exhibitiontype</title-ref>
-		<title>exhibitiontype</title>
+		<title>Exhibition Type</title>
 		<options>
 			<option id="permanent">Permanent</option>
 			<option id="temporary">Temporary</option>
@@ -349,7 +395,7 @@
 	<instance id="vocab-exhibitionpersonrole">
 		<web-url>exhibitionpersonrole</web-url>
 		<title-ref>exhibitionpersonrole</title-ref>
-		<title>exhibitionpersonrole</title>
+		<title>Exhibition Person Role</title>
 		<options>
 			<option id="curator">Curator</option>
 			<option id="exhibitdesigner">Exhibit designer</option>
@@ -370,7 +416,7 @@
 	<instance id="vocab-exhibitionreferencetype">
 		<web-url>exhibitionreferencetype</web-url>
 		<title-ref>exhibitionreferencetype</title-ref>
-		<title>exhibitionreferencetype</title>
+		<title>Exhibition Reference Type</title>
 		<options>
 			<option id="catalog">Catalog</option>
 			<option id="research">Research</option>
@@ -383,7 +429,7 @@
 	<instance id="vocab-exhibitionstatus">
 		<web-url>exhibitionstatus</web-url>
 		<title-ref>exhibitionstatus</title-ref>
-		<title>exhibitionstatus</title>
+		<title>Exhibition Status</title>
 		<options>
 			<option id="themeselected">Theme selected</option>
 			<option id="preliminaryobjectlistcreated">Preliminary object list created</option>
@@ -395,7 +441,7 @@
 	<instance id="vocab-conservationstatus">
 		<web-url>conservationstatus</web-url>
 		<title-ref>conservationstatus</title-ref>
-		<title>conservationstatus</title>
+		<title>Conservation Status</title>
 		<options>
 			<option id="treatmentproposed">Treatment proposed</option>
 			<option id="treatmentapproved">Treatment approved</option>
@@ -410,7 +456,7 @@
 	<instance id="vocab-treatmentpurpose">
 		<web-url>treatmentpurpose</web-url>
 		<title-ref>treatmentpurpose</title-ref>
-		<title>treatmentpurpose</title>
+		<title>Treatment Purpose</title>
 		<options>
 			<option id="appraisal">Appraisal</option>
 			<option id="damage">Damage</option>
@@ -424,7 +470,7 @@
 	<instance id="vocab-otherpartyrole">
 		<web-url>otherpartyrole</web-url>
 		<title-ref>otherpartyrole</title-ref>
-		<title>otherpartyrole</title>
+		<title>Other Party Role</title>
 		<options>
 			<option id="conservator">Conservator</option>
 			<option id="technician">Technician</option>
@@ -434,7 +480,7 @@
 	<instance id="vocab-examinationphase">
 		<web-url>examinationphase</web-url>
 		<title-ref>examinationphase</title-ref>
-		<title>examinationphase</title>
+		<title>Examination Phase</title>
 		<options>
 			<option id="beforetreatment">before treatment</option>
 			<option id="duringtreatment">during treatment</option>
@@ -449,6 +495,11 @@
 			<option id="class">class</option>
 			<option id="family">family</option>
 			<option id="generic">generic</option>
+			<option id="category">category</option>
+			<option id="subclass">sub-class</option>
+			<option id="primaryterm">primary term</option>
+			<option id="secondaryterm">secondary term</option>
+			<option id="tertiaryterm">tertiary term</option>
 		</options>
 	</instance>
 	<instance id="vocab-organizationtype">
@@ -569,6 +620,7 @@
 			<option id="abbreviation">abbreviation</option>
 			<option id="commercial">commercial</option>
 			<option id="common">common</option>
+			<option id="scientific">scientific name</option>
 		</options>
 	</instance>
 	<instance id="vocab-materialuse">
@@ -704,7 +756,7 @@
 	<instance id="vocab-acousticalproperties">
 		<web-url>acousticalproperties</web-url>
 		<title-ref>acousticalproperties</title-ref>
-		<title>acousticalproperties</title>
+		<title>Acoustical Properties</title>
 		<options>
 			<option id="sound_absorption_reflective">sound absorption - reflective</option>
 			<option id="sound_absorption_neutral">sound absorption - neutral</option>
@@ -717,7 +769,7 @@
 	<instance id="vocab-durabilityproperties">
 		<web-url>durabilityproperties</web-url>
 		<title-ref>durabilityproperties</title-ref>
-		<title>durabilityproperties</title>
+		<title>Durability Properties</title>
 		<options>
 			<option id="abrasion_resistant">abrasion resistant</option>
 			<option id="dimensionally_stable">dimensionally-stable</option>
@@ -757,7 +809,7 @@
 	<instance id="vocab-mechanicalproperties">
 		<web-url>mechanicalproperties</web-url>
 		<title-ref>mechanicalproperties</title-ref>
-		<title>mechanicalproperties</title>
+		<title>Mechanical Properties</title>
 		<options>
 			<option id="density">density</option>
 			<option id="compressive_strength">compressive strength</option>
@@ -774,7 +826,7 @@
 	<instance id="vocab-hygrothermalproperties">
 		<web-url>hygrothermalproperties</web-url>
 		<title-ref>hygrothermalproperties</title-ref>
-		<title>hygrothermalproperties</title>
+		<title>Hygrothermal Properties</title>
 		<options>
 			<option id="thermal_resistivity">thermal resistivity</option>
 			<option id="thermal_expansion_coefficient">thermal expansion coefficient</option>
@@ -790,7 +842,7 @@
 	<instance id="vocab-opticalproperties">
 		<web-url>opticalproperties</web-url>
 		<title-ref>opticalproperties</title-ref>
-		<title>opticalproperties</title>
+		<title>Optical Properties</title>
 		<options>
 			<option id="iridescent">iridescent</option>
 			<option id="light_diffusing">light diffusing</option>
@@ -807,7 +859,7 @@
 	<instance id="vocab-sensorialproperties">
 		<web-url>sensorialproperties</web-url>
 		<title-ref>sensorialproperties</title-ref>
-		<title>sensorialproperties</title>
+		<title>Sensorial Properties</title>
 		<options>
 			<option id="vision_colorfulness_low">vision - colorfulness (low)</option>
 			<option id="vision_colorfulness_medium">vision - colorfulness (medium)</option>
@@ -831,7 +883,7 @@
 	<instance id="vocab-smartmaterialproperties">
 		<web-url>smartmaterialproperties</web-url>
 		<title-ref>smartmaterialproperties</title-ref>
-		<title>smartmaterialproperties</title>
+		<title>Smart Material Properties</title>
 		<options>
 			<option id="dichroic">dichroic</option>
 			<option id="electroluminescent">electroluminescent</option>
@@ -852,7 +904,7 @@
 	<instance id="vocab-additionalproperties">
 		<web-url>additionalproperties</web-url>
 		<title-ref>additionalproperties</title-ref>
-		<title>additionalproperties</title>
+		<title>Additional Properties</title>
 		<options>
 			<option id="acoustic">acoustic</option>
 			<option id="ductile">ductile</option>
@@ -874,7 +926,7 @@
 	<instance id="vocab-mechanicalpropertyunits">
 		<web-url>mechanicalpropertyunits</web-url>
 		<title-ref>mechanicalpropertyunits</title-ref>
-		<title>mechanicalpropertyunits</title>
+		<title>Mechanical Propertyunits</title>
 		<options>
 			<option id="kg_per_m3">kg/m³</option>
 			<option id="MPa">MPa</option>
@@ -885,7 +937,7 @@
 	<instance id="vocab-hygrothermalpropertyunits">
 		<web-url>hygrothermalpropertyunits</web-url>
 		<title-ref>hygrothermalpropertyunits</title-ref>
-		<title>hygrothermalpropertyunits</title>
+		<title>Hygrothermal Property Units</title>
 		<options>
 			<option id="m_degC_per_W">m°C/W</option> <!-- thermal resistivity -->
 			<option id="microstrain_per_degC">μstrain/°C</option> <!-- coefficient of thermal expansion -->
@@ -897,7 +949,7 @@
 	<instance id="vocab-recycledcontentqualifiers">
 		<web-url>recycledcontentqualifiers</web-url>
 		<title-ref>recycledcontentqualifiers</title-ref>
-		<title>recycledcontentqualifiers</title>
+		<title>Recycled Content Qualifiers</title>
 		<options>
 			<option id="postconsumer">Post-consumer</option>
 			<option id="postindustrial">Post industrial</option>
@@ -907,7 +959,7 @@
 	<instance id="vocab-lifecyclecomponents">
 		<web-url>lifecyclecomponents</web-url>
 		<title-ref>lifecyclecomponents</title-ref>
-		<title>lifecyclecomponents</title>
+		<title>Lifecycle Components</title>
 		<options>
 			<option id="biodegradable">Biodegradable</option>
 			<option id="landfillable">Landfillable</option>
@@ -918,7 +970,7 @@
 	<instance id="vocab-energyunits">
 		<web-url>energyunits</web-url>
 		<title-ref>energyunits</title-ref>
-		<title>energyunits</title>
+		<title>Energy Units</title>
 		<options>
 			<option id="MJ_per_kg">MJ/kg</option>
 			<option id="tCO2">tCO₂</option>
@@ -927,7 +979,7 @@
 	<instance id="vocab-ecologicalcertifications">
 		<web-url>ecologicalcertifications</web-url>
 		<title-ref>ecologicalcertifications</title-ref>
-		<title>ecologicalcertifications</title>
+		<title>Ecological Certifications</title>
 		<options>
 			<option id="leed">LEED</option>
 		</options>
@@ -949,7 +1001,7 @@
 	<instance id="vocab-deformingprocesses">
 		<web-url>deformingprocesses</web-url>
 		<title-ref>deformingprocesses</title-ref>
-		<title>deformingprocesses</title>
+		<title>Deforming Processes</title>
 		<options>
 			<option id="aeration">aeration</option>
 			<option id="corrugating">corrugating</option>
@@ -978,7 +1030,7 @@
 	<instance id="vocab-joiningprocesses">
 		<web-url>joiningprocesses</web-url>
 		<title-ref>joiningprocesses</title-ref>
-		<title>joiningprocesses</title>
+		<title>Joining Processes</title>
 		<options>
 			<option id="felting">felting</option>
 			<option id="heat_bonding">heat-bonding</option>
@@ -1002,7 +1054,7 @@
 	<instance id="vocab-machiningprocesses">
 		<web-url>machiningprocesses</web-url>
 		<title-ref>machiningprocesses</title-ref>
-		<title>machiningprocesses</title>
+		<title>Machining Processes</title>
 		<options>
 			<option id="milling">milling</option>
 			<option id="drilling">drilling</option>
@@ -1026,7 +1078,7 @@
 	<instance id="vocab-moldingprocesses">
 		<web-url>moldingprocesses</web-url>
 		<title-ref>moldingprocesses</title-ref>
-		<title>moldingprocesses</title>
+		<title>Molding Processes</title>
 		<options>
 			<option id="blow_molding">blow molding</option>
 			<option id="compression_molding">compression molding</option>
@@ -1055,7 +1107,7 @@
 	<instance id="vocab-rapidprototypingprocesses">
 		<web-url>rapidprototypingprocesses</web-url>
 		<title-ref>rapidprototypingprocesses</title-ref>
-		<title>rapidprototypingprocesses</title>
+		<title>Rapid Prototyping Processes</title>
 		<options>
 			<option id="printing">printing</option>
 			<option id="vacuum_deposition">vacuum deposition</option>
@@ -1074,7 +1126,7 @@
 	<instance id="vocab-surfacingprocesses">
 		<web-url>surfacingprocesses</web-url>
 		<title-ref>surfacingprocesses</title-ref>
-		<title>surfacingprocesses</title>
+		<title>Surfacing Processes</title>
 		<options>
 			<option id="acid_washing">acid-washing</option>
 			<option id="coating">coating</option>
@@ -1099,7 +1151,7 @@
 	<instance id="vocab-additionalprocesses">
 		<web-url>additionalprocesses</web-url>
 		<title-ref>additionalprocesses</title-ref>
-		<title>additionalprocesses</title>
+		<title>Additional Processes</title>
 		<options>
 			<option id="acetylation">acetylation</option>
 			<option id="casting">casting</option>
@@ -1128,7 +1180,7 @@
 	<instance id="vocab-deaccessionapprovalgroup">
 		<web-url>deaccessionapprovalgroup</web-url>
 		<title-ref>deaccessionapprovalgroup</title-ref>
-		<title>Deaccession Approval Group</title>
+		<title>Approval Group</title>
 		<options>
 			<option id="collection_committee">collection committee</option>
 			<option id="executive_committee">executive committee</option>
@@ -1138,7 +1190,7 @@
 	<instance id="vocab-deaccessionapprovalstatus">
 		<web-url>deaccessionapprovalstatus</web-url>
 		<title-ref>deaccessionapprovalstatus</title-ref>
-		<title>Deaccession Approval Status</title>
+		<title>Approval Status</title>
 		<options>
 			<option id="approved">approved</option>
 			<option id="not_approved">not approved</option>
@@ -1158,6 +1210,154 @@
 			<option id="repatriation">repatriation</option>
 			<option id="return_to_donor">return to donor</option>
 			<option id="transfer">transfer</option>
+		</options>
+	</instance>
+	<instance id="vocab-contactrole">
+		<web-url>contactrole</web-url>
+		<title-ref>contactrole</title-ref>
+		<title>Contact Person Roles</title>
+		<options>
+			<option id="curator">curator</option>
+			<option id="director">director</option>
+			<option id="registrar">registrar</option>
+		</options>
+	</instance>
+	<instance id="vocab-contactstatus">
+		<web-url>contactstatus</web-url>
+		<title-ref>contactstatus</title-ref>
+		<title>Contact Person Statuses</title>
+		<options>
+			<option id="active">active</option>
+			<option id="inactive">inactive</option>
+		</options>
+	</instance>
+	<instance id="vocab-uoccollectiontypes">
+		<web-url>uoccollectiontypes</web-url>
+		<title-ref>uoccollectiontypes</title-ref>
+		<title>Use of Collections Types</title>
+		<options>
+			<option id="uocosteology">osteology</option>
+			<option id="uocdocumentation">documentation</option>
+			<option id="uocarcheology">archeology</option>
+		</options>
+	</instance>
+	<instance id="vocab-uocstaffroles">
+		<web-url>uocstaffroles</web-url>
+		<title-ref>uocstaffroles</title-ref>
+		<title>Use of Collections Staff Roles</title>
+		<options>
+			<option id="greeter">greeter</option>
+			<option id="objecthandler">object handler</option>
+			<option id="presenter">presenter</option>
+		</options>
+	</instance>
+	<instance id="vocab-uocmaterialtypes">
+		<web-url>uocmaterialtypes</web-url>
+		<title-ref>uocmaterialtypes</title-ref>
+		<title>Use of Collections Material Types</title>
+		<options>
+			<option id="root">root</option>
+			<option id="bulb">bulb</option>
+			<option id="cones">cones</option>
+			<option id="cutting">cutting</option>
+			<option id="flower">flower</option>
+			<option id="fruit">fruit</option>
+			<option id="leaf">leaf</option>
+			<option id="livingplant">living plant</option>
+			<option id="pollen">pollen</option>
+			<option id="roots">roots</option>
+			<option id="seed">seed</option>
+			<option id="spores">spores</option>
+			<option id="wood">wood</option>
+		</options>
+	</instance>
+	<instance id="vocab-uocprojectid">
+		<web-url>uocprojectid</web-url>
+		<title-ref>uocprojectid</title-ref>
+		<title>Use of Collections Project Identification Numbers</title>
+		<options>
+		</options>
+	</instance>
+	<instance id="vocab-uocsubcollections">
+		<web-url>uocsubcollections</web-url>
+		<title-ref>uocsubcollections</title-ref>
+		<title>Use of Collections Subcollections</title>
+		<options>
+			<option id="uocsubcollection00">The Americas</option>
+			<option id="uocsubcollection01">Europe</option>
+			<option id="uocsubcollection02">Asia</option>
+		</options>
+	</instance>
+    <instance id="vocab-transportcosttype">
+        <web-url>transportcosttype</web-url>
+        <title-ref>transportcosttype</title-ref>
+        <title>Transport Cost Type</title>
+        <options>
+            <option id="incoming">incoming</option>
+            <option id="outgoing">outgoing</option>
+            <option id="return">return</option>
+        </options>
+    </instance>
+    <instance id="vocab-transportresponsibleparty">
+        <web-url>transportresponsibleparty</web-url>
+        <title-ref>transportresponsibleparty</title-ref>
+        <title>Transport Cost Responsbile Party</title>
+        <options>
+            <option id="borrower">borrower</option>
+            <option id="lender">lender</option>
+            <option id="thirdparty">third party</option>
+        </options>
+    </instance>
+    <instance id="vocab-transportadditionalcosttype">
+        <web-url>transportadditionalcosttype</web-url>
+        <title-ref>transportadditionalcosttype</title-ref>
+        <title>Transport Additional Cost Type</title>
+        <options>
+            <option id="crating">crating</option>
+            <option id="localmovement">local movement</option>
+            <option id="recipientcustoms">recipient customs</option>
+            <option id="recipientshipping">recipient shipping</option>
+            <option id="sendercustoms">sender customs</option>
+            <option id="sendershipping">sender shipping</option>
+            <option id="storage">storage</option>
+        </options>
+    </instance>
+	<instance id="vocab-annotationtype">
+		<web-url>annotationtype</web-url>
+		<title-ref>annotationtype</title-ref>
+		<title>Annotation Type</title>
+		<options>
+			<option id="additional_taxa">additional taxa</option>
+			<option id="deaccession">deaccession</option>
+			<option id="holotype_location">holotype location</option>
+			<option id="image_made">image made</option>
+			<option id="nomenclature">nomenclature</option>
+			<option id="number_collision">number collision</option>
+			<option id="population_biology">population biology</option>
+			<option id="type">type</option>
+			<option id="vegetation_type_map_project">Vegetation Type Map Project</option>
+		</options>
+	</instance>
+	<instance id="vocab-insurancetype">
+		<web-url>insurancetype</web-url>
+		<title-ref>insurancetype</title-ref>
+		<title>Insurance/Indemnity Type</title>
+		<options>
+			<option id="insurance">insurance</option>
+			<option id="indemnity">indemnity</option>
+			<option id="insuranceandindemnity">insurance and indemnity</option>
+		</options>
+	</instance>
+	<instance id="vocab-insurancestatus">
+		<web-url>insurancestatus</web-url>
+		<title-ref>insurancestatus</title-ref>
+		<title>Insurance/Indemnity Status</title>
+		<options>
+			<option id="request">request</option>
+			<option id="confirmation">confirmation</option>
+			<option id="begin">begin</option>
+			<option id="end">end</option>
+			<option id="renewal">renewal</option>
 		</options>
 	</instance>
 </instances>

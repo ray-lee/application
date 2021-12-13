@@ -1,27 +1,13 @@
-<record id="location" type="authority">
+<record id="location">
     <instances id="location">
         <instance id="location-location">
             <web-url>location</web-url>
             <title-ref>location</title-ref>
-            <title>Local Storage Locations</title>
         </instance>
     </instances>
+
     <section id="locationTermInformation">
        <!-- changed term list from dynamic to static -->
-       <field id="locationType" ui-search="repeatable">
-            <selector>location-type</selector>
-            <options>
-                <option id="">Please select a value</option>
-                <option id="room">Room</option>
-                <option id="row">Row</option>
-                <option id="bay">Bay</option>
-                <option id="shelf">Shelf</option>
-                <option id="gallery">Gallery</option>
-                <option id="floor">Floor</option>
-                <option id="rack">Rack</option>
-                <option id="section">Section</option>
-                <option id="subsection">Sub-section</option>
-            </options>
-        </field>
+       <field id="locationType" autocomplete="" />
     </section>
 </record>

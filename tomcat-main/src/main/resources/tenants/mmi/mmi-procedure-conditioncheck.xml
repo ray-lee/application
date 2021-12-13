@@ -1,22 +1,7 @@
-<record id="conditioncheck" is-extension="true" type="record,procedure">
+<record id="conditioncheck" is-extension="true">
+	<services-record-path id="mmi">conditionchecks_mmi:http://collectionspace.org/services/conditioncheck/local/mmi,conditionchecks_mmi</services-record-path>
 
-	<services-record-path id="mmi">
-		conditionchecks_mmi:http://collectionspace.org/services/conditioncheck/local/mmi,conditionchecks_mmi
-	</services-record-path>
 	<section id="conditionCheckInformation">
-		<!-- adding field to advanced search -->
-		<field id="conditionCheckReason" ui-search="repeatable">
-			<!-- adding new option to list -->
-            		<selector>conditioncheck-conditionCheckReason</selector>
-            		<options>
-               			<option id="" default="yes">Please select a value</option>
-               			<option id="conservation">Conservation</option>
-               			<option id="damagedintransit">Damaged in transit</option>
-               			<option id="loanin">Loan in</option>
-               			<option id="loanout">Loan out</option>
-               			<option id="newacquisition">New acquisition</option>
-            		</options>
-        	</field>
-		<field id="conditionCheckReasonExhibition" ui-search="repeatable" section="mmi"></field>
+		<field id="conditionCheckReasonExhibition" section="mmi" />
 	</section>
 </record>

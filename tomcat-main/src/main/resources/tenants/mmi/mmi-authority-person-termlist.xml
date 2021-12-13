@@ -1,50 +1,8 @@
 <record id="preferredPA">
      <section id="termInformation">
         <repeat id="personTermGroupList/personTermGroup">
-            <!-- updated option values -->
-            <field id="termType">
-                <selector>personAuthority-termType</selector>
-                <options>
-                    <option id="">Please select a value</option>
-                    <option id="corporation">Organization</option>
-                    <option id="group">Group</option>
-                    <option id="individual">Individual</option>
-                </options>
-            </field>
-            <!-- updated option values -->
-            <field id="termStatus" ui-search="repeatable" seperate_ui_container="true" mini="search,list,relate">
-                <selector>personAuthority-termStatus</selector>
-                <options>
-                    <option id="">Please select a value</option>
-                    <option id="quickadded">Quick added</option>
-                    <option id="needsattention">Needs attention</option>
-                    <option id="inprogress">In progress</option>
-                    <option id="complete">Complete</option>
-                </options>
-            </field>
-            <field id="termSource">
-                <selector>personAuthority-termSource</selector>
-                <!-- adding options list -->
-                <options>
-                    <option id="" default="yes">Please select a value</option>
-                    <option id="aficatalog">AFI Catalog</option>
-                    <option id="encyclopediaofearlycinema">Encyclopedia of Early Cinema</option>
-                    <option id="halliwellswhoswhointhemovies">Halliwell's Who's Who in the Cinema</option>
-                    <option id="libraryofcongressnameauthority">Library of Congress Name Authority</option>
-                    <option id="other">Other</option>
-                    <option id="root">Root</option>
-                    <option id="silentfilmnecrology2ndedition">Silent Film Necrology, 2nd Edition</option>
-                    <option id="thefilmencyclopedia4thedition">The Film Encyclopedia, 4th Edition</option>
-                </options>
-            </field>
-            <!-- removed option values -->
-            <field id="salutation">
-                <selector>personAuthority-salutation</selector>
-            </field>
-            <!-- removed option values -->
-            <field id="title">
-                <selector>personAuthority-title</selector>
-            </field>
+            <!-- Remove autocomplete -->
+            <field id="termSource" autocomplete="" />
         </repeat>
      </section>
 </record>

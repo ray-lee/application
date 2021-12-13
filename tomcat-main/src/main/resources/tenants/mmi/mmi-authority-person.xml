@@ -1,62 +1,27 @@
-<record id="person"  type="authority" is-extension="true" generate-services-schema="true">
-    <services-record-path id="mmi">
-        persons_mmi:http://collectionspace.org/services/person/local/mmi,persons_mmi
-    </services-record-path>
+<record id="person" is-extension="true">
+    <services-record-path id="mmi">persons_mmi:http://collectionspace.org/services/person/local/mmi,persons_mmi</services-record-path>
+
     <instances id="person">
         <instance id="person-person">
             <web-url>person</web-url>
             <title-ref>person</title-ref>
-            <title>Local Entity</title>
-            <!-- deactivating non-preferred terms in term completion -->
-            <nptAllowed>false</nptAllowed>
         </instance>
     </instances>
+
     <section id="personNameAuthorityInformation">
-        <repeat id="affiliatedPersonOrgGroupList/affiliatedPersonOrgGroup"
-                section="mmi">
-            <field id="affiliatedPersonOrg" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi">
-            </field>
-            <field id="affiliatedPersonOrgType" section="mmi">
-                <options>
-                    <option id="">Please select a value</option>
-                    <option id="employee">Employee</option>
-                    <option id="founder">Founder</option>
-                    <option id="member">Member</option>
-                    <option id="partner">Partner</option>
-                </options>
-            </field>
+        <repeat id="affiliatedPersonOrgGroupList/affiliatedPersonOrgGroup" section="mmi">
+            <field id="affiliatedPersonOrg" autocomplete="true" section="mmi" />
+            <field id="affiliatedPersonOrgType" section="mmi" />
         </repeat>
+
         <field id="lifeSpan" section="mmi"/>
+
         <repeat id="orgContactNames" section="mmi">
-            <field id="orgContactName" autocomplete="person-person,person-person_shared,organization-organization,organization-organization_shared" section="mmi" />
-        	<selector>person-orgContactName</selector>
+            <field id="orgContactName" autocomplete="true" section="mmi" />
         </repeat>
+
         <repeat id="orgFunctions" section="mmi">
             <field id="orgFunction" section="mmi" />
-        	<selector>person-orgFunction</selector>
         </repeat>
-    	<!-- setting custom person structured date component -->
-    	<field id="birthDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
-    		ui-search="range" primarykey="birthDateGroup.dateDisplayDate" ui-func="cspace.personStructuredDate">
-    		<selector>personAuthority-birthDate</selector>
-    		<title-selector>titleBar-birthDate</title-selector>
-    	</field>
-    	<!-- setting custom person structured date component -->
-    	<field id="deathDateGroup" in-title="yes" ui-type="groupfield/structureddate" 
-    		ui-search="range" primarykey="deathDateGroup.dateDisplayDate" ui-func="cspace.personStructuredDate">
-    		<selector>personAuthority-deathDate</selector>
-    		<title-selector>titleBar-deathDate</title-selector>
-    	</field>
-	<field id="gender" ui-search="repeatable" seperate_ui_container="true">
-            <selector>personAuthority-gender</selector>
- 	    <!-- updating options list -->
-            <options>
-                <option id="" default="yes">Please select a value</option>
-                <option id="male">Male</option>
-                <option id="female">Female</option>
-                <option id="transgender">Transgender</option>
-                <option id="nonbinary">Nonbinary</option>
-            </options>
-        </field>
     </section>
 </record>

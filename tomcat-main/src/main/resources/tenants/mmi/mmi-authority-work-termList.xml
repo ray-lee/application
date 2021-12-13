@@ -1,10 +1,8 @@
 <record id="preferredWork">
     <section id="termInformation">
-        <!-- List containing this item's preferred term and any non-preferred terms -->
         <repeat id="workTermGroupList/workTermGroup">
-            <field id="termSource" autocomplete="vocab-worktermsource" ui-type="enum">
-                <selector>workAuthority-termSource</selector>
-            </field>
+            <!-- Change to term list -->
+            <field id="termSource" ui-type="enum" />
         </repeat>
     </section>
 </record>

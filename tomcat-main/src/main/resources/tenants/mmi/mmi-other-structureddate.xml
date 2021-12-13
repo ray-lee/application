@@ -1,9 +1,0 @@
-<record id="structureddate" in-recordlist="no" separate-record="false" services-type="structuredDateGroup">
-    <section id="structuredDateInformation">
-        <!-- added autocomplate vocab -->
-        <field id="dateAssociation" autocomplete="vocab-dateassociation" ui-type="enum">
-        	<selector>dateAssociation</selector>
-        	<preselector />
-        </field>
-    </section>
-</record>
