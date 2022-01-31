@@ -13,7 +13,6 @@ cspi-schema/dumpTree-1331765768078
 cspi-schema/dumpTree-1331765768078.xml
 cspi-schema/dumpedTrees/
 tomcat-main/src/main/resources/tenants/core/cow.xml
-.gitignore
 *.bak
 target/
 .DS_Store
