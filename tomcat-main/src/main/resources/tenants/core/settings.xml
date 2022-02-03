@@ -5,9 +5,10 @@
 		<tenant>1</tenant>
 		<tenantname>core</tenantname>
 		<cookievalidformins>60</cookievalidformins>
-		<!-- termLists, autocomplete instance lists, specs, and schemas,
-						 static UI elements, etc.
-						 will cache for a month (60*60*24*30) by default -->
+		<!--
+			termLists, autocomplete instance lists, specs, and schemas,
+			static UI elements, etc will cache for a month (60*60*24*30) by default
+		-->
 		<termlist-cache-timeout>2592000</termlist-cache-timeout>
 		<autocompletelist-cache-timeout>2592000</autocompletelist-cache-timeout>
 		<reportlist-cache-timeout>2592000</reportlist-cache-timeout>
@@ -23,8 +24,8 @@
 		<ui-props-cache-timeout>2592000</ui-props-cache-timeout>
 	</admin>
 	<email>
-		<baseurl>http://qa.collectionspace.org:@JEE_PORT@</baseurl>
-		<from>admin@core.collectionspace.org</from>
+		<baseurl>deprecated</baseurl> <!-- computed at runtime -->
+		<from>${CSPACE_SMTP_EMAIL_FROM_OPT}</from>
 		<to></to>
 		<!-- if specified then all emails will send to this address - used for debugging -->
 		<smtp>
@@ -39,7 +40,6 @@
 		</smtp>
 		<passwordreset>
 			<token>
-				<!-- <daysvalid>1</daysvalid> --> <!-- As of v5.0, this field is no longer used. -->
 				<tokenExpirationSeconds>300</tokenExpirationSeconds>
 			</token>
 			<loginpage>/cspace/core/resetpw</loginpage>
