@@ -11,7 +11,7 @@
 		<tenantname>pahma</tenantname>
 	</admin>
 	<email>
-		<baseurl>deprecated</baseurl> <!-- computed at runtime -->
+		<baseurl>${CSPACE_SMTP_EMAIL_BASEURL_OPT}</baseurl>
 		<from>${CSPACE_SMTP_EMAIL_FROM_OPT}</from>
         <to></to>
 		<smtp>
