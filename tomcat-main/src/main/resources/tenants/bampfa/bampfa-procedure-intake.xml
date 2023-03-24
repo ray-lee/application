@@ -12,14 +12,10 @@
 		<field id="intakeObject" section="bampfa"/>
 		<field id="sourceAddress" section="bampfa"/>
 		
-		<field id="receipt" section="bampfa">
-			<options>
-				<option id="">Please select a value</option>
-				<option id="Yes">Yes</option>
-				<option id="No">No</option>
-			</options>
+		<field id="receipt" section="bampfa" autocomplete="vocab-intakereceipt" ui-type="enum">
+			<options/>
 		</field>
-		
+
 		<field id="disposition" section="bampfa"/>
 	</section>
 </record>

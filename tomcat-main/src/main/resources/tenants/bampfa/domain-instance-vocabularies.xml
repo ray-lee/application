@@ -356,4 +356,13 @@
 			<option id="productionpeoplerole004">Artists Collective</option>
 		</options>
 	</instance>
+	<instance id="vocab-intakereceipt">
+		<web-url>intakereceipt</web-url>
+		<title-ref>intakereceipt</title-ref>
+		<title>Receipt</title>
+		<options>
+			<option id="intakereceipt001">Yes</option>
+			<option id="intakereceipt002">No</option>
+		</options>
+	</instance>
 </instances>
