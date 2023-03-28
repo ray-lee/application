@@ -365,4 +365,11 @@
 			<option id="intakereceipt002">No</option>
 		</options>
 	</instance>
+	<instance id="vocab-bampfaconditionchecks">
+		<web-url>bampfaconditionchecks</web-url>
+		<title-ref>bampfaconditionchecks</title-ref>
+		<title>Condition</title>
+		<options>
+		</options>
+	</instance>
 </instances>

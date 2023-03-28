@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<record id="conditioncheck">
+	<section id="objectConditionInformation">
+		<repeat id="conditionCheckGroupList/conditionCheckGroup">
+			<field id="condition" autocomplete="vocab-bampfaconditionchecks" ui-type="enum" mini="summary,list">
+                <options/>
+            </field>
+		</repeat>
+	</section>
+</record>

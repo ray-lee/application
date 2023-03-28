@@ -16,7 +16,7 @@
 			<!-- <include src="base-procedure-acquisition.xml,bampfa-procedure-acquisition.xml" merge="xmlmerge.properties"/> -->
 			<include src="base-procedure-blobs.xml"/>
 			<!-- <include src="base-procedure-claim.xml"/> -->
-			<include src="base-procedure-conditioncheck.xml"/>
+			<include src="base-procedure-conditioncheck.xml,bampfa-procedure-conditioncheck.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-exhibition.xml"/>
 			<include src="base-procedure-groups.xml,bampfa-procedure-groups.xml" merge="xmlmerge.properties"/>
 			<include src="base-procedure-intake.xml,bampfa-procedure-intake.xml" merge="xmlmerge.properties"/>
