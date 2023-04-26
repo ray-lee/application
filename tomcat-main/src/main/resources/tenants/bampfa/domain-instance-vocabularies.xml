@@ -372,4 +372,11 @@
 		<options>
 		</options>
 	</instance>
+	<instance id="vocab-bampfaloanpurposes">
+		<web-url>bampfaloanpurposes</web-url>
+		<title-ref>bampfaloanpurposes</title-ref>
+		<title>Out Loan Purpose</title>
+		<options>
+		</options>
+	</instance>
 </instances>
