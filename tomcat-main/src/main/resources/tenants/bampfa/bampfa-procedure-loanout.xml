@@ -1,0 +1,9 @@
+<record id="loanout" is-extension="true">
+	<services-record-path>loansout_common:http://collectionspace.org/services/loanout,loansout_common</services-record-path>
+
+	<section id="loanoutInformation">
+		<field id="loanPurpose" autocomplete="vocab-bampfaloanpurposes" ui-type="enum">
+            <options/>
+        </field>
+	</section>
+</record>
