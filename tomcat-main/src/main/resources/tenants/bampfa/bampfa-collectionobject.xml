@@ -250,7 +250,7 @@
 		<field id="acquisitionMethod" section="bampfa" ui-search="repeatable" seperate_ui_container="true" autocomplete="vocab-acquisitionmethod" ui-type="enum"/>
 
 		<repeat id="acquisitionSources" section="bampfa">
-			<field id="acquisitionSource" section="bampfa" ui-search="repeatable"/>
+			<field id="acquisitionSource" section="bampfa" ui-search="repeatable" autocomplete="person-person"/>
 		</repeat>
 
 		<field id="creditLine" section="bampfa" ui-search="repeatable"/>
