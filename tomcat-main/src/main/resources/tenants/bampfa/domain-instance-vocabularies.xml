@@ -377,6 +377,13 @@
 		<title-ref>bampfaloanpurposes</title-ref>
 		<title>Out Loan Purpose</title>
 		<options>
+			<option id="bampfaloanpurposes001">Exhibition</option>
+			<option id="bampfaloanpurposes002">Research</option>
+			<option id="bampfaloanpurposes003">Scientific or exhibit preparation</option>
+			<option id="bampfaloanpurposes004">Analysis</option>
+			<option id="bampfaloanpurposes005">Photography</option>
+			<option id="bampfaloanpurposes006">Conservation or other requested services</option>
+			<option id="bampfaloanpurposes007">Long-term collections management and storage</option>
 		</options>
 	</instance>
 </instances>
