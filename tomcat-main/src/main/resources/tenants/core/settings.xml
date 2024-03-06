@@ -5,10 +5,9 @@
 		<tenant>1</tenant>
 		<tenantname>core</tenantname>
 		<cookievalidformins>60</cookievalidformins>
-		<!--
-			termLists, autocomplete instance lists, specs, and schemas,
-			static UI elements, etc will cache for a month (60*60*24*30) by default
-		-->
+		<!-- termLists, autocomplete instance lists, specs, and schemas,
+						 static UI elements, etc.
+						 will cache for a month (60*60*24*30) by default -->
 		<termlist-cache-timeout>2592000</termlist-cache-timeout>
 		<autocompletelist-cache-timeout>2592000</autocompletelist-cache-timeout>
 		<reportlist-cache-timeout>2592000</reportlist-cache-timeout>
@@ -24,22 +23,22 @@
 		<ui-props-cache-timeout>2592000</ui-props-cache-timeout>
 	</admin>
 	<email>
-		<baseurl>deprecated</baseurl> <!-- computed at runtime -->
-		<from>${CSPACE_SMTP_EMAIL_FROM_OPT}</from>
+		<from>admin@core.collectionspace.org</from>
 		<to></to>
 		<!-- if specified then all emails will send to this address - used for debugging -->
 		<smtp>
-			<host>smtp.gmail.com</host>
-			<port>587</port>
+			<host>localhost</host>
+			<port>25</port>
 			<debug>${CSPACE_CORE_EMAIL_AUTH_DEBUG_OPT}</debug>
-			<auth enabled="true">
+			<auth enabled="false">
 				<!-- set to true if wish to use auth -->
-			    <username>${CSPACE_CORE_EMAIL_AUTH_USERNAME_OPT}</username>
-			    <password>${CSPACE_CORE_EMAIL_AUTH_PASSWORD_OPT}</password>
+				<username>${CSPACE_CORE_EMAIL_AUTH_USERNAME_OPT}</username>
+				<password>${CSPACE_CORE_EMAIL_AUTH_PASSWORD_OPT}</password>
 			</auth>
 		</smtp>
 		<passwordreset>
 			<token>
+				<!-- <daysvalid>1</daysvalid> --> <!-- As of v5.0, this field is no longer used. -->
 				<tokenExpirationSeconds>300</tokenExpirationSeconds>
 			</token>
 			<loginpage>/cspace/core/resetpw</loginpage>
@@ -56,11 +55,10 @@
 				<version>0.1</version>
 				<display-name>CollectionSpace Core Tenant</display-name>
 				<create-disabled>${CSPACE_CORE_CREATE_DISABLED_OPT}</create-disabled>
-				<audit-required>false</audit-required>
 			</tenant>
 			<repository>
 				<domain>core-domain</domain>
-				<name>core_domain</name>
+				<name></name>
 				<client>nuxeo-java</client>
 				<dateformats>
 					<pattern>MM/dd/yyyy</pattern>
@@ -89,33 +87,6 @@
 		</service>
 	</persistence>
 	<ui>
-		<web>
-			<login-dest>/collectionspace/ui/core/html/findedit.html</login-dest>
-			<login-failed-dest>/collectionspace/ui/core/html/index.html</login-failed-dest>
-			<front-page>/collectionspace/ui/core/html/index.html</front-page>
-			<find-page>myCollectionSpace</find-page>
-			<tmp-schema-path></tmp-schema-path>
-			<mappings>
-				<map id="record">
-					<recordtype>record</recordtype>
-					<file>/core/html/record.html</file>
-				</map>
-				<map id="authority">
-					<recordtype>authority</recordtype>
-					<file>/core/html/record.html</file>
-					<configure>
-						<meta id="recordType">{instance/web-url}</meta>
-					</configure>
-				</map>
-				<map id="procedure">
-					<url></url>
-					<recordtype>procedure</recordtype>
-					<file>/core/html/record.html</file>
-					<configure>
-						<meta id="title">Core CollectionSpace - {record/web-url}</meta>
-					</configure>
-				</map>
-			</mappings>
-		</web>
+		<baseurl>${CSPACE_CORE_UI_BASE_URL_OPT}</baseurl>
 	</ui>
 </settings>
