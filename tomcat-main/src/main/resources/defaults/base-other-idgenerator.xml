@@ -8,7 +8,6 @@
 		<field id="archive" />
 		<field id="evaluation" />
 		<field id="intake" />
-		<field id="hit" />
 		<field id="uoc" />
 		<field id="inventory" />
 		<field id="library" />
@@ -30,6 +29,7 @@
 		<field id="accession-activity" />
 		<field id="intake-object" />
 		<field id="uuid" />
+		<field id="hit" />
 		<!--
 		This is the type for id generators - if you add a new record type that has an id_generator you need to:
 		log into cspace db and look at table id_generators and find the csid for the record type
