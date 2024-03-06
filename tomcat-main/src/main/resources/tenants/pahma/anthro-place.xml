@@ -1,58 +1,57 @@
 <record id="place" is-extension="true">
-	<services-record-path id="anthro">places_anthro:http://collectionspace.org/services/place/domain/anthro,places_anthro</services-record-path>
+    <services-record-path id="anthro">places_anthro:http://collectionspace.org/services/place/domain/anthro,places_anthro</services-record-path>
 
-	<section id="assertions">
-    <repeat id="assertionGroupList/assertionGroup" section="anthro" >
-      <field id="assertionName" section="anthro" autocomplete="vocab-pahmaObjectStatuses" ui-type="enum"/>
-      <field id="assertionDescription" section="anthro" />
+    <section id="assertions">
+        <repeat id="assertionGroupList/assertionGroup" section="anthro">
+            <field id="assertionName" section="anthro" autocomplete="vocab-pahmaObjectStatuses" ui-type="enum" />
+            <field id="assertionDescription" section="anthro" />
 
-      <repeat id="assertionSourceGroupList/assertionSourceGroup" section="anthro">
-        <field id="assertionSourceBy" autocomplete="true" section="anthro" />
-        <field id="assertionSourceDate" section="anthro" />
-        <field id="assertionSourceNote" section="anthro" />
-      </repeat>
+            <repeat id="assertionSourceGroupList/assertionSourceGroup" section="anthro">
+                <field id="assertionSourceBy" autocomplete="true" section="anthro" />
+                <field id="assertionSourceDate" section="anthro" />
+                <field id="assertionSourceNote" section="anthro" />
+            </repeat>
 
-      <field id="assertionRelatedRecords" section="anthro" />
+            <field id="assertionRelatedRecords" section="anthro" />
 
-      <repeat id="assertionReferenceGroupList/assertionReferenceGroup" section="anthro">
-        <field id="assertionReference" autocomplete="true" section="anthro" />
-        <field id="assertionReferenceNote" section="anthro" />
-      </repeat>
-    </repeat>
-	</section>
+            <repeat id="assertionReferenceGroupList/assertionReferenceGroup" section="anthro">
+                <field id="assertionReference" autocomplete="true" section="anthro" />
+                <field id="assertionReferenceNote" section="anthro" />
+            </repeat>
+        </repeat>
+    </section>
 
-  <section id="background">
-    <repeat id="basicInfoList" section="anthro">
-      <field id="basicInfo" section="anthro" />
-    </repeat>
+    <section id="background">
+        <repeat id="basicInfoList" section="anthro">
+            <field id="basicInfo" section="anthro" />
+        </repeat>
 
-    <repeat id="nagpraHistoryList" section="anthro">
-      <field id="nagpraHistory" section="anthro" />
-    </repeat>
+        <repeat id="nagpraHistoryList" section="anthro">
+            <field id="nagpraHistory" section="anthro" />
+        </repeat>
 
-    <repeat id="backgroundSummaryList" section="anthro">
-      <field id="backgroundSummary" section="anthro" />
-    </repeat>
+        <repeat id="backgroundSummaryList" section="anthro">
+            <field id="backgroundSummary" section="anthro" />
+        </repeat>
 
-    <repeat id="landOwnershipInfoList" section="anthro">
-      <field id="landOwnershipInfo" section="anthro" />
-    </repeat>
-  </section>
+        <repeat id="landOwnershipInfoList" section="anthro">
+            <field id="landOwnershipInfo" section="anthro" />
+        </repeat>
+    </section>
 
-  <section id="consultedDocs">
-    <repeat id="museumRecordsList" section="anthro">
-      <field id="museumRecords" section="anthro" />
-    </repeat>
+    <section id="consultedDocs">
+        <repeat id="museumRecordsList" section="anthro">
+            <field id="museumRecords" section="anthro" />
+        </repeat>
 
-    <repeat id="manuscriptGroupList/manuscriptGroup" section="anthro">
-      <field id="manuscriptReferences" autocomplete="true" section="anthro" />
-      <field id="manuscriptNote" section="anthro" />
-    </repeat>
+        <repeat id="manuscriptGroupList/manuscriptGroup" section="anthro">
+            <field id="manuscriptReferences" autocomplete="true" section="anthro" />
+            <field id="manuscriptNote" section="anthro" />
+        </repeat>
 
-    <repeat id="reportRefGroupList/reportRefGroup" section="anthro">
-      <field id="reportReferences" autocomplete="true" section="anthro" />
-      <field id="reportNote" section="anthro" />
-    </repeat>
-  </section>
+        <repeat id="reportRefGroupList/reportRefGroup" section="anthro">
+            <field id="reportReferences" autocomplete="true" section="anthro" />
+            <field id="reportNote" section="anthro" />
+        </repeat>
+    </section>
 </record>
-

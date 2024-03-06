@@ -140,7 +140,7 @@
 		<title>Color Palette</title>
 		<options>
 			<option id="cmyk">CMYK</option>
-			<option id="rgb"> RGB</option>
+			<option id="rgb">RGB</option>
 		</options>
 	</instance>
 	<instance id="vocab-creationhardware">
