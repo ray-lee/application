@@ -241,7 +241,7 @@ public class TenantSpec {
 	public boolean getCreateDisabled() {
 		return createDisabled;
 	}
-
+	
 	public TenantSpec getTenantData() {
 		return this;
 	}
