@@ -12,7 +12,6 @@
 
 			<include src="base-other-locality.xml" />
 			<include src="base-collectionobject.xml,
-					extensions/annotation-collectionobject.xml,
 					extensions/nagpra-collectionobject.xml,
 					anthropology-collectionobject.xml,
 					ucb-naturalhistory-collectionobject.xml,
