@@ -156,35 +156,35 @@
 				<title-selector>titleBar-object-identification-object-name</title-selector>
 			</field>
 		</repeat>
-		
+
 		<!-- Fields from anthropology -->
-		
+
 		<!-- Fields from naturalhistory -->
-		
+
 		<!-- Local fields -->
 		<field id="sortableObjectNumber" section="pahma" ui-search="range" ui-type="computed" ui-args="objectNumber" ui-search-args="objectNumberRangeSearch" ui-func="pahma.computeSortableObjectNumber" ui-readonly="true"/>
-		
+
 		<!-- This is an app-layer-only field, used in advanced search to enter "regular" object numbers, which will be computed into sortableObjectNumber for range search. -->
 		<field id="objectNumberRangeSearch" ui-search="range" exists-in-services="false" query-behavior="ignore"/>
 
-		<!-- 
+		<!--
 			Create app-layer-only fields for use on advanced search to search on computedCurrentLocation
 			and computedCrate. These fields need to be created because computedCurrentLocation and
 			computedCrate have the ui-type="valueDeURNed" decorator applied, which is the behavior desired
 			in the record editor, but not on the advanced search form. On the advanced search form, we also
 			want the fields to autocomplete.
-			
+
 			The exists-in-services="false" attribute prevents a field from being saved in the record editor,
 			but still allows it to be used as a search filter. (Adding query-behavior="ignore" would prevent
 			it from being used as a search filter.)
 		-->
-		
+
 		<field id="computedCurrentLocationSearch" ui-search="repeatable" autocomplete="location-location" exists-in-services="false">
 			<services-tag>computedCurrentLocation</services-tag>
 		</field>
-		
+
 		<!-- computedCrate is in the anthropology schema, so the corresponding search field must be declared in that section. -->
-		
+
 		<field id="computedCrateSearch" ui-search="repeatable" autocomplete="location-crate" exists-in-services="false" section="anthropology">
 			<services-tag>computedCrate</services-tag>
 		</field>
@@ -193,7 +193,7 @@
 			<field id="objectClassName" section="pahma" autocomplete="concept-objectclass"/>
 			<field id="objectClassNote" section="pahma"/>
 		</repeat>
-		
+
 		<repeat id="pahmaAltNumGroupList/pahmaAltNumGroup" section="pahma">
 			<selector>collection-object-pahmaAltNumGroup</selector> <!-- WHY ARE MANY GROUP SELECTORS MISSING OR COMMENTED OUT, BUT THIS ONE IS NOT? -->
 			<field id="pahmaAltNum" section="pahma" ui-search="repeatable" in-tab="yes">
@@ -951,7 +951,7 @@
 					<!-- Add options -->
 					<options>
 						<option id="" default="yes">(none selected)</option>
-						<!-- 
+						<!--
 						<option id="discovered">discovered</option>
 						<option id="found">found</option>
 						<option id="demonstrated">demonstrated</option>
@@ -978,7 +978,7 @@
 					</options>
 				</field>
 			</repeat>
-			
+
 			<!-- New fields -->
 
 			<!-- TEMPORARY REPLACEMENT OF OWNERSHIP FIELDS UNTIL COMMON SCHEMA HAS REPEATABLE, LINKED OWNERSHIP DETAILS -->
@@ -1066,8 +1066,6 @@
 	</section>
 
 	<section id="objectCollectionInformation">
-		<!-- Remove place-tgn_place from autocomplete -->
-		<field id="fieldCollectionPlace" autocomplete="place-place"/>
 		<repeat id="fieldCollectionSources">
 			<!-- Add ui-search and add concept-concept to autocomplete -->
 			<field id="fieldCollectionSource" ui-search="repeatable" autocomplete="person-person,concept-concept"/>
@@ -1076,9 +1074,9 @@
 			<!-- Add ui-search -->
 			<field id="fieldCollector" ui-search="repeatable"/>
 		</repeat>
-		
+
 		<!-- Local fields -->
-		
+
 		<repeat id="pahmaFieldCollectionDateGroupList/pahmaFieldCollectionDateGroup" section="pahma">
 			<group id="pahmaFieldCollectionDate" section="pahma" xxx-services-no-repeat="true"
 				ui-type="groupfield/structureddate" primarykey="dateDisplayDate"
@@ -1110,13 +1108,13 @@
 				<field id="scalarValuesComputed" section="pahma"/>
 			</group>
 		</repeat>
-		
+
 		<repeat id="pahmaFieldCollectionPlaceList" section="pahma">
 			<field id="pahmaFieldCollectionPlace" section="pahma" autocomplete="place-place" ui-search="repeatable"/>
 		</repeat>
-		
+
 		<field id="pahmaFieldLocVerbatim" section="pahma"/>
-		
+
 		<repeat id="ageEstimateGroupList/ageEstimateGroup" section="pahma">
 			<field id="ageEstimate" section="pahma" ui-type="validated" datatype="integer"/>
 			<field id="ageEstimateQualifier" section="pahma">
@@ -1140,7 +1138,7 @@
 			<field id="ageEstimateNote" section="pahma"/>
 		</repeat>
 	</section>
-	
+
 	<!--  CC-1480 - Replaced with LYRASIS' NAGPRA extension
 	<section id="repatriationNagpraComplianceInformation">
 		<repeat id="nagpraInventoryNameList" section="anthropology">
@@ -1159,5 +1157,5 @@
 		</repeat>
 	</section>
 	-->
-	
+
 </record>
