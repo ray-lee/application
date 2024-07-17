@@ -299,8 +299,6 @@
 			</field>
 		</repeat>
 
-		<field id="inventoryCount" section="pahma"/>
-
 		<field id="portfolioSeries" section="pahma" ui-search="repeatable">
 			<options>
 				<option id="" default="yes">(none selected)</option>
