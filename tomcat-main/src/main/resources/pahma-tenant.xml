@@ -25,6 +25,7 @@
 			<include src="base-procedure-osteology.xml,extensions/anthropology-procedure-osteology.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-exhibition.xml" />
 			<include src="base-procedure-groups.xml,pahma-procedure-groups.xml" merge="xmlmerge.properties" />
+			<include src="base-procedure-insurance.xml" />
 			<include src="base-procedure-intake.xml,pahma-procedure-intake.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-hit.xml,pahma-procedure-hit.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-loanin.xml,pahma-procedure-loanin.xml" merge="xmlmerge.properties" />
@@ -35,6 +36,7 @@
 			<include src="base-procedure-objectexit.xml,anthropology-procedure-objectexit.xml,pahma-procedure-objectexit.xml" merge="xmlmerge.properties" />
 			<include src="base-procedure-conservation.xml" />
 			<include src="base-procedure-uoc.xml" />
+			<include src="base-procedure-transport.xml" />
 
 			<include src="base-authority-contact.xml,anthropology-authority-contact.xml,pahma-authority-contact.xml" merge="xmlmerge.properties" />
 
@@ -51,6 +53,8 @@
 			<include src="base-authority-place.xml,anthropology-authority-place.xml,pahma-authority-place.xml,anthro-place.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-taxon-termList.xml,pahma-authority-taxon-termList.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-taxon.xml,pahma-authority-taxon.xml" merge="xmlmerge.properties" />
+			<include src="base-authority-chronology-termList.xml" />
+			<include src="base-authority-chronology.xml,pahma-authority-chronology.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-concept-termList.xml,pahma-authority-concept-termList.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-concept.xml,pahma-authority-concept.xml" merge="xmlmerge.properties" />
 			<include src="base-authority-work-termList.xml,pahma-authority-work-termList.xml" merge="xmlmerge.properties" />
