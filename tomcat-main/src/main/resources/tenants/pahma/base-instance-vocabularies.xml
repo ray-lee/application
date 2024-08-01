@@ -2120,6 +2120,7 @@
 			<option id="inventory_count">inventory count</option>
 			<option id="associated_funerary_objects">associated funerary objects</option>
 			<option id="miniumum_num_of_individuals">minimum number of individuals</option>
+			<option id="piece_count">piece count</option>
 		</options>
 	</instance>
 	<instance id="vocab-assocauthorityrelationtype">
